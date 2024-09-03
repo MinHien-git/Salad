@@ -9,6 +9,7 @@ public class Tooltip : MonoBehaviour
     private RectTransform tooltipRectTransform;
     private Canvas canvas;
     public TextMeshProUGUI tooltipText;
+    public RectTransform tooltipTail;
 
     private void Awake()
     {
@@ -32,8 +33,8 @@ public class Tooltip : MonoBehaviour
         float yOffsetAbove,
         float yOffsetBelow,
         string text,
-        float xOffsetLeft = 10f,
-        float xOffsetRight = 10f
+        float xOffsetLeft = 30f,
+        float xOffsetRight = 30f
     )
     {
         // Set the text and update the layout
@@ -43,7 +44,7 @@ public class Tooltip : MonoBehaviour
 
         // Adjust the tooltip's width to fit the text
         tooltipRectTransform.sizeDelta = new Vector2(
-            textWidth - 80,
+            textWidth - 60,
             tooltipRectTransform.sizeDelta.y
         );
 
@@ -80,6 +81,7 @@ public class Tooltip : MonoBehaviour
         {
             // Place tooltip above the target
             tooltipY = targetRect.rect.height / 2 + yOffsetAbove;
+            tooltipTail.localPosition = new Vector2(0, -tooltipRectTransform.rect.height / 2 + 4); // Align tail with the center of the tooltip
         }
         else if (
             bottomLeftScreen.y - tooltipRectTransform.rect.height - yOffsetBelow >= 0
@@ -89,24 +91,31 @@ public class Tooltip : MonoBehaviour
         {
             // Place tooltip below the target
             tooltipY = -targetRect.rect.height / 2 - yOffsetBelow;
+            tooltipTail.localPosition = new Vector2(0, tooltipRectTransform.rect.height / 2 - 4);
         }
         else if (topRightScreen.x + tooltipRectTransform.rect.width + xOffsetRight <= screenWidth)
         {
             // If no space above/below, place to the right of the target
-            tooltipX = targetRect.rect.width / 2 + xOffsetRight;
+            tooltipX =
+                targetRect.rect.width / 2 + xOffsetRight + tooltipRectTransform.rect.width / 2;
             tooltipY = 0; // Align Y-axis with the center of the target
+            tooltipTail.localPosition = new Vector2(-tooltipRectTransform.rect.width / 2 - 50, 0);
         }
         else if (topLeftScreen.x - tooltipRectTransform.rect.width - xOffsetLeft >= 0)
         {
             // If no space on the right, place to the left of the target
-            tooltipX = -targetRect.rect.width / 2 - xOffsetLeft - tooltipRectTransform.rect.width;
+            tooltipX =
+                -targetRect.rect.width / 2 - xOffsetLeft - tooltipRectTransform.rect.width / 2;
             tooltipY = 0; // Align Y-axis with the center of the target
+            tooltipTail.localPosition = new Vector2(tooltipRectTransform.rect.width / 2 + 50, 0);
         }
         else
         {
             // Default to below if space is tight (worst-case scenario)
             tooltipY =
                 -targetRect.rect.height / 2 - yOffsetBelow - tooltipRectTransform.rect.height;
+            tooltipX = targetRect.rect.width / 2 + xOffsetRight;
+            tooltipTail.localPosition = new Vector2(-tooltipRectTransform.rect.width / 2 - 50, 0);
         }
 
         // Set the tooltip's anchored position
