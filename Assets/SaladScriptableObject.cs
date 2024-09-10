@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaladScriptableObject : MonoBehaviour
+public class SaladScriptableObject : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Ingredient[] ingredient;
+    public string salad_name;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [TextAreaAttribute]
+    public string description;
 }
