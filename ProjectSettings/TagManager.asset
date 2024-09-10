@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DropZone
+  - TableArea
   layers:
   - Default
   - TransparentFX

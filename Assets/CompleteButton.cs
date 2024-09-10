@@ -73,4 +73,6 @@ public class CompleteButton
             rectTransform.DOScale(normalScale, duration);
         }
     }
+
+    public void Complete() { }
 }
