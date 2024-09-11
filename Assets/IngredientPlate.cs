@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IngredientPlate : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class IngredientPlate : MonoBehaviour
 
     public void Start()
     {
+        itemImage.sprite = ingredient.sprite;
         objectToolTip.Init(ingredient.ingredient_name);
     }
 }

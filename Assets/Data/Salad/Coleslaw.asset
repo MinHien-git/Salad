@@ -26,12 +26,7 @@ MonoBehaviour:
     l\xE0 s\u1EF1 k\u1EBFt h\u1EE3p gi\xE0u ch\u1EA5t s\u01A1 v\xE0 vitamin A. M\u1ED9t
     m\xF3n ngon kh\xF3 c\u01B0\u1EE1ng b\u1EDFi h\u01B0\u01A1ng v\u1ECB gi\xF2n ng\u1ECDt
     t\u1EEB c\xE1c lo\u1EA1i rau c\u1EE7."
-  ingredient_description: "B\u1EAFp c\u1EA3i: 1/2 \u0111\u1EA7u (kho\u1EA3ng 300-400g,
-    th\xE1i s\u1EE3i)\nC\xE0 r\u1ED1t: 1-2 c\u1EE7 (kho\u1EA3ng 100-150g, b\xE0o
-    s\u1EE3i)\nB\u1EAFp h\u1EA1t: 150g, 1 qu\u1EA3 t\xE1ch h\u1EA1t\nTh\u1ECBt ngu\u1ED9i:
-    100g\nX\u1ED1t M\xF3n \u0102n Vi\u1EC7t: 3 mu\u1ED7ng c\xE0 ph\xEA (ho\u1EB7c
-    theo kh\u1EA9u v\u1ECB)"
-  ingredient_information: "\"Coleslaw Salad\" c\xF3 ngu\u1ED3n g\u1ED1c t\u1EEB m\xF3n
+  ingredient_description: "\"Coleslaw Salad\" c\xF3 ngu\u1ED3n g\u1ED1c t\u1EEB m\xF3n
     salad b\u1EAFp c\u1EA3i truy\u1EC1n th\u1ED1ng ch\xE2u \xC2u. T\xEAn g\u1ECDi
     \"\"coleslaw\"\" c\xF3 ngh\u0129a l\xE0 \"\"salad b\u1EAFp c\u1EA3i\"\".  M\xF3n
     salad n\xE0y \u0111\xE3 tr\u1EDF n\xEAn ph\u1ED5 bi\u1EBFn \u1EDF M\u1EF9 t\u1EEB
@@ -45,3 +40,8 @@ MonoBehaviour:
     tuy\u1EC7t v\u1EDDi cho c\xE1c m\xF3n th\u1ECBt n\u01B0\u1EDBng, b\xE1nh m\xEC
     hay burger, mang l\u1EA1i s\u1EF1 t\u01B0\u01A1i m\u1EDBi cho b\u1EEFa \u0103n
     c\u1EE7a gia \u0111\xECnh b\u1EA1n. "
+  ingredient_information: "B\u1EAFp c\u1EA3i: 1/2 \u0111\u1EA7u (kho\u1EA3ng 300-400g,
+    th\xE1i s\u1EE3i)\nC\xE0 r\u1ED1t: 1-2 c\u1EE7 (kho\u1EA3ng 100-150g, b\xE0o
+    s\u1EE3i)\nB\u1EAFp h\u1EA1t: 150g, 1 qu\u1EA3 t\xE1ch h\u1EA1t\nTh\u1ECBt ngu\u1ED9i:
+    100g\nX\u1ED1t M\xF3n \u0102n Vi\u1EC7t: 3 mu\u1ED7ng c\xE0 ph\xEA (ho\u1EB7c
+    theo kh\u1EA9u v\u1ECB)"

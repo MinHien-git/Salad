@@ -5,9 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GuideUI : MonoBehaviour
+public class CompletePopup : MonoBehaviour
 {
-    public static GuideUI Instance { get; set; }
+    public static CompletePopup Instance { get; set; }
     public TextMeshProUGUI title;
     public TextMeshProUGUI content;
     public Image saladImage;
@@ -23,13 +23,13 @@ public class GuideUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        note.SetActive(false);
     }
 
     public void Init(SaladScriptableObject saladScriptable)
     {
         title.text = saladScriptable.salad_name;
-        content.text = saladScriptable.description;
-        saladImage.sprite = saladScriptable.saladImage;
+        content.text = saladScriptable.ingredient_description;
     }
 
     public void CloseGuide()
@@ -64,7 +64,7 @@ public class GuideUI : MonoBehaviour
         IsOpen = false;
     }
 
-    public void Open(string closeLabel = "Ready")
+    public void Open(string closeLabel = "Next")
     {
         if (!IsOpen)
         {

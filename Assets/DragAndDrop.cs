@@ -6,6 +6,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
     public Transform parentAfterDrag;
     public Image image;
+    public IngredientPlate plate;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -21,7 +22,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.position = temp;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public virtual void OnEndDrag(PointerEventData eventData)
     {
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;

@@ -5,10 +5,22 @@ using UnityEngine.EventSystems;
 
 public class ITemDrop : MonoBehaviour, IDropHandler
 {
-    public void OnDrop(PointerEventData eventData)
+    public virtual void OnDrop(PointerEventData eventData)
     {
         GameObject dropped = eventData.pointerDrag;
-        DragAndDrop dragAndDrop = dropped.GetComponent<DragAndDrop>();
-        dragAndDrop.parentAfterDrag = transform;
+        DragAndDrop dragAndDrop = dropped.GetComponent<PlateDragAndDrop>();
+        if (transform.CompareTag("TableArea"))
+        {
+            if (GameManager.Instance.CanPlacePlate())
+                return;
+
+            dragAndDrop.parentAfterDrag = transform;
+            GameManager.Instance.AddPlate(dragAndDrop.plate);
+        }
+        else
+        {
+            dragAndDrop.parentAfterDrag = transform;
+            GameManager.Instance.RemovePlate(dragAndDrop.plate);
+        }
     }
 }
