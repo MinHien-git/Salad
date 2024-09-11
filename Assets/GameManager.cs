@@ -7,11 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public SaladScriptableObject currentSalad;
     public SaladScriptableObject[] saladScriptableObjects;
-    public GuideUI guideUI;
     public TextMeshProUGUI currentAmountDisplayer;
+    public GameObject background;
 
     public void Start()
     {
         currentSalad = saladScriptableObjects[Random.Range(0, saladScriptableObjects.Length)];
+        GuideUI.Instance.Init(currentSalad);
+        currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
     }
 }

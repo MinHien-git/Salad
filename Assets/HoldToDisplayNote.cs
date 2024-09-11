@@ -24,9 +24,9 @@ public class HoldToDisplayNote
     private void Start()
     {
         // Ensure the note is hidden and set its initial scale at the start
-        note.SetActive(false);
-        background.gameObject.SetActive(false);
-        note.transform.localScale = initialScale;
+        // note.SetActive(false);
+        // background.gameObject.SetActive(false);
+        // note.transform.localScale = initialScale;
     }
 
     public void OnPointerDown(PointerEventData eventData)

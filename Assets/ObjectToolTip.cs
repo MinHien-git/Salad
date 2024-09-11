@@ -20,6 +20,11 @@ public class ObjectToolTip : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         holdCoroutine = StartCoroutine(HoldToShowTooltip());
     }
 
+    public void Init(string content)
+    {
+        tooltipContent = content;
+    }
+
     public void OnPointerUp(PointerEventData eventData)
     {
         isPointerDown = false;

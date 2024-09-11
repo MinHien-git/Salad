@@ -540,7 +540,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5407386955469140563, guid: 133f774e0daf13747aada1e4673f80b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658341385}
   m_SourcePrefab: {fileID: 100100000, guid: 133f774e0daf13747aada1e4673f80b5, type: 3}
 --- !u!224 &140130950 stripped
 RectTransform:
@@ -1869,9 +1872,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d849334cf0c9524b8140d61a37740ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  content: {fileID: 0}
-  saladImage: {fileID: 0}
+  title: {fileID: 1317959102}
+  content: {fileID: 1546392635}
+  saladImage: {fileID: 1569423494}
+  note: {fileID: 815561148}
+  background: {fileID: 1016821128}
+  initialScale: {x: 0.1, y: 0.1, z: 0.1}
+  closeColor: {r: 0, g: 0, b: 0, a: 0}
+  animationDuration: 0.3
+  openColor: {r: 0, g: 0, b: 0, a: 0.6156863}
+  button: {fileID: 715603281}
+  IsOpen: 0
+  plate: []
 --- !u!1 &930781656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2027,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016821126}
   m_CullTransparentMesh: 1
+--- !u!1 &1059152654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5407386955469140563, guid: 133f774e0daf13747aada1e4673f80b5, type: 3}
+  m_PrefabInstance: {fileID: 124776442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1071767299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,6 +2670,7 @@ GameObject:
   - component: {fileID: 1489645576}
   - component: {fileID: 1489645575}
   - component: {fileID: 1489645574}
+  - component: {fileID: 1489645577}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2723,7 +2741,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1489645575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1489645577}
+        m_TargetAssemblyTypeName: GuideButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1489645575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,6 +2792,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489645572}
   m_CullTransparentMesh: 1
+--- !u!114 &1489645577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489645572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1fb381e474ba748b2ecff462228826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  node: {fileID: 815561152}
 --- !u!1001 &1492300479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3056,7 +3099,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 99.3}
-  m_SizeDelta: {x: 100, y: 150}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569423494
 MonoBehaviour:
@@ -3190,6 +3233,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3287077262020841771, guid: 133f774e0daf13747aada1e4673f80b5, type: 3}
   m_PrefabInstance: {fileID: 124776442}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1658341385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059152654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47587c601c64bd44a8a3e1d16a7e2a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 0}
+  objectToolTip: {fileID: 0}
 --- !u!224 &1715374338 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3287077262020841771, guid: 133f774e0daf13747aada1e4673f80b5, type: 3}
@@ -3709,6 +3766,7 @@ GameObject:
   - component: {fileID: 1970687359}
   - component: {fileID: 1970687358}
   - component: {fileID: 1970687357}
+  - component: {fileID: 1970687360}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3779,7 +3837,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1970687358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 815561152}
+        m_TargetAssemblyTypeName: GuideUI, Assembly-CSharp
+        m_MethodName: CloseGuide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1970687358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3818,6 +3888,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970687355}
   m_CullTransparentMesh: 1
+--- !u!114 &1970687360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970687355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3652fa303bb606d49a04b74034c2be97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 1, g: 0.5529412, b: 0.078431375, a: 1}
+  hoverColor: {r: 1, g: 0.33261448, b: 0.07843137, a: 1}
+  clickColor: {r: 1, g: 0.24580184, b: 0.07843137, a: 1}
+  duration: 0.25
+  normalScale: {x: 1, y: 1, z: 1}
+  hoverScale: {x: 1.1, y: 1.1, z: 1.1}
+  clickScale: {x: 0.9, y: 0.9, z: 0.9}
 --- !u!1 &1988804515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,9 +4078,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSalad: {fileID: 0}
-  saladScriptableObjects: []
-  guideUI: {fileID: 0}
-  currentAmountDisplayer: {fileID: 0}
+  saladScriptableObjects:
+  - {fileID: 11400000, guid: b0c64455f482ccf478385ebba0bc6f61, type: 2}
+  - {fileID: 11400000, guid: 2f2053f557020ed4aa133022ee5141b8, type: 2}
+  currentAmountDisplayer: {fileID: 1821060844}
+  background: {fileID: 1016821126}
 --- !u!4 &2140507033
 Transform:
   m_ObjectHideFlags: 0
