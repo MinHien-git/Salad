@@ -7,6 +7,7 @@ using UnityEngine;
 public class AnimateHeader : MonoBehaviour
 {
     public TextMeshProUGUI headerText;
+    public Color color;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class AnimateHeader : MonoBehaviour
         headerText.transform.DOScale(new Vector3(1.2f, 1.2f, 1f), 1f).SetLoops(-1, LoopType.Yoyo);
 
         // Fade in and out the text color between white and blue, looping infinitely
-        headerText.DOColor(Color.black, 1f).SetLoops(-1, LoopType.Yoyo);
+        headerText.DOColor(color, 1f).SetLoops(-1, LoopType.Yoyo);
 
         // Optional: Loop the text change, but you can leave it out if unnecessary
     }
