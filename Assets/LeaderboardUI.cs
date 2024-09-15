@@ -17,7 +17,8 @@ public class LeaderboardUI : MonoBehaviour
     public Color openColor = new(1, 1, 1, 1);
     public TextMeshProUGUI button;
     public bool IsOpen;
-
+    public LeaderboardCard leaderboardCard;
+    public Transform container;
     private void Awake()
     {
         Instance = this;
@@ -55,6 +56,14 @@ public class LeaderboardUI : MonoBehaviour
 
     private void OnEnable()
     {
+        foreach (Transform child in container.transform) {
+            GameObject.Destroy(child.gameObject);
+        }
+        var players = PlayerProfile.Instance.LoadPlayerDataFromFile();
+        for (int i = 0; i < players.Count;++i){
+            LeaderboardCard card=  Instantiate(leaderboardCard,container);
+            card.Init(players[i]);
+        }
         Open();
     }
 

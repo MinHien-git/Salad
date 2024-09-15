@@ -45,6 +45,7 @@ public class PlayerProfile : MonoBehaviour
             File.AppendAllText(filePath, newPlayerData.ToString() + "\n");
 
             Debug.Log("Data saved: " + newPlayerData);
+            saveButton.interactable  = false;
         }
         else
         {
