@@ -378,10 +378,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Leaderboard
+  m_text: "X\u1EBFp H\u1EA1ng"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bd9bf06095fdedd43b050725947ea36e, type: 2}
-  m_sharedMaterial: {fileID: 6625354487518797633, guid: bd9bf06095fdedd43b050725947ea36e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1091,8 +1091,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bd9bf06095fdedd43b050725947ea36e, type: 2}
-  m_sharedMaterial: {fileID: 6625354487518797633, guid: bd9bf06095fdedd43b050725947ea36e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3c3691b19673ed24e9d9c8fbbed74107, type: 2}
+  m_sharedMaterial: {fileID: -2613621167301457668, guid: 3c3691b19673ed24e9d9c8fbbed74107, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
