@@ -10,7 +10,7 @@ public class ScorePane : MonoBehaviour
 
     private void OnEnable()
     {
-        explaining.text = "Score: " + GameManager.Instance.currentSalad.ingredient_information;
+        explaining.text = GameManager.Instance.currentSalad.ingredient_information;
         scoreText.text = GameManager.Instance.currentAmountDisplayer.text;
     }
 }

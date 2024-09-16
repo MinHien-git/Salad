@@ -22,7 +22,8 @@ public class ScoreText : MonoBehaviour
             .OnComplete(() => text.transform.DOScale(Vector3.one, 0.3f)); // Return to original size
 
         // Change the color of the text to green during the animation
-        text.DOColor(Color.green, 0.2f).OnComplete(() => text.DOColor(Color.white, 0.3f)); // Return to original color
+        text.DOColor(new Color(28 / 255f, 166 / 255f, 63 / 255f), 0.2f)
+            .OnComplete(() => text.DOColor(new Color(242 / 255f, 80 / 255f, 110 / 255f), 0.3f)); // Return to original color
     }
 
     // Animation to play when the score decreases
@@ -33,6 +34,7 @@ public class ScoreText : MonoBehaviour
             .OnComplete(() => text.transform.DOScale(Vector3.one, 0.3f)); // Return to original size
 
         // Change the color of the text to red during the animation
-        text.DOColor(Color.red, 0.2f).OnComplete(() => text.DOColor(Color.white, 0.3f)); // Return to original color
+        text.DOColor(new Color(242 / 255f, 68 / 255f, 5 / 255f), 0.2f)
+            .OnComplete(() => text.DOColor(new Color(242 / 255f, 80 / 255f, 110 / 255f), 0.3f)); // Return to original color
     }
 }

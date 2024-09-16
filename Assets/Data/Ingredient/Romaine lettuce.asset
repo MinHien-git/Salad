@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: Romaine lettuce
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c0720742141bf2b4a8dd1164835e62f3, type: 3}
   ingredient_name: "Rau x\xE0 l\xE1ch Romaine"

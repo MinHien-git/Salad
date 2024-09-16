@@ -14,4 +14,11 @@ public class IngredientPlate : MonoBehaviour
         itemImage.sprite = ingredient.sprite;
         objectToolTip.Init(ingredient.ingredient_name);
     }
+
+    public void Init(Ingredient ingredient)
+    {
+        this.ingredient = ingredient;
+        itemImage.sprite = ingredient.sprite;
+        objectToolTip.Init(ingredient.ingredient_name);
+    }
 }

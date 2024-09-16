@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: Cabbage
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 79640d0eb74cda5458f878191a561e61, type: 3}
   ingredient_name: "B\u1EAFp c\u1EA3i"

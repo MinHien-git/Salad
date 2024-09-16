@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: Ham
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1969c3d14f69b2b4797636cebbaf9aa2, type: 3}
   ingredient_name: "Th\u1ECBt ngu\u1ED9i"

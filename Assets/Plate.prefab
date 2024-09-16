@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cd97332b92e6140b0077186ad30397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdDuration: 1
+  holdDuration: 0.5
   yOffsetAbove: 0
   yOffsetBelow: 0
   tooltipContent: "Th\u1ECBt x\xF4ng kh\xF3i"
@@ -403,13 +403,13 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 42dddaa2418f3ed4ab3933588c7c99fe, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8800367825376845926
 GameObject:
