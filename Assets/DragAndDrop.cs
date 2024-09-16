@@ -13,7 +13,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
+        Vector2 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         image.raycastTarget = false;
+
+        transform.position = temp;
     }
 
     public void OnDrag(PointerEventData eventData)

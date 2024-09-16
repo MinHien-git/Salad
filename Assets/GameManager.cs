@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -76,5 +78,23 @@ public class GameManager : MonoBehaviour
     public bool CanPlacePlate()
     {
         return plates.Count == currentSalad.ingredient.Length;
+    }
+
+    public int CheckScore()
+    {
+        List<Ingredient> temp = new();
+        int point = 0;
+        for (int i = 0; i < currentSalad.ingredient.Length; ++i)
+        {
+            if (
+                currentSalad.ingredient.Contains(plates[i].ingredient)
+                && !temp.Contains(plates[i].ingredient)
+            )
+            {
+                temp.Add(plates[i].ingredient);
+                ++point;
+            }
+        }
+        return point;
     }
 }
