@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
-  m_Name: KEWPIE -  Xot me PHO MAI CAY
+  m_Name: Rong Nho
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  ingredient_name: "Dressing Ph\xF4 mai cay"
+  sprite: {fileID: 21300000, guid: 62628a8ab3edde347834b356e78f1307, type: 3}
+  ingredient_name: Rong nho

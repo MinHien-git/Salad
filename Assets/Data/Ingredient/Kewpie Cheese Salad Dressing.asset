@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Kewpie Cheese Salad Dressing
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 9a0fad18ee602e24689d12098f4f75ad, type: 3}
-  ingredient_name: "N\u01B0\u1EDBc x\u1ED1t Salad Dressing Ph\xF4 Mai Kewpie"
+  ingredient_name: "Dressing Ph\xF4 Mai"
