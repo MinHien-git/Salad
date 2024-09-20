@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad m\xEC Ramen"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
+  - {fileID: 11400000, guid: 15e28ddfc6a0b53439af559b7cf7aa1e, type: 2}
+  - {fileID: 11400000, guid: 7ad80dad90a4a1446bfe0ea2b9bd9734, type: 2}
+  - {fileID: 11400000, guid: 18753e81336b6ef488e75fac9fa72e58, type: 2}
+  - {fileID: 11400000, guid: 4f7e9af5d57159941af756fcb36af3d9, type: 2}
+  - {fileID: 11400000, guid: ed1793479e1454c42986020661a805ce, type: 2}
+  - {fileID: 11400000, guid: c826f8394dfde8f4c97423bc5f998abe, type: 2}
+  saladImage: {fileID: 21300000, guid: 87295645d6ad5e44dbe4ed65ac0298da, type: 3}
+  salad_name: "Salad m\xEC Ramen"
+  description: "M\u1ED9t m\xF3n salad c\xF3 s\u1EF1 bi\u1EBFn t\u1EA5u v\xF4 c\xF9ng
+    \u0111\u1ED9c \u0111\xE1o b\u1EDFi s\u1EF1 xu\u1EA5t hi\u1EC7n c\u1EE7a m\u1ED9t
+    nguy\xEAn li\u1EC7u v\xF4 c\xF9ng n\u1ED5i ti\u1EBFng trong \u1EA9m th\u1EF1c
+    Nh\u1EADt B\u1EA3n. Kh\xF4ng d\u1EEBng l\u1EA1i \u1EDF \u0111\xF3, m\xF3n salad
+    c\xF2n \u0111\u01B0\u1EE3c t\u1EA1o n\xEAn t\u1EEB nh\u1EEFng nguy\xEAn li\u1EC7u
+    gi\xE0u ch\u1EA5t dinh d\u01B0\u1EE1ng nh\u01B0 c\xE1c lo\u1EA1i rau c\u1EE7
+    v\xE0 nh\u1EEFng l\xE1t th\u1ECBt m\u1ECDng n\u01B0\u1EDBc c\xF3 nhi\u1EC1u protein.
+    M\xF3n \u0103n th\u1EC3 hi\u1EC7n \u0111\u01B0\u1EE3c phong c\xE1ch \u0111\u1EB7c
+    tr\u01B0ng c\u1EE7a x\u1EE9 s\u1EDF hoa anh \u0111\xE0o. "
+  ingredient_description: "\"Salad M\xEC Ramen\" ra \u0111\u1EDDi nh\u1EDD v\xE0o
+    s\u1EF1 giao thoa c\u1EE7a \u1EA9m th\u1EF1c Nh\u1EADt B\u1EA3n do c\xF3 s\u1EF1
+    k\u1EBFt h\u1EE3p th\xFA v\u1ECB v\u1EDBi m\xF3n \u0103n truy\u1EC1n c\u1EE7a
+    x\u1EE9 s\u1EDF hoa anh \u0111\xE0o l\xE0 M\xEC Ramen. \r\n\r\nM\xF3n salad n\xE0y
+    ch\u1EAFc ch\u1EAFn s\u1EBD l\xE0m b\xF9ng n\u1ED5 v\u1ECB gi\xE1c b\u1EDFi h\u01B0\u01A1ng
+    v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC ramen. S\u1EE3i m\xEC ramen th\u01B0\u1EDDng
+    c\xF3 v\u1ECB h\u01A1i m\u1EB7n, k\u1EBFt h\u1EE3p v\u1EDBi h\u01B0\u01A1ng th\u01A1m
+    \u0111\u1EB7c tr\u01B0ng c\u1EE7a b\u1ED9t m\xEC. V\u1ECB t\u01B0\u01A1i m\xE1t
+    c\u1EE7a c\xE1c lo\u1EA1i rau c\u1EE7 nh\u01B0 x\xE0 l\xE1ch, c\xE0 chua, d\u01B0a
+    chu\u1ED9t,... mang \u0111\u1EBFn v\u1ECB t\u01B0\u01A1i m\xE1t, thanh ng\u1ECDt,
+    gi\xFAp c\xE2n b\u1EB1ng l\u1EA1i v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC."
+  ingredient_information: "M\xEC Ramen: 2-3 g\xF3i (t\xF9y thu\u1ED9c v\xE0o s\u1ED1
+    l\u01B0\u1EE3ng ng\u01B0\u1EDDi \u0103n)\r\nRau c\u1EE7:\r\nX\xE0 l\xE1ch: 1/2
+    c\xE1i\r\nC\xE0 r\u1ED1t: 1 c\u1EE7\r\nD\u01B0a chu\u1ED9t: 1 qu\u1EA3\r\nH\xE0nh
+    t\xE2y: 1/2 c\u1EE7\r\nB\u1EAFp c\u1EA3i t\xEDm (t\xF9y ch\u1ECDn): 1/4 c\xE1i\r\nProtein:\r\nTh\u1ECBt
+    g\xE0 x\xE9 s\u1EE3i: 100g\r\nTr\u1EE9ng lu\u1ED9c: 2 qu\u1EA3\r\nGia v\u1ECB
+    v\xE0 s\u1ED1t:\r\nMayonnaise: 3-4 mu\u1ED7ng canh\r\nGi\u1EA5m g\u1EA1o: 2 mu\u1ED7ng
+    canh\r\n\u0110\u01B0\u1EDDng: 1 mu\u1ED7ng canh\r\nD\u1EA7u m\xE8: 1 mu\u1ED7ng
+    canh\r\nT\u1ECFi b\u0103m: 1 t\xE9p\r\n\u1EDAt b\u1ED9t (t\xF9y ch\u1ECDn): 1/2
+    mu\u1ED7ng c\xE0 ph\xEA\r\nMu\u1ED1i, ti\xEAu: v\u1EEBa \u0111\u1EE7"

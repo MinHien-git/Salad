@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad rau th\u01A1m v\xE0  c\xE1 h\u1ED3i"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
+  - {fileID: 11400000, guid: aaa01a3ddf77f8b42a32d292be73f917, type: 2}
+  - {fileID: 11400000, guid: f0bfd567657af2a4896ae55fc5546e99, type: 2}
+  - {fileID: 11400000, guid: c826f8394dfde8f4c97423bc5f998abe, type: 2}
+  saladImage: {fileID: 21300000, guid: b506c06bb565f264f83c8cdbb43ece19, type: 3}
+  salad_name: "Salad rau th\u01A1m v\xE0  c\xE1 h\u1ED3i "
+  description: "M\u1ED9t m\xF3n Salad v\u1EDBi nh\u1EEFng nguy\xEAn li\u1EC7u r\u1EA5t
+    d\u1EC5 t\xECm, k\u1EBFt h\u1EE3p h\xE0i h\xF2a gi\u1EEFa v\u1ECB b\xE9o ng\u1EADy
+    c\u1EE7a m\u1ED9t nguy\xEAn li\u1EC7u c\xF3 h\xE0m l\u01B0\u1EE3ng dinh d\u01B0\u1EE1ng
+    cao th\u01B0\u1EDDng \u0111\u01B0\u1EE3c c\xE1c \u0111\u1EA7u b\u1EBFp ch\u1EBF
+    bi\u1EBFn th\xE0nh c\xE1c m\xF3n t\u01B0\u01A1i s\u1ED1ng chu\u1EA9n v\u1ECB
+    Shashimi. C\xF9ng v\u1EDBi \u0111\u1ED9 gi\xF2n t\u01B0\u01A1i c\u1EE7a rau xanh
+    v\xE0 h\u01B0\u01A1ng v\u1ECB thanh m\xE1t c\u1EE7a c\xE1c lo\u1EA1i gia v\u1ECB.
+    M\xF3n \u0103n n\xE0y kh\xF4ng ch\u1EC9 ngon mi\u1EC7ng m\xE0 c\xF2n r\u1EA5t
+    gi\xE0u dinh d\u01B0\u1EE1ng, cung c\u1EA5p nhi\u1EC1u protein, omega-3, vitamin
+    v\xE0 kho\xE1ng ch\u1EA5t c\u1EA7n thi\u1EBFt cho c\u01A1 th\u1EC3."
+  ingredient_description: "\"Salad rau th\u01A1m v\xE0 c\xE1 h\u1ED3i\" c\xF3 ngu\u1ED3n
+    g\u1ED1c t\u1EEB s\u1EF1 giao thoa v\u0103n h\xF3a gi\u1EEFa n\u1EC1n v\u0103n
+    minh c\u1ED5 \u0111\u1EA1i Hy L\u1EA1p v\u1EDBi s\u1EF1 s\xE1ng t\u1EA1o \u0111\u1ED9c
+    \u0111\xE1o c\u1EE7a v\u0103n h\xF3a \u1EA9m th\u1EF1c Ch\xE2u \xC2u, c\u1EE5
+    th\u1EC3 l\xE0 n\u01B0\u1EDBc Ph\xE1p. Ng\u01B0\u1EDDi Ph\xE1p \u0111\xE3 s\xE1ng
+    t\u1EA1o ra nhi\u1EC1u lo\u1EA1i s\u1ED1t tr\u1ED9n salad v\xE0 k\u1EBFt h\u1EE3p
+    c\xE1c nguy\xEAn li\u1EC7u \u0111a d\u1EA1ng, trong \u0111\xF3 c\xF3 c\xE1 h\u1ED3i.\r\n\r\nM\xF3n
+    salad n\xE0y mang \u0111\u1EBFn h\u01B0\u01A1ng v\u1ECB t\u01B0\u01A1i m\xE1t
+    c\u1EE7a rau xanh v\xE0 \u0111\u1ED9 b\xE9o ng\u1EADy c\u1EE7a c\xE1 h\u1ED3i.
+    C\xE1 h\u1ED3i t\u01B0\u01A1i \u0111\u01B0\u1EE3c ch\u1EBF bi\u1EBFn ch\xEDn
+    t\u1EDBi, v\u1EABn gi\u1EEF \u0111\u01B0\u1EE3c \u0111\u1ED9 m\u1EC1m ng\u1ECDt
+    t\u1EF1 nhi\xEAn. Khi k\u1EBFt h\u1EE3p v\u1EDBi c\xE1c lo\u1EA1i rau c\u1EE7
+    v\xE0 s\u1ED1t, c\xE1 h\u1ED3i s\u1EBD c\xE0ng tr\u1EDF n\xEAn \u0111\u1EADm
+    \u0111\xE0 h\u01B0\u01A1ng v\u1ECB h\u01A1n."
+  ingredient_information: "C\xE1 h\u1ED3i: 200g (ch\u1ECDn ph\u1EA7n phi l\xEA t\u01B0\u01A1i
+    ngon)\r\nRau xanh: X\xE0 l\xE1ch, rau m\u1EA7m, d\u01B0a chu\u1ED9t, c\xE0 chua
+    bi (c\xF3 th\u1EC3 th\xEAm c\xE1c lo\u1EA1i rau kh\xE1c t\xF9y th\xEDch)\r\nGia
+    v\u1ECB: Mu\u1ED1i, ti\xEAu, d\u1EA7u \xF4 liu, n\u01B0\u1EDBc c\u1ED1t chanh,
+    m\u1EADt ong\r\nPh\u1EE5 li\u1EC7u: H\xE0nh t\xE2y t\xEDm, \u1EDBt chu\xF4ng,
+    h\u1EA1t \u0111i\u1EC1u rang"
