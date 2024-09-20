@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
 
 namespace Utility.SLayout
 {
@@ -108,3 +109,4 @@ namespace Utility.SLayout
         }
     }
 }
+#endif
