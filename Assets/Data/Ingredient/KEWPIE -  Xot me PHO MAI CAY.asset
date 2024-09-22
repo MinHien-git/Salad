@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: KEWPIE -  Xot me PHO MAI CAY
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c08045256c0610c43981628cf22fbcdc, type: 3}
   ingredient_name: "Dressing Ph\xF4 mai cay"
