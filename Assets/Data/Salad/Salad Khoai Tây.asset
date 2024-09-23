@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad Khoai T\xE2y"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: e886f997c400c6740903d068329de833, type: 2}
+  - {fileID: 11400000, guid: e4b1e347f93c96c4fa0956f18bb2d82e, type: 2}
+  - {fileID: 11400000, guid: 18753e81336b6ef488e75fac9fa72e58, type: 2}
+  - {fileID: 11400000, guid: 6d310ed10b787de458090caf54307617, type: 2}
+  - {fileID: 11400000, guid: c57235b072b525c478e25c63e190822b, type: 2}
+  - {fileID: 11400000, guid: 6e064839c87bd00409078eb1ae6a7026, type: 2}
+  saladImage: {fileID: 21300000, guid: 84baefb31059c9642bdc246a812aefbf, type: 3}
+  salad_name: "Salad Khoai T\xE2y "
+  description: "M\u1ED9t m\xF3n salad \u0111\u01B0\u1EE3c ch\u1EBF bi\u1EBFn t\u1EEB
+    nguy\xEAn li\u1EC7u ch\xEDnh quen thu\u1ED9c \u0111\u1ED1i v\u1EDBi m\u1ED7i
+    gia \u0111\xECnh, \u0111\u1EB7c bi\u1EC7t l\xE0 tr\u1EBB nho. Ch\xFAng \u0111\u01B0\u1EE3c
+    ch\u1EBF bi\u1EBFn b\u1EB1ng c\xE1ch nghi\u1EC1n nhuy\u1EC5n nh\u01B0 nh\u1EEFng
+    \u0111\xE1m m\xE2y m\u1EC1m m\u1ECBn, k\u1EBFt h\u1EE3p v\u1EDBi m\u1ED9t lo\u1EA1i
+    rong bi\u1EC3n s\u1EE3i gi\xF2n tan v\xE0 th\u1ECBt ngu\u1ED9i. T\u1EA5t c\u1EA3
+    h\xF2a quy\u1EC7n c\xF9ng n\u01B0\u1EDBc x\u1ED1t b\xE9o ng\u1EADy t\u1EA1o n\xEAn
+    m\u1ED9t m\xF3n \u0103n \u0111\u1EA7y dinh d\u01B0\u1EE1ng, ph\xF9 h\u1EE3p cho
+    c\xE1c b\u1EEFa \u0103n nh\u1EB9. "
+  ingredient_description: "\"Salad khoai t\xE2y\" ki\u1EC3u Nh\u1EADt c\xF3 ngu\u1ED3n
+    g\u1ED1c t\u1EEB x\u1EE9 s\u1EDF hoa Anh \u0110\xE0o, n\u1ED5i b\u1EADt v\u1EDBi
+    khoai t\xE2y nghi\u1EC1n k\u1EBFt h\u1EE3p rau c\u1EE7, th\u1ECBt ngu\u1ED9i
+    v\xE0 x\u1ED1t Mayonnaise Kewpie. M\xF3n \u0103n n\xE0y mang \u0111\u1EBFn h\u01B0\u01A1ng
+    v\u1ECB b\xE9o ng\u1EADy v\xE0 th\u01A1m ngon, khi\u1EBFn ng\u01B0\u1EDDi d\xF9ng
+    c\u1EA3m nh\u1EADn s\u1EF1 tinh t\u1EBF trong \u1EA9m th\u1EF1c Nh\u1EADt B\u1EA3n.\r\n\r\nKhoai
+    t\xE2y nghi\u1EC1n m\u1ECBn, \u0111\u01B0\u1EE3c n\u1EA5u ch\xEDn v\u1EEBa ph\u1EA3i,
+    mang l\u1EA1i s\u1EF1 b\xE9o ng\u1EADy v\xE0 \u1EA5m \xE1p. K\u1EBFt h\u1EE3p
+    c\xF9ng \u0111a d\u1EA1ng lo\u1EA1i rau c\u1EE7 t\u01B0\u01A1i m\xE1t, m\xF9i
+    th\u01A1m c\u1EE7a th\u1ECBt ngu\u1ED9i, v\xE0 \u0111\u1EB7c bi\u1EC7t l\xE0
+    s\u1EF1 gi\xF2n tan c\u1EE7a rong nho. T\u1EA5t c\u1EA3 s\u1EBD \u0111\u01B0\u1EE3c
+    ho\xE0 quy\u1EC7n l\u1EA1i, r\u1EA5t th\xEDch h\u1EE3p \u0111\u1EC3 b\u1EA1n
+    \u0103n nh\u1EB9 ho\u1EB7c mang \u0111i picnic."
+  ingredient_information: "Khoai t\xE2y: 500g (kho\u1EA3ng 3-4 c\u1EE7 v\u1EEBa)\r\nD\u01B0a
+    leo: 1 qu\u1EA3 (kho\u1EA3ng 150-200g, th\xE1i l\xE1t)\r\nC\xE0 r\u1ED1t: 1 c\u1EE7
+    (kho\u1EA3ng 100-150g, b\xE0o s\u1EE3i ho\u1EB7c th\xE1i nh\u1ECF)\r\nTh\u1ECBt
+    ngu\u1ED9i: 100-150g (th\xE1i nh\u1ECF ho\u1EB7c x\xE9 s\u1EE3i)\r\nRong nho:
+    50g (r\u1EEDa s\u1EA1ch v\xE0 \u0111\u1EC3 r\xE1o)\r\nX\u1ED1t Mayonnaise Kewpie:
+    100g (ho\u1EB7c theo kh\u1EA9u v\u1ECB)"

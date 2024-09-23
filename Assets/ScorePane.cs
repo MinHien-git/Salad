@@ -8,11 +8,12 @@ public class ScorePane : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI explaining;
     public ParticleSystem[] randomParticles;
+    public ParticleSystem[] sadParticles;
+    public ParticleSystem[] regretParticles;
     public ParticleSystem particle;
 
     private void OnEnable()
     {
-        explaining.text = GameManager.Instance.currentSalad.ingredient_information;
         scoreText.text =
             GameManager.Instance.CheckScore()
             + "/"
@@ -27,6 +28,30 @@ public class ScorePane : MonoBehaviour
             {
                 randomParticles[i].transform.position = GetRandomPositionInsideScreen();
                 randomParticles[i].Play();
+            }
+            explaining.text = GameManager.Instance.currentSalad.ingredient_information;
+        }
+        else if (
+            (int)GameManager.Instance.currentSalad.ingredient.Length / 2f
+            < GameManager.Instance.CheckScore()
+        )
+        {
+            explaining.text =
+                "Tiếc quá, còn chút nữa thôi là hoàn thành món Salad "
+                + GameManager.Instance.currentSalad.salad_name;
+            for (int i = 0; i < randomParticles.Length; ++i)
+            {
+                regretParticles[i].transform.position = GetRandomPositionInsideScreen();
+                regretParticles[i].Play();
+            }
+        }
+        else
+        {
+            explaining.text = "Bạn chưa đọc kĩ đề bài đúng không?";
+            for (int i = 0; i < randomParticles.Length; ++i)
+            {
+                sadParticles[i].transform.position = GetRandomPositionInsideScreen();
+                sadParticles[i].Play();
             }
         }
     }

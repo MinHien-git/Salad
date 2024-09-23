@@ -16,6 +16,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
+        Vector2 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         // Adjust position to account for the offset between the pointer/touch and the object center
         Vector2 pointerPosition = GetPointerPosition(eventData);

@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
     {
         List<Ingredient> temp = new();
         int point = 0;
-        for (int i = 0; i < currentSalad.ingredient.Length; ++i)
+        for (int i = 0; i < plates.Count; ++i)
         {
             if (
                 currentSalad.ingredient.Contains(plates[i].ingredient)

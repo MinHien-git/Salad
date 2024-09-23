@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad th\u1ECBt g\xE0  Bang Bang Ji"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: e4b1e347f93c96c4fa0956f18bb2d82e, type: 2}
+  - {fileID: 11400000, guid: ccdf6648db887f04ba45579d65958313, type: 2}
+  saladImage: {fileID: 21300000, guid: c8db49acb94e2be4f91a5e0c1d8db863, type: 3}
+  salad_name: "Salad th\u1ECBt g\xE0  Bang Bang Ji"
+  description: "M\u1ED9t m\xF3n salad mang \u0111\u1EADm phong c\xE1ch \xC1 \u0110\xF4ng,
+    v\u1EDBi s\u1EF1 k\u1EBFt h\u1EE3p h\xE0i h\xF2a gi\u1EEFa v\u1ECB cay n\u1ED3ng
+    t\u1EEB m\u1ED9t lo\u1EA1i n\u01B0\u1EDBc x\u1ED1t th\u1EE7 c\xF4ng v\xF4 c\xF9ng
+    \u0111\u1EB7c bi\u1EC7t v\xE0 \u0111\u1ED9 gi\xF2n tan c\u1EE7a c\xE1c nguy\xEAn
+    li\u1EC7u. V\u1EDBi s\u1EF1 k\u1EBFt h\u1EE3p c\u1EE7a m\u1ED9t lo\u1EA1i th\u1ECBt
+    c\xF3 m\xE0u v\xE0ng \xF3ng \u0111\u1EB7c tr\u01B0ng, c\xF3 h\xE0m l\u01B0\u1EE3ng
+    protein, c\xF3 v\u1ECB ng\u1ECDt r\u1EA5t t\u1EF1 nhi\xEAn v\xE0 rau xanh mang
+    l\u1EA1i m\u1ED9t m\xF3n \u0103n c\xF3 h\u01B0\u01A1ng v\u1ECB \u0111\u1EADm
+    \u0111\xE0 v\xE0 \u0111\u1ED9c \u0111\xE1o. M\xF3n \u0103n n\xE0y kh\xF4ng ch\u1EC9
+    h\u1EA5p d\u1EABn b\u1EDFi h\u01B0\u01A1ng v\u1ECB m\xE0 c\xF2n b\u1EDFi c\xE1ch
+    tr\xECnh b\xE0y b\u1EAFt m\u1EAFt. "
+  ingredient_description: "\"Salad th\u1ECBt g\xE0 Bang Bang Ji\" l\xE0 m\u1ED9t
+    m\xF3n \u0103n c\xF3 k\u1EBFt h\u1EE3p gi\u1EEFa \u1EA9m th\u1EF1c hi\u1EC7n
+    \u0111\u1EA1i t\u1EEB nhi\u1EC1u n\u1EC1n v\u0103n h\xF3a kh\xE1c nhau. V\xEC
+    v\u1EADy, n\xF3 kh\xF4ng c\xF3 ngu\u1ED3n g\u1ED1c ch\xEDnh x\xE1c \u0111\u1EBFn
+    t\u1EEB qu\u1ED1c gia n\xE0o c\u1EA3. \r\n\r\nH\u01B0\u01A1ng v\u1ECB c\u1EE7a
+    m\u1ED9t m\xF3n \u0103n l\xE0 s\u1EF1 k\u1EBFt h\u1EE3p ph\u1EE9c t\u1EA1p c\u1EE7a
+    nhi\u1EC1u y\u1EBFu t\u1ED1, kh\xF4ng ch\u1EC9 \u0111\u01A1n thu\u1EA7n l\xE0
+    v\u1ECB gi\xE1c m\xE0 c\xF2n li\xEAn quan \u0111\u1EBFn c\u1EA3 kh\u1EE9u gi\xE1c,
+    th\u1ECB gi\xE1c v\xE0 th\u1EADm ch\xED c\u1EA3 c\u1EA3m x\xFAc. V\u1ECB ng\u1ECDt
+    m\xE1t l\xE0nh \u0111\u1EBFn t\u1EEB rau c\u1EE7 t\u01B0\u01A1i, v\u1ECB cay
+    \u0111\u1EBFn t\u1EEB gia v\u1ECB c\xF9ng v\u1EDBi h\u01B0\u01A1ng v\u1ECB gi\xF2n
+    tan, ng\u1ECDt th\u1ECBt t\u1EEB g\xE0. T\u1EA5t c\u1EA3 t\u1EA1o n\xEAn m\u1ED9t
+    h\u01B0\u01A1ng v\u1ECB \u0111\u1ED9c \u0111\xE1o v\xE0 r\u1EA5t \u0111\xE1ng
+    \u0111\u1EC3 b\u1EA1n tr\u1EA3i nghi\u1EC7m."
+  ingredient_information: "Th\u1ECBt g\xE0: 250g (\u1EE9c g\xE0 ho\u1EB7c \u0111\xF9i
+    g\xE0 kh\xF4ng x\u01B0\u01A1ng)\r\nRau c\u1EE7:\r\nC\xE0 r\u1ED1t: 1 c\u1EE7\r\nD\u01B0a
+    chu\u1ED9t: 1 qu\u1EA3\r\nH\xE0nh t\xE2y: 1/2 c\u1EE7\r\nS\u1ED1t Bang Bang:\r\n\u1EDAt
+    t\u01B0\u01A1i: 2 qu\u1EA3\r\nT\u1ECFi: 3 t\xE9p\r\nD\u1EA7u m\xE8: 2 mu\u1ED7ng
+    canh\r\nGi\u1EA5m g\u1EA1o: 2 mu\u1ED7ng canh\r\n\u0110\u01B0\u1EDDng: 1 mu\u1ED7ng
+    canh\r\nN\u01B0\u1EDBc t\u01B0\u01A1ng: 1 mu\u1ED7ng canh\r\nD\u1EA7u \u0103n:
+    1 mu\u1ED7ng canh\r\nNguy\xEAn li\u1EC7u kh\xE1c:\r\nH\u1EA1t \u0111i\u1EC1u
+    rang: 2 mu\u1ED7ng canh\r\n\u0110\u1EADu ph\u1ED9ng rang: 2 mu\u1ED7ng canh\r\nH\xE0nh
+    l\xE1 th\xE1i nh\u1ECF: 2 mu\u1ED7ng canh"

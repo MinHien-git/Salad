@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: Salad Rong nho
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
+  - {fileID: 11400000, guid: e4b1e347f93c96c4fa0956f18bb2d82e, type: 2}
+  - {fileID: 11400000, guid: a2d2c50bdcdaf8b43840279d7e8096f0, type: 2}
+  - {fileID: 11400000, guid: aabe2067a67c0644aa15ab2803515210, type: 2}
+  - {fileID: 11400000, guid: c57235b072b525c478e25c63e190822b, type: 2}
+  - {fileID: 11400000, guid: fcc8193ede47eba4d9989bba11931196, type: 2}
+  saladImage: {fileID: 21300000, guid: 45a39e0f346234048905c75f5db84744, type: 3}
+  salad_name: Salad Rong nho
+  description: "M\u1ED9t m\xF3n salad quen thu\u1ED9c v\u1EDBi nh\u1EEFng ai y\xEAu
+    th\xEDch \u1EA9m th\u1EF1c Nh\u1EADt B\u1EA3n, v\u1EDBi s\u1EF1 k\u1EBFt h\u1EE3p
+    ho\xE0n h\u1EA3o gi\u1EEFa c\xE1c lo\u1EA1i rau c\u1EE7 quen thu\u1ED9c c\xF9ng
+    v\u1EDBi m\u1ED9t lo\u1EA1i rong bi\u1EC3n \u0111\u1EB7c tr\u01B0ng \u0103n k\xE8m
+    v\u1EDBi c\xE1c m\xF3n sashimi t\u01B0\u01A1i ngon. H\u01B0\u01A1ng v\u1ECB ng\u1ECDt
+    m\xE1t c\u1EE7a rau c\u1EE7 h\xF2a quy\u1EC7n c\xF9ng v\u1EDBi s\u1EF1 \u0111\u1EADm
+    \u0111\xE0, th\u01A1m b\xF9i c\u1EE7a n\u01B0\u1EDBc x\u1ED1t mang \u0111\u1EBFn
+    tr\u1EA3i nghi\u1EC7m v\u1ECB gi\xE1c \u0111a d\u1EA1ng v\xE0 b\u1ED5 d\u01B0\u1EE1ng."
+  ingredient_description: "\"Salad rong nho\" c\xF3 ngu\u1ED3n g\u1ED1c t\u1EEB \u1EA9m
+    th\u1EF1c Nh\u1EADt B\u1EA3n, n\u01A1i rong nho \u0111\u01B0\u1EE3c \u01B0a chu\u1ED9ng
+    nh\u1EDD h\u01B0\u01A1ng v\u1ECB bi\u1EC3n \u0111\u1ED9c \u0111\xE1o v\xE0 gi\xE1
+    tr\u1ECB dinh d\u01B0\u1EE1ng cao. M\xF3n salad n\xE0y k\u1EBFt h\u1EE3p nh\u1EEFng
+    s\u1EE3i rong nho gi\xF2n tan v\u1EDBi c\xE1c lo\u1EA1i rau c\u1EE7 t\u01B0\u01A1i
+    ngon, th\u01B0\u1EDDng \u0111\u01B0\u1EE3c tr\u1ED9n v\u1EDBi x\u1ED1t \u0111\u1EC3
+    t\u1EA1o ra m\u1ED9t m\xF3n \u0103n h\u1EA5p d\u1EABn v\xE0 b\u1ED5 d\u01B0\u1EE1ng
+    mang h\u01B0\u01A1ng v\u1ECB Nh\u1EADt B\u1EA3n. \r\n\r\nH\u01B0\u01A1ng v\u1ECB
+    m\u1EB7n m\xE0 nh\u1EB9 nh\xE0ng t\u1EEB rong nho k\u1EBFt h\u1EE3p ho\xE0n h\u1EA3o
+    v\u1EDBi \u0111\u1ED9 gi\xF2n c\u1EE7a c\xE1c lo\u1EA1i rau c\u1EE7 nh\u01B0
+    d\u01B0a chu\u1ED9t v\xE0 c\xE0 chua, t\u1EA1o n\xEAn s\u1EF1 h\xE0i h\xF2a v\u1EC1
+    k\u1EBFt c\u1EA5u ch\u1EAFc ch\u1EAFn l\xE0 m\xF3n salad l\xFD t\u01B0\u1EDFng
+    cho nh\u1EEFng ai th\xEDch s\u1EF1 t\u01B0\u01A1i m\u1EDBi v\xE0 \u0111\u1EA7y
+    dinh d\u01B0\u1EE1ng."
+  ingredient_information: "X\xE0 l\xE1ch: 200g (kho\u1EA3ng 1 \u0111\u1EA7u nh\u1ECF,
+    r\u1EEDa s\u1EA1ch v\xE0 x\xE9 nh\u1ECF)\r\nD\u01B0a leo: 1 qu\u1EA3 (kho\u1EA3ng
+    150-200g, th\xE1i l\xE1t m\u1ECFng)\r\nC\xE0 chua: 2 qu\u1EA3 (kho\u1EA3ng 150-200g,
+    th\xE1i m\xFAi ho\u1EB7c h\u1EA1t l\u1EF1u)\r\nB\u1EAFp h\u1EA1t: 100g\r\nRong
+    nho: 50g (r\u1EEDa s\u1EA1ch v\xE0 \u0111\u1EC3 r\xE1o)\r\nX\u1ED1t Salad Dressing
+    M\xE8 Rang Kewpie: 100g (ho\u1EB7c theo kh\u1EA9u v\u1ECB)"
