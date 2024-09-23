@@ -18,6 +18,7 @@ public class GuideUI : MonoBehaviour
     public float animationDuration = 0.3f; // Duration of the appear animation
     public Color openColor = new(1, 1, 1, 1);
     public TextMeshProUGUI button;
+    public Button realButton;
     public bool IsOpen;
 
     private void Awake()
@@ -57,11 +58,17 @@ public class GuideUI : MonoBehaviour
     private void OnEnable()
     {
         Open();
+        CloseOpen(true);
     }
 
     private void OnDisable()
     {
         IsOpen = false;
+    }
+
+    public void CloseOpen(bool active)
+    {
+        realButton.gameObject.SetActive(active);
     }
 
     public void Open(string closeLabel = "Ready")

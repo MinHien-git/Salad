@@ -80,6 +80,7 @@ public class HoldToDisplayNote
     {
         // Show the note and animate it
         note.SetActive(true);
+        note.GetComponent<GuideUI>().CloseOpen(false);
         background.gameObject.SetActive(true);
         note.transform.DOScale(Vector3.one, animationDuration).SetEase(Ease.OutBack);
         background.DOColor(openColor, animationDuration).SetEase(Ease.OutBack);
