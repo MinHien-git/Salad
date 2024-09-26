@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad Ng\u0169 Qu\u1EA3 sung t\xFAc"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 177bdc0f6c02d434baba79e7f7388f0c, type: 2}
+  - {fileID: 11400000, guid: 17a5ec80466ae2c4ba6a2fbdd7e97bf7, type: 2}
+  - {fileID: 11400000, guid: 4dc7442ad9ed8424097f17099cd54fa2, type: 2}
+  - {fileID: 11400000, guid: 467503d07a9bd2f4c815f51e5480f585, type: 2}
+  - {fileID: 11400000, guid: 1c8a97ecca2f0b8489af22bb1a0873e4, type: 2}
+  - {fileID: 11400000, guid: 6e4cbb90f183be041b9e3e88543b511d, type: 2}
+  - {fileID: 11400000, guid: 302fa70f57f67ad4bbad0ed999ca36ef, type: 2}
+  - {fileID: 11400000, guid: cc51cbc1ee2bd174c9e0641b812f3267, type: 2}
+  saladImage: {fileID: 21300000, guid: 5e291e052fa93e546aebce5cc9be076d, type: 3}
+  salad_name: "Salad Ng\u0169 Qu\u1EA3 sung t\xFAc"
+  description: "M\u1ED9t m\xF3n Salad t\u01B0\u01A1i m\xE1t, gi\xE0u dinh d\u01B0\u1EE1ng
+    v\u1EDBi s\u1EF1 k\u1EBFt h\u1EE3p \u0111a d\u1EA1ng c\u1EE7a tr\xEAn 5 lo\u1EA1i
+    tr\xE1i c\xE2y t\u01B0\u01A1i ngon v\xE0 c\xE1c lo\u1EA1i h\u1EA1t. \r\n\r\nM\xF3n
+    \u0103n n\xE0y kh\xF4ng ch\u1EC9 mang \u0111\u1EBFn h\u01B0\u01A1ng v\u1ECB ng\u1ECDt
+    ng\xE0o, chua thanh m\xE0 c\xF2n cung c\u1EA5p m\u1ED9t l\u01B0\u1EE3ng l\u1EDBn
+    vitamin v\xE0 kho\xE1ng ch\u1EA5t c\u1EA7n thi\u1EBFt cho c\u01A1 th\u1EC3."
+  ingredient_description: "\"Salad Ng\u0169 Qu\u1EA3 sung t\xFAc\" b\u1EAFt ngu\u1ED3n
+    t\u1EEB v\u0103n h\xF3a c\u1EE7a Ch\xE2u \xC1 v\xE0o nh\u1EEFng d\u1ECBp L\u1EC5/T\u1EBFt,
+    m\xF3n \u0103n Salad n\xE0y l\xE0 s\u1EF1 s\xE1ng t\u1EA1o \u0111\u1ED9c l\u1EA1
+    v\xE0 l\xE0 m\u1ED9t bi\u1EBFn th\u1EC3 c\u1EE7a c\xE1c m\xF3n salad truy\u1EC1n
+    th\u1ED1ng t\u1EEB nhi\u1EC1u n\u1EC1n v\u0103n h\xF3a kh\xE1c nhau, ch\u1EB3ng
+    h\u1EA1n nh\u01B0 salad tr\xE1i c\xE2y c\u1EE7a ng\u01B0\u1EDDi Hy L\u1EA1p,
+    salad tr\u1ED9n c\u1EE7a ng\u01B0\u1EDDi M\u1EF9, ho\u1EB7c g\u1ECFi tr\xE1i
+    c\xE2y c\u1EE7a ng\u01B0\u1EDDi Vi\u1EC7t Nam.\r\n\r\nH\u01B0\u01A1ng v\u1ECB
+    t\u01B0\u01A1i m\xE1t c\u1EE7a m\xF3n Salad n\xE0y r\u1EA5t ph\xF9 h\u1EE3p cho
+    c\xE1c b\u1EA1n m\u1EDBi t\u1EADp \u0103n Salad, b\u1EDFi c\xE1c nguy\xEAn li\u1EC7u
+    hoa qu\u1EA3 th\xE2n thu\u1ED9c, ng\u1ECDt thanh, m\xE1t l\u1EA1nh. \r\n Salad
+    ng\u0169 qu\u1EA3 th\u01B0\u1EDDng \u0111\u01B0\u1EE3c \u0103n l\u1EA1nh, gi\xFAp
+    b\u1EA1n c\u1EA3m th\u1EA5y s\u1EA3ng kho\xE1i, \u0111\u1EB7c bi\u1EC7t l\xE0
+    trong nh\u1EEFng ng\xE0y h\xE8 n\xF3ng b\u1EE9c."
+  ingredient_information: "Ng\u0169 qu\u1EA3:\r\nT\xE1o: 1 qu\u1EA3\r\nL\xEA: 1 qu\u1EA3\r\nCam:
+    2 qu\u1EA3\r\nChu\u1ED1i: 1 qu\u1EA3\r\nNho: 1/2 h\u1ED9p\r\nD\u01B0a h\u1EA5u:
+    1 l\xE1t (kho\u1EA3ng 200g)\r\nH\u1EA1t:\r\nH\u1EA1nh nh\xE2n: 20g\r\n\xD3c ch\xF3:
+    20g\r\nH\u1EA1t \u0111i\u1EC1u: 20g\r\nS\u1ED1t:\r\nS\u1EEFa chua kh\xF4ng \u0111\u01B0\u1EDDng:
+    1 h\u1ED9p (150g)\r\nM\u1EADt ong: 2 mu\u1ED7ng canh\r\nN\u01B0\u1EDBc c\u1ED1t
+    chanh: 1 mu\u1ED7ng canh\r\nD\u1EA7u oliu: 1 mu\u1ED7ng canh"

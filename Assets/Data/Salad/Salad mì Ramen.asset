@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: "Salad m\xEC Ramen"
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
-  - {fileID: 11400000, guid: 15e28ddfc6a0b53439af559b7cf7aa1e, type: 2}
-  - {fileID: 11400000, guid: 7ad80dad90a4a1446bfe0ea2b9bd9734, type: 2}
-  - {fileID: 11400000, guid: 18753e81336b6ef488e75fac9fa72e58, type: 2}
-  - {fileID: 11400000, guid: 4f7e9af5d57159941af756fcb36af3d9, type: 2}
+  - {fileID: 11400000, guid: 01a1895a58e989e419fff92e653e70ec, type: 2}
+  - {fileID: 11400000, guid: 732ea797a083edc4a832e0d3bec40ebf, type: 2}
+  - {fileID: 11400000, guid: edfd9218696a9a54682e2a28bcf66342, type: 2}
+  - {fileID: 11400000, guid: c0a2c9a3c49bfb94897701284c094a4c, type: 2}
+  - {fileID: 11400000, guid: 6e4cbb90f183be041b9e3e88543b511d, type: 2}
   - {fileID: 11400000, guid: ed1793479e1454c42986020661a805ce, type: 2}
   - {fileID: 11400000, guid: c826f8394dfde8f4c97423bc5f998abe, type: 2}
   saladImage: {fileID: 21300000, guid: 87295645d6ad5e44dbe4ed65ac0298da, type: 3}

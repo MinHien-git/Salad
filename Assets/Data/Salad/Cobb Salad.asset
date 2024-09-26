@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Cobb Salad
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
-  - {fileID: 11400000, guid: 18753e81336b6ef488e75fac9fa72e58, type: 2}
-  - {fileID: 11400000, guid: aabe2067a67c0644aa15ab2803515210, type: 2}
+  - {fileID: 11400000, guid: 01a1895a58e989e419fff92e653e70ec, type: 2}
+  - {fileID: 11400000, guid: c0a2c9a3c49bfb94897701284c094a4c, type: 2}
+  - {fileID: 11400000, guid: 48c99f2d6f0a0db4a811ad1822f7aef9, type: 2}
   - {fileID: 11400000, guid: a2d2c50bdcdaf8b43840279d7e8096f0, type: 2}
   - {fileID: 11400000, guid: 61843786583e4e648899ce9cac2c9080, type: 2}
-  - {fileID: 11400000, guid: ccdf6648db887f04ba45579d65958313, type: 2}
+  - {fileID: 11400000, guid: 6bff7e69470d8bb49bc5a5d374a3ccd6, type: 2}
   - {fileID: 11400000, guid: 77216b22241873941ba69fde6adc9672, type: 2}
   - {fileID: 11400000, guid: fcc8193ede47eba4d9989bba11931196, type: 2}
   saladImage: {fileID: 21300000, guid: 8c5694b770491b341b50a19c29807c53, type: 3}

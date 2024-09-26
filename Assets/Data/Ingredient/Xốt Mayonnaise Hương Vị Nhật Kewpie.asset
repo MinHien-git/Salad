@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: "X\u1ED1t Mayonnaise H\u01B0\u01A1ng V\u1ECB Nh\u1EADt Kewpie"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 11c861dd896ba814f941eaff55d463a3, type: 3}
-  ingredient_name: "X\u1ED1t Mayonnaise H\u01B0\u01A1ng V\u1ECB Nh\u1EADt Kewpie"
+  sprite: {fileID: 21300000, guid: e2a3a35737d245a4eb24a356584fda1f, type: 3}
+  ingredient_name: "X\u1ED1t Mayonnaise H\u01B0\u01A1ng V\u1ECB Nh\u1EADt"

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: "C\xE0 chua bi"
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 22e073fc26951944cbcaedb83f3afb5d, type: 3}
-  ingredient_name: 
+  ingredient_name: "C\xE0 chua bi"

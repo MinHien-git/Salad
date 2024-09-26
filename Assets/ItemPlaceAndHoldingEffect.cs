@@ -52,4 +52,9 @@ public class PlateHoldAndPlaceEffect : MonoBehaviour, IPointerDownHandler, IPoin
                 plateTransform.DOScale(normalScale, placeDuration).SetEase(Ease.OutBack);
             });
     }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(this); // Kills any tween associated with this object
+    }
 }

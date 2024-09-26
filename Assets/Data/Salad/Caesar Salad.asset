@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Caesar Salad
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: e28b34d0e217e854ea2c3b0c028a7910, type: 2}
-  - {fileID: 11400000, guid: 34c162e91ca3e9045810669b1a27ba55, type: 2}
-  - {fileID: 11400000, guid: 7ea52d2cd2c7f4f4eb282070638ac844, type: 2}
-  - {fileID: 11400000, guid: d3c836cdba7e1714a8f512c09de8ca26, type: 2}
-  - {fileID: 11400000, guid: 18005c36fa4e7bc4da54103a8e1c1ba8, type: 2}
+  - {fileID: 11400000, guid: 2e122190a81b7a2458fd3c20f80a77b7, type: 2}
+  - {fileID: 11400000, guid: 262441defc6c7df47957a6d6307c36a4, type: 2}
+  - {fileID: 11400000, guid: 4716d43ee9322144eb84044ecf3754a1, type: 2}
+  - {fileID: 11400000, guid: df8609dd0333857479e7a5ed876ff178, type: 2}
+  - {fileID: 11400000, guid: cc51cbc1ee2bd174c9e0641b812f3267, type: 2}
   saladImage: {fileID: 21300000, guid: 02775e9ea077b1142a9b9bd1c00d1c9b, type: 3}
   salad_name: Caesar Salad
   description: "M\u1ED9t m\xF3n salad g\xE2y \u1EA5n t\u01B0\u1EE3ng b\u1EB1ng s\u1EF1

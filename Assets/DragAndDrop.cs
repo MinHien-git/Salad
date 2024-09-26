@@ -2,7 +2,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
+public class DragAndDrop
+    : MonoBehaviour,
+        IBeginDragHandler,
+        IDragHandler,
+        IEndDragHandler,
+        IPointerDownHandler
 {
     public Transform parentAfterDrag;
     public Image image;
@@ -23,6 +28,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.position = pointerPosition;
         Debug.Log(transform.position);
     }
+
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 pointerPosition = GetPointerPosition(eventData);
@@ -32,11 +38,11 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnPointerDown(PointerEventData eventData)
     {
-         Vector2 pointerPosition = GetPointerPosition(eventData);
+        Vector2 pointerPosition = GetPointerPosition(eventData);
         transform.position = pointerPosition + offset;
         Debug.Log(transform.position);
     }
-    
+
     public virtual void OnEndDrag(PointerEventData eventData)
     {
         transform.SetParent(parentAfterDrag);

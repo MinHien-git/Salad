@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "Salad rau th\u01A1m v\xE0  c\xE1 h\u1ED3i"
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: 1a79cd5c06edb4947a5498935980ffce, type: 2}
   - {fileID: 11400000, guid: aaa01a3ddf77f8b42a32d292be73f917, type: 2}
+  - {fileID: 11400000, guid: 01a1895a58e989e419fff92e653e70ec, type: 2}
   - {fileID: 11400000, guid: f0bfd567657af2a4896ae55fc5546e99, type: 2}
   - {fileID: 11400000, guid: c826f8394dfde8f4c97423bc5f998abe, type: 2}
   saladImage: {fileID: 21300000, guid: b506c06bb565f264f83c8cdbb43ece19, type: 3}

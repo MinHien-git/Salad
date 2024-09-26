@@ -37,4 +37,9 @@ public class ScoreText : MonoBehaviour
         text.DOColor(new Color(242 / 255f, 68 / 255f, 5 / 255f), 0.2f)
             .OnComplete(() => text.DOColor(new Color(242 / 255f, 80 / 255f, 110 / 255f), 0.3f)); // Return to original color
     }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(this); // Kills any tween associated with this object
+    }
 }

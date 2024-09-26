@@ -15,8 +15,8 @@ MonoBehaviour:
   ingredient:
   - {fileID: 11400000, guid: e886f997c400c6740903d068329de833, type: 2}
   - {fileID: 11400000, guid: e4b1e347f93c96c4fa0956f18bb2d82e, type: 2}
-  - {fileID: 11400000, guid: 18753e81336b6ef488e75fac9fa72e58, type: 2}
-  - {fileID: 11400000, guid: 6d310ed10b787de458090caf54307617, type: 2}
+  - {fileID: 11400000, guid: c0a2c9a3c49bfb94897701284c094a4c, type: 2}
+  - {fileID: 11400000, guid: 2c7f9bbb1b8f3bd499f2e3740524b729, type: 2}
   - {fileID: 11400000, guid: c57235b072b525c478e25c63e190822b, type: 2}
   - {fileID: 11400000, guid: 6e064839c87bd00409078eb1ae6a7026, type: 2}
   saladImage: {fileID: 21300000, guid: 84baefb31059c9642bdc246a812aefbf, type: 3}

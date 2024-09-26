@@ -106,8 +106,7 @@ public class CompletePopup : MonoBehaviour
 
     public void RestartGame()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+        SceneManager.LoadScene("StartScene");
     }
 
     public void RestartPage()
@@ -124,5 +123,10 @@ public class CompletePopup : MonoBehaviour
                 pages[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(this); // Kills any tween associated with this object
     }
 }

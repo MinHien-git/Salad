@@ -19,6 +19,7 @@ public class LeaderboardUI : MonoBehaviour
     public bool IsOpen;
     public LeaderboardCard leaderboardCard;
     public Transform container;
+
     private void Awake()
     {
         Instance = this;
@@ -56,12 +57,14 @@ public class LeaderboardUI : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach (Transform child in container.transform) {
+        foreach (Transform child in container.transform)
+        {
             GameObject.Destroy(child.gameObject);
         }
         var players = PlayerProfile.Instance.LoadPlayerDataFromFile();
-        for (int i = 0; i < players.Count;++i){
-            LeaderboardCard card=  Instantiate(leaderboardCard,container);
+        for (int i = 0; i < players.Count; ++i)
+        {
+            LeaderboardCard card = Instantiate(leaderboardCard, container);
             card.Init(players[i]);
         }
         Open();
@@ -86,5 +89,10 @@ public class LeaderboardUI : MonoBehaviour
             note.transform.DOScale(Vector3.one, animationDuration).SetEase(Ease.OutBack);
             background.DOColor(openColor, animationDuration).SetEase(Ease.OutBack);
         }
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(this); // Kills any tween associated with this object
     }
 }

@@ -85,4 +85,9 @@ public class HelpUI : MonoBehaviour
             background.DOColor(openColor, animationDuration).SetEase(Ease.OutBack);
         }
     }
+
+    private void OnDestroy()
+    {
+        DOTween.Kill(this); // Kills any tween associated with this object
+    }
 }
