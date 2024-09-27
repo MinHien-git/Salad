@@ -29,7 +29,8 @@ public class ScorePane : MonoBehaviour
                 randomParticles[i].transform.position = GetRandomPositionInsideScreen();
                 randomParticles[i].Play();
             }
-            explaining.text = GameManager.Instance.currentSalad.ingredient_information;
+            explaining.text =
+                "Chúc mừng, bạn đã hoàn thành phần chơi của mình với số điểm tuyệt đối";
         }
         else if (
             (int)GameManager.Instance.currentSalad.ingredient.Length / 2f

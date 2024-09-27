@@ -13,6 +13,11 @@ public class FitTextHeight : MonoBehaviour
         AdjustHeight();
     }
 
+    void OnEnable()
+    {
+        AdjustHeight();
+    }
+
     public void AdjustHeight()
     {
         // Force TextMeshPro to update the text layout

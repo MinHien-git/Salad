@@ -46,13 +46,30 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        currentSalad = saladScriptableObjects[Random.Range(0, saladScriptableObjects.Length)];
+        currentSalad = GetRandomSalad();
         GuideUI.Instance.Init(currentSalad);
         CompletePopup.Instance.Init(currentSalad);
         currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
         PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(5));
         PrepareIngredientTable.Instance.InitPlate(currentSalad);
         PrepareIngredientTable.Instance.ShuffleChildObjects();
+    }
+
+    SaladScriptableObject GetRandomSalad()
+    {
+        List<SaladScriptableObject> validSalads = saladScriptableObjects
+            .Where(s => s != PersistentData.Instance.previousSalad)
+            .ToList();
+
+        // Nếu không còn salad hợp lệ, sử dụng danh sách đầy đủ
+        if (validSalads.Count == 0)
+        {
+            validSalads = saladScriptableObjects.ToList();
+        }
+
+        SaladScriptableObject newSalad = validSalads[Random.Range(0, validSalads.Count)];
+        PersistentData.Instance.previousSalad = newSalad;
+        return newSalad;
     }
 
     public void RemovePlate(IngredientPlate plate)
