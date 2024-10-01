@@ -28,18 +28,18 @@ MonoBehaviour:
     ch\xFAt gi\xF2n tan t\u1EEB nh\u1EEFng m\u1EA9u m\xE0u v\xE0ng l\xE0m t\u1EEB
     l\xFAa m\xEC. T\u1EA5t c\u1EA3 ho\xE0 quy\u1EC7n t\u1EA1o n\xEAn h\u01B0\u01A1ng
     v\u1ECB h\u1EA5p d\u1EABn c\u1EE7a m\xF3n salad n\xE0y."
-  ingredient_description: "\u0110\u01B0\u1EE3c \u0111\u1EA7u b\u1EBFp \"\"Caesar
-    Cardini\"\" s\xE1ng t\u1EA1o t\u1EA1i Mexico n\u0103m 1924, Caesar Salad nhanh
-    ch\xF3ng tr\u1EDF th\xE0nh m\xF3n \u0103n qu\u1ED1c t\u1EBF nh\u1EDD s\u1EF1
-    k\u1EBFt h\u1EE3p \u0111\u1ED9c \u0111\xE1o gi\u1EEFa x\xE0 l\xE1ch romaine,
-    b\xE1nh m\xEC kh\xF4 v\xE0 ph\xF4 mai Parmesan.\n\nCaesar Salad l\xE0 s\u1EF1
-    k\u1EBFt h\u1EE3p gi\u1EEFa \u0111\u1ED9 t\u01B0\u01A1i m\xE1t c\u1EE7a x\xE0
-    l\xE1ch, v\u1ECB b\xE9o ng\u1EADy \u0111\u1EB7c tr\u01B0ng c\u1EE7a ph\xF4 mai
-    Parmesan v\xE0 th\u1ECBt ba r\u1ECDi x\xF4ng kh\xF3i, nh\u1EEFng mi\u1EBFng crouton
-    gi\xF2n r\u1EE5m kh\xF4ng ch\u1EC9 th\xEAm \u0111\u1ED9 gi\xF2n m\xE0 c\xF2n
-    mang l\u1EA1i h\u01B0\u01A1ng th\u01A1m n\u01B0\u1EDBng h\u1EA5p d\u1EABn. T\u1EA5t
-    c\u1EA3 h\u01B0\u01A1ng v\u1ECB s\u1EBD h\xF2a quy\u1EC7n l\u1EA1i, khi\u1EBFn
-    m\u1ED7i mi\u1EBFng salad tr\u1EDF n\xEAn h\u1EA5p d\u1EABn v\xE0 kh\xF3 qu\xEAn.\n"
+  ingredient_description: "\u0110\u01B0\u1EE3c \u0111\u1EA7u b\u1EBFp \"Caesar Cardini\"
+    s\xE1ng t\u1EA1o t\u1EA1i Mexico n\u0103m 1924, Caesar Salad nhanh ch\xF3ng tr\u1EDF
+    th\xE0nh m\xF3n \u0103n qu\u1ED1c t\u1EBF nh\u1EDD s\u1EF1 k\u1EBFt h\u1EE3p
+    \u0111\u1ED9c \u0111\xE1o gi\u1EEFa x\xE0 l\xE1ch romaine, b\xE1nh m\xEC kh\xF4
+    v\xE0 ph\xF4 mai Parmesan.\n\nCaesar Salad l\xE0 s\u1EF1 k\u1EBFt h\u1EE3p gi\u1EEFa
+    \u0111\u1ED9 t\u01B0\u01A1i m\xE1t c\u1EE7a x\xE0 l\xE1ch, v\u1ECB b\xE9o ng\u1EADy
+    \u0111\u1EB7c tr\u01B0ng c\u1EE7a ph\xF4 mai Parmesan v\xE0 th\u1ECBt ba r\u1ECDi
+    x\xF4ng kh\xF3i, nh\u1EEFng mi\u1EBFng crouton gi\xF2n r\u1EE5m kh\xF4ng ch\u1EC9
+    th\xEAm \u0111\u1ED9 gi\xF2n m\xE0 c\xF2n mang l\u1EA1i h\u01B0\u01A1ng th\u01A1m
+    n\u01B0\u1EDBng h\u1EA5p d\u1EABn. T\u1EA5t c\u1EA3 h\u01B0\u01A1ng v\u1ECB s\u1EBD
+    h\xF2a quy\u1EC7n l\u1EA1i, khi\u1EBFn m\u1ED7i mi\u1EBFng salad tr\u1EDF n\xEAn
+    h\u1EA5p d\u1EABn v\xE0 kh\xF3 qu\xEAn.\n"
   ingredient_information: "Rau x\xE0 l\xE1ch Romaine: Kho\u1EA3ng 250g\nPh\xF4 mai
     Parmesan: 50g (b\xE0o s\u1EE3i ho\u1EB7c th\xE1i l\xE1t m\u1ECFng)\nB\xE1nh m\xEC:
     2-3 l\xE1t - kho\u1EA3ng 100g\nTh\u1ECBt ba r\u1ECDi x\xF4ng kh\xF3i: 100g\nN\u01B0\u1EDBc

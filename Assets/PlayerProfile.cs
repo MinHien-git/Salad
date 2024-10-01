@@ -33,7 +33,10 @@ public class PlayerProfile : MonoBehaviour
     public void SavePlayerDataToFile()
     {
         string playerName = nameInputField.text;
-        string playerScore = GameManager.Instance.currentAmountDisplayer.text; // Convert score input to integer
+        string playerScore =
+            GameManager.Instance.CheckScore()
+            + "/"
+            + GameManager.Instance.currentSalad.ingredient.Length; // Convert score input to integer
         string salad_name = GameManager.Instance.currentSalad.salad_name;
 
         if (!string.IsNullOrEmpty(playerName) && !string.IsNullOrEmpty(salad_name))
@@ -45,7 +48,7 @@ public class PlayerProfile : MonoBehaviour
             File.AppendAllText(filePath, newPlayerData.ToString() + "\n");
 
             Debug.Log("Data saved: " + newPlayerData);
-            saveButton.interactable  = false;
+            saveButton.interactable = false;
         }
         else
         {

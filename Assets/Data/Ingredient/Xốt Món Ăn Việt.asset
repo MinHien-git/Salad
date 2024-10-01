@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: "X\u1ED1t M\xF3n \u0102n Vi\u1EC7t"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: dbce789f7c34071448aa8f623b0a3553, type: 3}
   ingredient_name: "X\u1ED1t M\xF3n \u0102n Vi\u1EC7t"

@@ -18,7 +18,15 @@ public class IngredientInfo : MonoBehaviour
             randomParticles[i].transform.position = GetRandomPositionInsideScreen();
             randomParticles[i].Play();
         }
-        explaining.text = GameManager.Instance.currentSalad.ingredient_information;
+        string text = "";
+        for (int i = 0; i < GameManager.Instance.currentSalad.ingredient.Length; ++i)
+        {
+            text +=
+                "•<indent={10}em>"
+                + GameManager.Instance.currentSalad.ingredient[i].name
+                + "</indent>\n";
+        }
+        explaining.text = text;
     }
 
     public Vector3 GetRandomPositionInsideScreen()

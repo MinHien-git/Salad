@@ -33,15 +33,16 @@ MonoBehaviour:
     tr\u01B0ng c\u1EE7a x\u1EE9 s\u1EDF hoa anh \u0111\xE0o. "
   ingredient_description: "\"Salad M\xEC Ramen\" ra \u0111\u1EDDi nh\u1EDD v\xE0o
     s\u1EF1 giao thoa c\u1EE7a \u1EA9m th\u1EF1c Nh\u1EADt B\u1EA3n do c\xF3 s\u1EF1
-    k\u1EBFt h\u1EE3p th\xFA v\u1ECB v\u1EDBi m\xF3n \u0103n truy\u1EC1n c\u1EE7a
-    x\u1EE9 s\u1EDF hoa anh \u0111\xE0o l\xE0 M\xEC Ramen. \r\n\r\nM\xF3n salad n\xE0y
-    ch\u1EAFc ch\u1EAFn s\u1EBD l\xE0m b\xF9ng n\u1ED5 v\u1ECB gi\xE1c b\u1EDFi h\u01B0\u01A1ng
-    v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC ramen. S\u1EE3i m\xEC ramen th\u01B0\u1EDDng
-    c\xF3 v\u1ECB h\u01A1i m\u1EB7n, k\u1EBFt h\u1EE3p v\u1EDBi h\u01B0\u01A1ng th\u01A1m
-    \u0111\u1EB7c tr\u01B0ng c\u1EE7a b\u1ED9t m\xEC. V\u1ECB t\u01B0\u01A1i m\xE1t
-    c\u1EE7a c\xE1c lo\u1EA1i rau c\u1EE7 nh\u01B0 x\xE0 l\xE1ch, c\xE0 chua, d\u01B0a
-    chu\u1ED9t,... mang \u0111\u1EBFn v\u1ECB t\u01B0\u01A1i m\xE1t, thanh ng\u1ECDt,
-    gi\xFAp c\xE2n b\u1EB1ng l\u1EA1i v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC."
+    k\u1EBFt h\u1EE3p th\xFA v\u1ECB v\u1EDBi m\xF3n \u0103n truy\u1EC1n th\u1ED1ng
+    c\u1EE7a x\u1EE9 s\u1EDF hoa anh \u0111\xE0o l\xE0 M\xEC Ramen. \r\n\r\nM\xF3n
+    salad n\xE0y ch\u1EAFc ch\u1EAFn s\u1EBD l\xE0m b\xF9ng n\u1ED5 v\u1ECB gi\xE1c
+    b\u1EDFi h\u01B0\u01A1ng v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC ramen.
+    S\u1EE3i m\xEC ramen th\u01B0\u1EDDng c\xF3 v\u1ECB h\u01A1i m\u1EB7n, k\u1EBFt
+    h\u1EE3p v\u1EDBi h\u01B0\u01A1ng th\u01A1m \u0111\u1EB7c tr\u01B0ng c\u1EE7a
+    b\u1ED9t m\xEC. V\u1ECB t\u01B0\u01A1i m\xE1t c\u1EE7a c\xE1c lo\u1EA1i rau c\u1EE7
+    nh\u01B0 x\xE0 l\xE1ch, c\xE0 chua, d\u01B0a chu\u1ED9t,... mang \u0111\u1EBFn
+    v\u1ECB t\u01B0\u01A1i m\xE1t, thanh ng\u1ECDt, gi\xFAp c\xE2n b\u1EB1ng l\u1EA1i
+    v\u1ECB \u0111\u1EADm \u0111\xE0 c\u1EE7a m\xEC."
   ingredient_information: "M\xEC Ramen: 2-3 g\xF3i (t\xF9y thu\u1ED9c v\xE0o s\u1ED1
     l\u01B0\u1EE3ng ng\u01B0\u1EDDi \u0103n)\r\nRau c\u1EE7:\r\nX\xE0 l\xE1ch: 1/2
     c\xE1i\r\nC\xE0 r\u1ED1t: 1 c\u1EE7\r\nD\u01B0a chu\u1ED9t: 1 qu\u1EA3\r\nH\xE0nh

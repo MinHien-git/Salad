@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: 6625354487518797633, guid: bd9bf06095fdedd43b050725947ea36e, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &316690360
@@ -12477,7 +12477,7 @@ MonoBehaviour:
   m_text: SAVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12540,7 +12540,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &717021745
@@ -22404,7 +22404,7 @@ MonoBehaviour:
   m_text: RESTART
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22813,7 +22813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xE1ch th\u1EF1c hi\u1EC7n"
+  m_text: "Nguy\xEAn Li\u1EC7u C\u1EA7n C\xF3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
@@ -22840,8 +22840,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -33757,7 +33757,7 @@ MonoBehaviour:
   m_text: "Nh\u1EADp t\xEAn c\u1EE7a b\u1EA1n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40680,10 +40680,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save your score
+  m_text: Save your name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41478,7 +41478,7 @@ MonoBehaviour:
     cho \u0111\u1EC3 l\u01B0u v\xE0o h\u1EC7 th\u1ED1ng kh\xF4ng?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
-  m_sharedMaterial: {fileID: -4397503167360852442, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
+  m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41740,11 +41740,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Rau x\xE0 l\xE1ch Romaine: Kho\u1EA3ng 250g\nPh\xF4 mai Parmesan: 50g
-    (b\xE0o s\u1EE3i ho\u1EB7c th\xE1i l\xE1t m\u1ECFng)\nB\xE1nh m\xEC: 2-3 l\xE1t
-    - kho\u1EA3ng 100g\nTh\u1ECBt ba r\u1ECDi x\xF4ng kh\xF3i: 100g\nN\u01B0\u1EDBc
-    x\u1ED1t Salad Dressing Ph\xF4 Mai Kewpie: 3 mu\u1ED7ng c\xE0 ph\xEA (ho\u1EB7c
-    theo kh\u1EA9u v\u1ECB"
+  m_text: "\u2022<indent={10}em>Rau x\xE0 l\xE1ch Romaine: Kho\u1EA3ng 250g\nPh\xF4
+    mai Parmesan: 50g (b\xE0o s\u1EE3i ho\u1EB7c th\xE1i l\xE1t m\u1ECFng)\nB\xE1nh
+    m\xEC: 2-3 l\xE1t - kho\u1EA3ng 100g</indent>\nTh\u1ECBt ba r\u1ECDi x\xF4ng
+    kh\xF3i: 100g\nN\u01B0\u1EDBc x\u1ED1t Salad Dressing Ph\xF4 Mai Kewpie: 3 mu\u1ED7ng
+    c\xE0 ph\xEA (ho\u1EB7c theo kh\u1EA9u v\u1ECB"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
@@ -42704,16 +42704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSalad: {fileID: 0}
   saladScriptableObjects:
-  - {fileID: 11400000, guid: b0c64455f482ccf478385ebba0bc6f61, type: 2}
-  - {fileID: 11400000, guid: cdf0d007cf723e647bec8a75fe9a0477, type: 2}
-  - {fileID: 11400000, guid: 2f2053f557020ed4aa133022ee5141b8, type: 2}
   - {fileID: 11400000, guid: 5a83f30487ff3554b8ed77614fcc7104, type: 2}
-  - {fileID: 11400000, guid: 6643a28acc91f6340a20bcfac0375818, type: 2}
-  - {fileID: 11400000, guid: 5918de6984c22c34fb5f464733af53ec, type: 2}
-  - {fileID: 11400000, guid: 2ef0f6bbd8642ba4ebc37f2d0bcaf59f, type: 2}
-  - {fileID: 11400000, guid: aecccd635337e664f83cb2680c013a6c, type: 2}
-  - {fileID: 11400000, guid: 4817ea033ac011f4d9d4bb1b7449785b, type: 2}
-  - {fileID: 11400000, guid: 2898f15bba789b747a528fb2e29e3f52, type: 2}
+  - {fileID: 11400000, guid: b0c64455f482ccf478385ebba0bc6f61, type: 2}
   ingredients:
   - {fileID: 11400000, guid: 4716d43ee9322144eb84044ecf3754a1, type: 2}
   - {fileID: 11400000, guid: b36fd5715a197ba4a9397adb5570a189, type: 2}
