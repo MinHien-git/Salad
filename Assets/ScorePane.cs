@@ -38,7 +38,7 @@ public class ScorePane : MonoBehaviour
         )
         {
             explaining.text =
-                "Tiếc quá, còn chút nữa thôi là hoàn thành món Salad "
+                "Tiếc quá, còn chút nữa thôi là hoàn thành món "
                 + GameManager.Instance.currentSalad.salad_name;
             for (int i = 0; i < randomParticles.Length; ++i)
             {
