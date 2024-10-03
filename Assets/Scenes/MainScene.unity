@@ -41474,8 +41474,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\u1EA1n c\xF3 th\u1EC3 cung c\u1EA5p cho ch\xFAng t\xF4i \u0111i\u1EC3m
-    cho \u0111\u1EC3 l\u01B0u v\xE0o h\u1EC7 th\u1ED1ng kh\xF4ng?"
+  m_text: "B\u1EA1n c\xF3 th\u1EC3 cung c\u1EA5p cho ch\xFAng t\xF4i t\xEAn \u0111\u1EC3
+    l\u01B0u v\xE0o h\u1EC7 th\u1ED1ng kh\xF4ng?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
   m_sharedMaterial: {fileID: 4737515351672852418, guid: 167a8d4011d89e64e8fcefd939f0128f, type: 2}
@@ -42704,8 +42704,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSalad: {fileID: 0}
   saladScriptableObjects:
-  - {fileID: 11400000, guid: 5a83f30487ff3554b8ed77614fcc7104, type: 2}
   - {fileID: 11400000, guid: b0c64455f482ccf478385ebba0bc6f61, type: 2}
+  - {fileID: 11400000, guid: cdf0d007cf723e647bec8a75fe9a0477, type: 2}
+  - {fileID: 11400000, guid: 2f2053f557020ed4aa133022ee5141b8, type: 2}
+  - {fileID: 11400000, guid: 5a83f30487ff3554b8ed77614fcc7104, type: 2}
+  - {fileID: 11400000, guid: 6643a28acc91f6340a20bcfac0375818, type: 2}
+  - {fileID: 11400000, guid: 5918de6984c22c34fb5f464733af53ec, type: 2}
+  - {fileID: 11400000, guid: 2ef0f6bbd8642ba4ebc37f2d0bcaf59f, type: 2}
+  - {fileID: 11400000, guid: aecccd635337e664f83cb2680c013a6c, type: 2}
+  - {fileID: 11400000, guid: 4817ea033ac011f4d9d4bb1b7449785b, type: 2}
+  - {fileID: 11400000, guid: 2898f15bba789b747a528fb2e29e3f52, type: 2}
   ingredients:
   - {fileID: 11400000, guid: 4716d43ee9322144eb84044ecf3754a1, type: 2}
   - {fileID: 11400000, guid: b36fd5715a197ba4a9397adb5570a189, type: 2}

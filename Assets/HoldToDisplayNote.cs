@@ -43,10 +43,8 @@ public class HoldToDisplayNote
         isPointerDown = false;
         pointerDownTimer = 0f;
 
-        if (hasDisplayedNote)
-        {
-            HideNote();
-        }
+
+        HideNote();
     }
 
     public void OnPointerExit(PointerEventData eventData)
