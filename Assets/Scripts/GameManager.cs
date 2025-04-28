@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI currentAmountDisplayer;
     public GameObject background;
     public List<IngredientPlate> plates = new List<IngredientPlate>();
+    public GameObject dropItemPrefab;
 
     void Awake()
     {
