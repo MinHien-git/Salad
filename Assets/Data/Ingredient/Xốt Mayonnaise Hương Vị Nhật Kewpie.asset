@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: e2a3a35737d245a4eb24a356584fda1f, type: 3}
   ingredient_name: "X\u1ED1t Mayonnaise H\u01B0\u01A1ng V\u1ECB Nh\u1EADt"
+  isSaurce: 1

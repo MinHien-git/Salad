@@ -33914,7 +33914,7 @@ MonoBehaviour:
   currentAmountDisplayer: {fileID: 1523835701}
   background: {fileID: 58004251}
   plates: []
-  dropItemPrefab: {fileID: 0}
+  dropItemPrefab: {fileID: 1189645158305225718, guid: 3ac7dcb5b6bb02745a9fa9e9aa3bee21, type: 3}
 --- !u!4 &1340004068
 Transform:
   m_ObjectHideFlags: 0
@@ -51130,6 +51130,10 @@ MonoBehaviour:
   bowlSize: 200
   itemDistanceRatio: 0.5
   itemSize: {x: 50, y: 50}
+  numberOfDonut: 8
+  sauceSlots: []
+  currentSauce: 0
+  sauceRingDistanceRatio: 2
 --- !u!1 &1844023103
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 4286adf0ebf0676478ed99a9a19753e3, type: 3}
   ingredient_name: "X\u1ED1t Salad Dressing M\xE8 Rang Kewpie"
+  isSaurce: 1

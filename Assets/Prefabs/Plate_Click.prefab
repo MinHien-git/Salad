@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doubleTapMaxTime: 0.3
+  holdThreshold: 0.5
   horizontalLayoutGroupParent: {fileID: 0}
   offsetY: 2
   offsetX: 4

@@ -3,52 +3,71 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UITapHandler : MonoBehaviour, IPointerDownHandler
+public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public float doubleTapMaxTime = 0.3f;
     private float lastTapTime = -1f;
     private bool waitingSecondTap = false;
+
+    private bool pointerDown = false;
+    private float holdTimer = 0f;
+    private bool cancelTapBecauseHold = false;
+
+    public float holdThreshold = 0.5f; // <— thời gian vượt qua => coi là Hold, không Tap nữa
 
     [Header("Single Tap Settings")]
     public Transform horizontalLayoutGroupParent;
     private Transform bowlTarget;
 
     [Header("Target Offset Settings")]
-    public float offsetY = 50f; // Bay cao hơn Bowl 50
-    public float offsetX = 20f; // Lệch ngang 20
-
+    public float offsetY = 50f;
+    public float offsetX = 20f;
     public float moveDuration = 0.5f;
     public float dropDuration = 0.5f;
     public float fadeDuration = 0.2f;
 
     private RectTransform rectTransform;
     private Canvas canvas;
+    private CanvasGroup canvasGroup;
     private Tween idleTween;
 
     [Header("Idle Animation Settings")]
     public RectTransform targetForIdleAnimation;
+    public IngredientPlate ingredientPlate;
 
     private void Start()
     {
+        ingredientPlate = GetComponent<IngredientPlate>();
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
+        canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+            canvasGroup = gameObject.AddComponent<CanvasGroup>();
 
         GameObject bowlObj = GameObject.FindGameObjectWithTag("Bowl");
         if (bowlObj != null)
         {
             bowlTarget = bowlObj.transform;
         }
-        else
-        {
-            Debug.LogWarning("Không tìm thấy Bowl (Tag = 'Bowl') trong scene.");
-        }
 
         if (targetForIdleAnimation == null)
         {
-            targetForIdleAnimation = rectTransform; // Nếu chưa gán thì tự dùng chính object
+            targetForIdleAnimation = rectTransform;
         }
 
         PlayIdleAnimation();
+    }
+
+    private void Update()
+    {
+        if (pointerDown)
+        {
+            holdTimer += Time.unscaledDeltaTime;
+            if (!cancelTapBecauseHold && holdTimer >= holdThreshold)
+            {
+                cancelTapBecauseHold = true;
+            }
+        }
     }
 
     private void PlayIdleAnimation()
@@ -63,6 +82,23 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
     }
 
     public void OnPointerDown(PointerEventData eventData)
+    {
+        pointerDown = true;
+        holdTimer = 0f;
+        cancelTapBecauseHold = false;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        pointerDown = false;
+
+        if (!cancelTapBecauseHold)
+        {
+            HandleTap();
+        }
+    }
+
+    private void HandleTap()
     {
         if (waitingSecondTap && (Time.unscaledTime - lastTapTime) <= doubleTapMaxTime)
         {
@@ -86,18 +122,9 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    private void ShakePlate()
-    {
-        Debug.Log("Bowl đầy rồi, lắc cái plate!");
-
-        rectTransform
-            .DOShakePosition(0.3f, strength: new Vector3(10f, 0f, 0f), vibrato: 10, randomness: 90)
-            .SetEase(Ease.OutQuad);
-    }
-
     private void SingleTap()
     {
-        Debug.Log("Single Tap on: " + gameObject.name);
+        Debug.Log("Single Tap Spawn!");
 
         if (horizontalLayoutGroupParent != null)
         {
@@ -109,6 +136,7 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
             Debug.LogError("Không tìm thấy Bowl!");
             return;
         }
+
         BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
         if (bowlManager != null && bowlManager.IsFull())
         {
@@ -118,12 +146,8 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
         }
 
         Vector3 bowlPos = bowlTarget.position;
-
-        // Tính target vị trí
         Vector3 targetLeft = new Vector3(bowlPos.x - offsetX, bowlPos.y + offsetY, 0f);
         Vector3 targetRight = new Vector3(bowlPos.x + offsetX, bowlPos.y + offsetY, 0f);
-
-        // Random chọn bên trái hoặc phải
         Vector3 targetPos = (Random.value < 0.5f) ? targetLeft : targetRight;
 
         rectTransform
@@ -139,45 +163,37 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
     private void FadeAndDestroy()
     {
         if (idleTween != null && idleTween.IsActive())
-        {
             idleTween.Kill();
-        }
 
-        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            canvasGroup = gameObject.AddComponent<CanvasGroup>();
-        }
         canvasGroup
             .DOFade(0f, fadeDuration)
             .OnComplete(() =>
             {
-                Destroy(gameObject);
+                transform.parent = null;
             });
     }
 
     private void SpawnDropItemBezier(Vector3 fromPos, Vector3 toPos)
     {
-        IngredientPlate ingredientPlate = GetComponent<IngredientPlate>();
         if (ingredientPlate == null || ingredientPlate.itemImage == null)
         {
             Debug.LogWarning("Không tìm thấy IngredientPlate hoặc itemImage.");
             return;
         }
 
-        // 🔥 Tạo dropItem từ prefab
         GameObject dropItemObj = Instantiate(GameManager.Instance.dropItemPrefab, canvas.transform);
         RectTransform dropRect = dropItemObj.GetComponent<RectTransform>();
         dropRect.position = fromPos;
 
-        // 🧠 Gán ảnh vào DropItem script
         DropItem dropItem = dropItemObj.GetComponent<DropItem>();
-        if (dropItem != null)
-        {
-            dropItem.SetSprite(ingredientPlate.itemImage.sprite);
-        }
 
-        // Move theo Bezier
+        dropItem.SetSprite(ingredientPlate.itemImage.sprite);
+        dropItem.SetLinkedPlate(ingredientPlate);
+        Debug.Log(
+            "Đã thêm hình ảnh cho DropItem!"
+                + ingredientPlate.ingredient.name
+                + dropItem.linkedPlate.ingredient.name
+        );
         DropItemBezier bezierMove = dropItemObj.GetComponent<DropItemBezier>();
         if (bezierMove == null)
             bezierMove = dropItemObj.AddComponent<DropItemBezier>();
@@ -190,18 +206,42 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler
         bezierMove.OnReachDestination = () =>
         {
             BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
-            DropItem dropItem = dropItemObj.GetComponent<DropItem>();
-
-            if (bowlManager != null && dropItem != null)
+            if (bowlManager != null)
             {
-                bowlManager.AcceptDropItem(dropItem);
+                Debug.Log(
+                    ingredientPlate.ingredient.name
+                        + " đã được thêm vào Bowl! "
+                        + (dropItem.linkedPlate != null && dropItem.linkedPlate.ingredient.isSaurce)
+                );
+                if (dropItem.linkedPlate != null && dropItem.linkedPlate.ingredient.isSaurce)
+                {
+                    Debug.Log("Đã thêm sauce!");
+                    bowlManager.AcceptSauceItem(dropItem);
+                }
+                else
+                {
+                    Debug.Log("Đã thêm Nguyên liệu!");
+                    bowlManager.AcceptDropItem(dropItem);
+                }
             }
         };
     }
 
+    private void ShakePlate()
+    {
+        Sequence shakeSeq = DOTween.Sequence();
+        shakeSeq.Join(
+            rectTransform
+                .DOShakeRotation(0.4f, strength: new Vector3(0, 0, 20f), vibrato: 8, randomness: 90)
+                .SetEase(Ease.OutQuad)
+        );
+
+        shakeSeq.Join(canvasGroup.DOFade(1f, 0.1f).OnComplete(() => canvasGroup.DOFade(1f, 0.2f)));
+    }
+
     private void DoubleTap()
     {
-        Debug.Log("Double Tap: Move to Last Sibling - " + gameObject.name);
+        Debug.Log("Double Tap Move!");
         if (transform.parent != null)
         {
             transform.SetAsLastSibling();

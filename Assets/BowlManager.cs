@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +14,39 @@ public class BowlManager : MonoBehaviour
 
     [Header("Drop Item Settings")]
     public Vector2 itemSize = new Vector2(100f, 100f);
+    CanvasGroup cg;
+    public int numberOfDonut = 8;
+    public List<Vector2> sauceSlots = new List<Vector2>();
+    public int currentSauce = 0;
+    public float sauceRingDistanceRatio = 0.7f; // khoảng cách ra ngoài hơn nguyên l
 
     private void Start()
     {
+        cg = GetComponent<CanvasGroup>();
+        if (cg == null)
+        {
+            cg = gameObject.AddComponent<CanvasGroup>();
+        }
         GenerateSlices();
+        GenerateSauceSlots();
+    }
+
+    private void GenerateSauceSlots()
+    {
+        sauceSlots.Clear();
+
+        for (int i = 0; i < numberOfSlices; i++)
+        {
+            float angle = (360f / numberOfSlices) * i + (180f / numberOfSlices);
+            float rad = angle * Mathf.Deg2Rad;
+
+            float radius = (bowlSize * 0.5f) * sauceRingDistanceRatio; // Ra ngoài hơn bowl
+            Vector2 pos = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)) * radius;
+
+            sauceSlots.Add(pos);
+        }
+
+        Debug.Log($"Generated {sauceSlots.Count} sauce slots!");
     }
 
     public bool IsFull()
@@ -30,14 +60,26 @@ public class BowlManager : MonoBehaviour
 
         if (bowlRect != null)
         {
-            bowlRect
-                .DOShakePosition(
-                    0.3f,
-                    strength: new Vector3(10f, 0f, 0f),
-                    vibrato: 10,
-                    randomness: 90
-                )
-                .SetEase(Ease.OutQuad);
+            // 🔥 Dùng DOTween Sequence để vừa Scale vừa Shake Rotation cùng lúc
+            Sequence bowlShakeSeq = DOTween.Sequence();
+
+            bowlShakeSeq.Append(
+                bowlRect.DOScale(1.1f, 0.1f).SetEase(Ease.OutQuad) // Scale to lên
+            );
+            bowlShakeSeq.Append(
+                bowlRect.DOScale(1f, 0.1f).SetEase(Ease.OutQuad) // Scale nhỏ lại
+            );
+
+            bowlShakeSeq.Join(
+                bowlRect
+                    .DOShakeRotation(
+                        0.4f,
+                        strength: new Vector3(0f, 0f, 20f),
+                        vibrato: 8,
+                        randomness: 90
+                    )
+                    .SetEase(Ease.OutQuad)
+            );
         }
     }
 
@@ -62,6 +104,42 @@ public class BowlManager : MonoBehaviour
         }
     }
 
+    public void AcceptSauceItem(DropItem dropItem)
+    {
+        if (dropItem == null || dropItem.linkedPlate == null)
+        {
+            Debug.LogWarning("DropItem hoặc linkedPlate null!");
+            return;
+        }
+
+        if (currentSauce >= sauceSlots.Count)
+        {
+            Debug.Log("Tất cả các Sauce Slots đã đầy!");
+            return;
+        }
+        Debug.Log("Bỏ vào ô Sauce Slots !");
+        // Lấy rect của dropItem
+        RectTransform dropRect = dropItem.GetComponent<RectTransform>();
+
+        // Set parent về Bowl
+
+        dropRect.anchorMin = new Vector2(0.5f, 0.5f);
+        dropRect.anchorMax = new Vector2(0.5f, 0.5f);
+        dropRect.pivot = new Vector2(0.5f, 0.5f);
+
+        // Gán localPosition vào đúng Sauce Slot
+        dropRect.localPosition = sauceSlots[currentSauce];
+
+        // Nếu cần resize sauce cho nhỏ hơn nguyên liệu 1 xíu, có thể thêm:
+        dropRect.sizeDelta *= 2f;
+        dropRect.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)); // Xoay ngẫu nhiên
+
+        currentSauce++;
+
+        dropItem.PlayLandingAnimation(); // Cho sauce cũng có hiệu ứng hạ cánh
+        BounceBowl();
+    }
+
     public void AcceptDropItem(DropItem dropItem)
     {
         if (currentSlice >= numberOfSlices)
@@ -71,10 +149,6 @@ public class BowlManager : MonoBehaviour
             return;
         }
 
-        Vector3 worldPos = dropItem.transform.position;
-
-        dropItem.transform.SetParent(transform, true); // <-- true ở đây!!!
-
         float angle = (360f / numberOfSlices) * currentSlice + (180f / numberOfSlices);
         float rad = angle * Mathf.Deg2Rad;
         float radius = (bowlSize * 0.5f) * itemDistanceRatio;
@@ -82,14 +156,33 @@ public class BowlManager : MonoBehaviour
 
         RectTransform dropRect = dropItem.GetComponent<RectTransform>();
 
+        dropItem.transform.SetParent(transform, true);
+
         dropRect.anchorMin = new Vector2(0.5f, 0.5f);
         dropRect.anchorMax = new Vector2(0.5f, 0.5f);
         dropRect.pivot = new Vector2(0.5f, 0.5f);
 
         dropRect.localPosition = localOffset;
-        dropRect.localRotation = Quaternion.identity;
 
         currentSlice++;
+        dropItem.PlayLandingAnimation();
+        BounceBowl();
+    }
+
+    private void BounceBowl()
+    {
+        RectTransform bowlRect = GetComponent<RectTransform>();
+
+        if (bowlRect != null)
+        {
+            bowlRect
+                .DOScale(new Vector3(1.05f, 1.05f, 1f), 0.15f)
+                .SetEase(Ease.OutQuad)
+                .OnComplete(() =>
+                {
+                    bowlRect.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutQuad);
+                });
+        }
     }
 
     public void SpawnItemInNextSlice(Sprite itemSprite)

@@ -9,4 +9,5 @@ public class Ingredient : ScriptableObject
 
     [TextAreaAttribute(1, 3)]
     public string ingredient_name;
+    public bool isSaurce;
 }
