@@ -34,20 +34,27 @@ public class BowlManager : MonoBehaviour
     {
         sauceSlots.Clear();
 
-        float slotSpacing = 100f; // 🔥 Khoảng cách mỗi slot (bạn có thể chỉnh)
+        float slotSpacing = 100f;   // 🔥 Khoảng cách ngang
+        float smileCurveHeight = 50f; // 🔥 Độ cong lên (cao bao nhiêu)
 
         int half = maxSauceSlots / 2;
 
         for (int i = 0; i < maxSauceSlots; i++)
         {
-            float xOffset = (i - half) * slotSpacing;
-            Vector2 localPos = new Vector2(xOffset, bowlSize * 0.3f); // 🔥 0.3f: vị trí sauce hơi phía trên Bowl 1 tí
+            float xOffset = (i - half) * slotSpacing + (maxSauceSlots % 2 == 0 ? slotSpacing / 2f : 0f);
+
+            // 🧠 Tính độ cong: dùng Parabola nhỏ
+            float t = (float)(i - half) / half; // từ -1 đến +1
+            float yOffset = -smileCurveHeight * (1 - t * t); // Parabola lộn ngược
+
+            Vector2 localPos = new Vector2(xOffset, yOffset); // 🔥 Đã có độ cong như mặt cười
 
             sauceSlots.Add(localPos);
         }
 
-        Debug.Log($"Generated {sauceSlots.Count} sauce slots (horizontal)!");
+        Debug.Log($"Generated {sauceSlots.Count} sauce slots with smile curve!");
     }
+
 
 
     public bool IsFull()
