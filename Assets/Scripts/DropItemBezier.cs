@@ -46,4 +46,16 @@ public class DropItemBezier : MonoBehaviour
         float u = 1 - t;
         return u * u * p0 + 2 * u * t * p1 + t * t * p2;
     }
+
+    public void Play(Vector3 p0, Vector3 p1, Vector3 p2, float dur, Action onDone = null)
+    {
+        P0 = p0;
+        P1 = p1;
+        P2 = p2;
+        duration = dur;
+        OnReachDestination = onDone;
+
+        StopAllCoroutines(); // dừng mọi coroutine cũ
+        StartCoroutine(MoveAlongBezier()); // chạy lại với dữ liệu mới
+    }
 }

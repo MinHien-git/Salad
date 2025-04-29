@@ -20,32 +20,95 @@ public class BowlManager : MonoBehaviour
     public List<Vector2> sauceSlots = new List<Vector2>();
     public int maxSauceSlots = 4; // Số slot cố định
     public int currentSauceSlot = 0;
+
     private void Start()
     {
         cg = GetComponent<CanvasGroup>();
         if (cg == null)
         {
             cg = gameObject.AddComponent<CanvasGroup>();
+            cg.blocksRaycasts = true; // ★ thêm dòng này
+            cg.interactable = true; // ★ thêm dòng này (cho chắc)
         }
         GenerateSlices();
         GenerateSauceSlots();
     }
-   private void GenerateSauceSlots()
+
+    public void RemoveDropItem(DropItem item)
+    {
+        if (item == null)
+            return;
+        GameManager.Instance.RemoveDropItem(item);
+        if (item.ingredient != null && item.ingredient.isSaurce)
+        {
+            currentSauce = Mathf.Max(0, currentSauce - 1);
+            currentSauceSlot = Mathf.Max(0, currentSauceSlot - 1);
+            RecalculateSaucePositions();
+        }
+        else
+        {
+            currentSlice = Mathf.Max(0, currentSlice - 1);
+            RecalculateIngredientPositions();
+        }
+    }
+
+    private void RecalculateIngredientPositions()
+    {
+        int idx = 0;
+        foreach (Transform child in transform)
+        {
+            DropItem di = child.GetComponent<DropItem>();
+            if (di != null && (di.ingredient == null || !di.ingredient.isSaurce))
+            {
+                float angle = (360f / numberOfSlices) * idx + (180f / numberOfSlices);
+                float rad = angle * Mathf.Deg2Rad;
+                float radius = (bowlSize * 0.5f) * itemDistanceRatio;
+
+                Vector2 localOffset = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)) * radius;
+                RectTransform rect = di.GetComponent<RectTransform>();
+
+                rect.DOLocalMove(localOffset, 0.2f); // animate nhẹ
+                idx++;
+            }
+        }
+        currentSlice = idx;
+    }
+
+    private void RecalculateSaucePositions()
+    {
+        int idx = 0;
+        foreach (Transform child in container) // sauce nằm trong container
+        {
+            DropItem di = child.GetComponent<DropItem>();
+            if (di != null && di.ingredient != null && di.ingredient.isSaurce)
+            {
+                Vector2 localSlot = sauceSlots[idx];
+                RectTransform rect = di.GetComponent<RectTransform>();
+
+                rect.DOLocalMove(localSlot, 0.2f);
+                idx++;
+            }
+        }
+        currentSauceSlot = idx;
+    }
+
+    private void GenerateSauceSlots()
     {
         sauceSlots.Clear();
 
-        float slotSpacing = 100f;   // 🔥 Khoảng cách ngang
-        float smileCurveHeight = 50f; // 🔥 Độ cong lên (cao bao nhiêu)
+        float slotSpacing = 60f; // 🔥 Khoảng cách ngang
+        float smileCurveHeight = 80f; // 🔥 Độ cong lên (cao bao nhiêu)
 
         int half = maxSauceSlots / 2;
 
         for (int i = 0; i < maxSauceSlots; i++)
         {
-            float xOffset = (i - half) * slotSpacing + (maxSauceSlots % 2 == 0 ? slotSpacing / 2f : 0f);
+            float xOffset =
+                (i - half) * slotSpacing + (maxSauceSlots % 2 == 0 ? slotSpacing / 2f : 0f);
 
             // 🧠 Tính độ cong: dùng Parabola nhỏ
             float t = (float)(i - half) / half; // từ -1 đến +1
-            float yOffset = -smileCurveHeight * (1 - t * t); // Parabola lộn ngược
+            float yOffset = smileCurveHeight * (1 - t * t); // Parabola lộn ngược
 
             Vector2 localPos = new Vector2(xOffset, yOffset); // 🔥 Đã có độ cong như mặt cười
 
@@ -54,8 +117,6 @@ public class BowlManager : MonoBehaviour
 
         Debug.Log($"Generated {sauceSlots.Count} sauce slots with smile curve!");
     }
-
-
 
     public bool IsFull()
     {
@@ -112,15 +173,28 @@ public class BowlManager : MonoBehaviour
         }
     }
 
+    // Trả về vị trí lát kế tiếp (toạ độ WORLD) – KHÔNG tăng currentSlice
+    public Vector3 GetNextSliceWorldPos()
+    {
+        float angle = (360f / numberOfSlices) * currentSlice + (180f / numberOfSlices);
+        float rad = angle * Mathf.Deg2Rad;
+        float radius = (bowlSize * 0.5f) * itemDistanceRatio;
+
+        Vector2 localOffset = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)) * radius;
+
+        // Vì item được gắn trực tiếp vào BowlManager (this)
+        return transform.TransformPoint(localOffset);
+    }
+
     public void AcceptSauceItem(DropItem dropItem)
     {
-        if (dropItem == null || dropItem.linkedPlate == null)
+        if (dropItem == null || dropItem.ingredient == null)
         {
             Debug.LogWarning("DropItem hoặc linkedPlate null!");
             return;
         }
 
-        if (currentSauce >= 2)
+        if (currentSauce >= 10)
         {
             return;
         }
@@ -134,13 +208,14 @@ public class BowlManager : MonoBehaviour
         dropRect.anchorMax = new Vector2(0.5f, 0.5f);
         dropRect.pivot = new Vector2(0.5f, 0.5f);
 
-
         // Nếu cần resize sauce cho nhỏ hơn nguyên liệu 1 xíu, có thể thêm:
         dropRect.sizeDelta *= 2f;
 
         currentSauce++;
 
         dropItem.PlayLandingAnimation(); // Cho sauce cũng có hiệu ứng hạ cánh
+        if (dropItem.ingredient != null)
+            GameManager.Instance.AddDropItem(dropItem);
     }
 
     public void AcceptDropItem(DropItem dropItem)
@@ -170,6 +245,8 @@ public class BowlManager : MonoBehaviour
         currentSlice++;
         dropItem.PlayLandingAnimation();
         BounceBowl();
+        if (dropItem.ingredient != null)
+            GameManager.Instance.AddDropItem(dropItem);
     }
 
     private void BounceBowl()

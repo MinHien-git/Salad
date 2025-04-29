@@ -15,6 +15,46 @@ public class GameManager : MonoBehaviour
     public GameObject background;
     public List<IngredientPlate> plates = new List<IngredientPlate>();
     public GameObject dropItemPrefab;
+    public List<DropItem> dropItems = new List<DropItem>();
+
+    public bool CanPlaceItem()
+    {
+        return dropItems.Count == currentSalad.ingredient.Length;
+    }
+
+    public int CheckScorev2()
+    {
+        HashSet<Ingredient> unique = new(); // tránh trùng nguyên liệu
+        foreach (DropItem d in dropItems)
+            if (d != null)
+                unique.Add(d.ingredient);
+
+        int point = 0;
+        foreach (Ingredient ing in currentSalad.ingredient)
+            if (unique.Contains(ing))
+                point++;
+
+        return point; // 0 → Max
+    }
+
+    public void AddDropItem(DropItem item)
+    {
+        if (!dropItems.Contains(item))
+        {
+            dropItems.Add(item);
+            ScoreText.Instance.AnimateScoreTextIncrease();
+            currentAmountDisplayer.text = dropItems.Count + "/" + currentSalad.ingredient.Length;
+        }
+    }
+
+    public void RemoveDropItem(DropItem item)
+    {
+        if (dropItems.Remove(item)) // true nếu xoá được
+        {
+            ScoreText.Instance.AnimateScoreTextDecrease();
+            currentAmountDisplayer.text = dropItems.Count + "/" + currentSalad.ingredient.Length;
+        }
+    }
 
     void Awake()
     {
@@ -51,7 +91,7 @@ public class GameManager : MonoBehaviour
         GuideUI.Instance.Init(currentSalad);
         CompletePopup.Instance.Init(currentSalad);
         currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
-        PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(5));
+        PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(10));
         PrepareIngredientTable.Instance.InitPlate(currentSalad);
         PrepareIngredientTable.Instance.ShuffleChildObjects();
     }

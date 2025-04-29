@@ -13,6 +13,12 @@ public class PrepareIngredientTable : MonoBehaviour
         Instance = this;
     }
 
+    public Vector3 GetReturnWorldPos()
+    {
+        // Hạ cánh ngay chính giữa bàn (container) – muốn chỉnh thì bù thêm offset
+        return container.position;
+    }
+
     public void InitPlate(List<Ingredient> ingredients)
     {
         for (int i = 0; i < ingredients.Count; ++i)

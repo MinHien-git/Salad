@@ -15,8 +15,8 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     public float holdThreshold = 0.5f; // <— thời gian vượt qua => coi là Hold, không Tap nữa
 
-    [Header("Single Tap Settings")]
-    public Transform horizontalLayoutGroupParent;
+    // [Header("Single Tap Settings")]
+    // public Transform horizontalLayoutGroupParent;
     private Transform bowlTarget;
 
     [Header("Target Offset Settings")]
@@ -126,10 +126,10 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     {
         Debug.Log("Single Tap Spawn!");
 
-        if (horizontalLayoutGroupParent != null)
-        {
-            transform.SetParent(horizontalLayoutGroupParent, true);
-        }
+        // if (horizontalLayoutGroupParent != null)
+        // {
+        //     transform.SetParent(horizontalLayoutGroupParent, true);
+        // }
 
         if (bowlTarget == null)
         {
@@ -159,7 +159,10 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
                     .OnComplete(() =>
                     {
                         bowlManager.currentSauceSlot++;
-                        SpawnDropItemBezier(targetWorldPos, bowlManager.container.TransformPoint(localSlot));
+                        SpawnDropItemBezier(
+                            targetWorldPos,
+                            bowlManager.container.TransformPoint(localSlot)
+                        );
                         FadeAndDestroy();
                     });
 
@@ -175,7 +178,14 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             .SetEase(Ease.OutQuad)
             .OnComplete(() =>
             {
-                SpawnDropItemBezier(targetPos,bowlTarget.position);
+                BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
+                transform.SetParent(bowlManager.transform);
+                // ★ Lấy world-pos lát tiếp theo
+                Vector3 sliceWorldPos = bowlManager.GetNextSliceWorldPos();
+
+                // ★ Bay thẳng đến vị trí lát (không ghé tâm)
+                SpawnDropItemBezier(targetPos, sliceWorldPos);
+
                 FadeAndDestroy();
             });
     }
@@ -209,11 +219,7 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
         dropItem.SetSprite(ingredientPlate.itemImage.sprite);
         dropItem.SetLinkedPlate(ingredientPlate);
-        Debug.Log(
-            "Đã thêm hình ảnh cho DropItem!"
-                + ingredientPlate.ingredient.name
-                + dropItem.linkedPlate.ingredient.name
-        );
+
         DropItemBezier bezierMove = dropItemObj.GetComponent<DropItemBezier>();
         if (bezierMove == null)
             bezierMove = dropItemObj.AddComponent<DropItemBezier>();
@@ -228,12 +234,7 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
             if (bowlManager != null)
             {
-                Debug.Log(
-                    ingredientPlate.ingredient.name
-                        + " đã được thêm vào Bowl! "
-                        + (dropItem.linkedPlate != null && dropItem.linkedPlate.ingredient.isSaurce)
-                );
-                if (dropItem.linkedPlate != null && dropItem.linkedPlate.ingredient.isSaurce)
+                if (dropItem.ingredient != null && dropItem.ingredient.isSaurce)
                 {
                     Debug.Log("Đã thêm sauce!");
                     bowlManager.AcceptSauceItem(dropItem);

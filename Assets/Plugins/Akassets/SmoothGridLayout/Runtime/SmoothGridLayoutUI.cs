@@ -15,14 +15,26 @@ namespace Akassets.SmoothGridLayout
 
         private void Awake()
         {
-            if(placeholdersTransform == null)
-                Debug.LogError("<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Placeholders Transform\" is null.</color> Assign field in the inspector or use autofix.", this);
-            if(elementsTransform == null)
-                Debug.LogError("<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Transform\" is null.</color> Assign field in the inspector or use autofix.", this);
-            if(elementsContainer == null)
-                Debug.LogError("<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Container\" is null.</color> Assign field in the inspector or use autofix.", this);
-            if(gridLayoutGroup == null)
-                Debug.LogError("<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Transform\" is null.</color> Assign field in the inspector or use autofix.", this);
+            if (placeholdersTransform == null)
+                Debug.LogError(
+                    "<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Placeholders Transform\" is null.</color> Assign field in the inspector or use autofix.",
+                    this
+                );
+            if (elementsTransform == null)
+                Debug.LogError(
+                    "<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Transform\" is null.</color> Assign field in the inspector or use autofix.",
+                    this
+                );
+            if (elementsContainer == null)
+                Debug.LogError(
+                    "<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Container\" is null.</color> Assign field in the inspector or use autofix.",
+                    this
+                );
+            if (gridLayoutGroup == null)
+                Debug.LogError(
+                    "<color=lightblue><b>Smooth Grid Layout</b></color> ► <color=red>\"Elements Transform\" is null.</color> Assign field in the inspector or use autofix.",
+                    this
+                );
 
             elementsContainer.OnChildrenChanged += RebuildChildren;
         }
@@ -42,7 +54,7 @@ namespace Akassets.SmoothGridLayout
             var childTransforms = placeholdersTransform.Cast<Transform>().ToList();
             foreach (var child in childTransforms)
                 DestroyImmediate(child.gameObject);
-            
+
             foreach (Transform element in elementsTransform)
             {
                 if (element.TryGetComponent(out RectTransform rectTransform))

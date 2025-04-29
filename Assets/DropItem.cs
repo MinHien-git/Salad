@@ -1,13 +1,75 @@
 using DG.Tweening;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DropItem : MonoBehaviour
+public class DropItem : MonoBehaviour, IPointerClickHandler, IPointerDownHandler
 {
     [SerializeField]
     private Image itemImage;
+
+    [SerializeField]
+    private Image shadow;
     private Tween idleTween;
-    public IngredientPlate linkedPlate; // 🔥 Link tới plate gốc
+    public Ingredient ingredient; // 🔥 Link tới plate gốc
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log("CLICKED " + name);
+        ReturnToTable();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        ReturnToTable();
+    }
+
+    private void ReturnToTable()
+    {
+        if (PrepareIngredientTable.Instance == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Vector3 start = transform.position;
+        Vector3 end = PrepareIngredientTable.Instance.GetReturnWorldPos();
+        float h = Vector3.Distance(start, end) * 0.1f;
+        Vector3 mid = (start + end) * 0.5f + Vector3.up * h;
+
+        DropItemBezier bez = GetComponent<DropItemBezier>();
+        if (bez == null)
+            bez = gameObject.AddComponent<DropItemBezier>();
+
+        bez.Play(
+            start,
+            mid,
+            end,
+            0.4f,
+            () =>
+            {
+                // 1. Sinh plate mới
+                if (ingredient != null)
+                {
+                    IngredientPlate p = Instantiate(
+                        PrepareIngredientTable.Instance.platePrefab,
+                        end,
+                        Quaternion.identity,
+                        PrepareIngredientTable.Instance.container
+                    );
+                    p.Init(ingredient);
+                }
+
+                // 2. Báo bowl & huỷ chính mình
+                BowlManager bowl = GetComponentInParent<BowlManager>();
+                if (bowl != null)
+                    bowl.RemoveDropItem(this);
+
+                Destroy(gameObject);
+            }
+        );
+    }
 
     private void Start()
     {
@@ -24,19 +86,22 @@ public class DropItem : MonoBehaviour
         itemImage.preserveAspect = true;
     }
 
-   public void SetLinkedPlate(IngredientPlate plate)
+    public void SetLinkedPlate(IngredientPlate plate)
     {
-        linkedPlate = plate;
-        if (linkedPlate != null && linkedPlate.ingredient != null && linkedPlate.ingredient.isSaurce)
+        ingredient = plate.ingredient;
+        RectTransform rect = itemImage.GetComponent<RectTransform>();
+
+        if (ingredient != null && ingredient.isSaurce)
         {
-            RectTransform rect = GetComponent<RectTransform>();
-            if (rect != null)
-            {
-                rect.sizeDelta *= 2f; // 🔥 Gấp đôi kích thước!
-            }
+            rect.sizeDelta *= 1.25f; // 🔥 Gấp đôi kích thước!
+            rect.pivot = new Vector2(0.5f, 0f); // Giữa giữa
+            shadow.gameObject.SetActive(true); // Hiện shadow
+        }
+        else
+        {
+            rect.pivot = new Vector2(0.5f, 0.5f);
         }
     }
-
 
     public void PlayLandingAnimation()
     {
