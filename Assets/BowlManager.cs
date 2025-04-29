@@ -15,11 +15,11 @@ public class BowlManager : MonoBehaviour
     [Header("Drop Item Settings")]
     public Vector2 itemSize = new Vector2(100f, 100f);
     CanvasGroup cg;
-    public int numberOfDonut = 8;
-    public List<Vector2> sauceSlots = new List<Vector2>();
+    public RectTransform container;
     public int currentSauce = 0;
-    public float sauceRingDistanceRatio = 0.7f; // khoảng cách ra ngoài hơn nguyên l
-
+    public List<Vector2> sauceSlots = new List<Vector2>();
+    public int maxSauceSlots = 4; // Số slot cố định
+    public int currentSauceSlot = 0;
     private void Start()
     {
         cg = GetComponent<CanvasGroup>();
@@ -30,24 +30,25 @@ public class BowlManager : MonoBehaviour
         GenerateSlices();
         GenerateSauceSlots();
     }
-
-    private void GenerateSauceSlots()
+   private void GenerateSauceSlots()
     {
         sauceSlots.Clear();
 
-        for (int i = 0; i < numberOfSlices; i++)
+        float slotSpacing = 100f; // 🔥 Khoảng cách mỗi slot (bạn có thể chỉnh)
+
+        int half = maxSauceSlots / 2;
+
+        for (int i = 0; i < maxSauceSlots; i++)
         {
-            float angle = (360f / numberOfSlices) * i + (180f / numberOfSlices);
-            float rad = angle * Mathf.Deg2Rad;
+            float xOffset = (i - half) * slotSpacing;
+            Vector2 localPos = new Vector2(xOffset, bowlSize * 0.3f); // 🔥 0.3f: vị trí sauce hơi phía trên Bowl 1 tí
 
-            float radius = (bowlSize * 0.5f) * sauceRingDistanceRatio; // Ra ngoài hơn bowl
-            Vector2 pos = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)) * radius;
-
-            sauceSlots.Add(pos);
+            sauceSlots.Add(localPos);
         }
 
-        Debug.Log($"Generated {sauceSlots.Count} sauce slots!");
+        Debug.Log($"Generated {sauceSlots.Count} sauce slots (horizontal)!");
     }
+
 
     public bool IsFull()
     {
@@ -112,9 +113,8 @@ public class BowlManager : MonoBehaviour
             return;
         }
 
-        if (currentSauce >= sauceSlots.Count)
+        if (currentSauce >= 2)
         {
-            Debug.Log("Tất cả các Sauce Slots đã đầy!");
             return;
         }
         Debug.Log("Bỏ vào ô Sauce Slots !");
@@ -122,22 +122,18 @@ public class BowlManager : MonoBehaviour
         RectTransform dropRect = dropItem.GetComponent<RectTransform>();
 
         // Set parent về Bowl
-
+        dropItem.transform.SetParent(container.transform, true);
         dropRect.anchorMin = new Vector2(0.5f, 0.5f);
         dropRect.anchorMax = new Vector2(0.5f, 0.5f);
         dropRect.pivot = new Vector2(0.5f, 0.5f);
 
-        // Gán localPosition vào đúng Sauce Slot
-        dropRect.localPosition = sauceSlots[currentSauce];
 
         // Nếu cần resize sauce cho nhỏ hơn nguyên liệu 1 xíu, có thể thêm:
         dropRect.sizeDelta *= 2f;
-        dropRect.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)); // Xoay ngẫu nhiên
 
         currentSauce++;
 
         dropItem.PlayLandingAnimation(); // Cho sauce cũng có hiệu ứng hạ cánh
-        BounceBowl();
     }
 
     public void AcceptDropItem(DropItem dropItem)

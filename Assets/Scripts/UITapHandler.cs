@@ -146,6 +146,26 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         }
 
         Vector3 bowlPos = bowlTarget.position;
+        if (ingredientPlate.ingredient.isSaurce)
+        {
+            if (bowlManager != null && bowlManager.currentSauceSlot < bowlManager.sauceSlots.Count)
+            {
+                Vector2 localSlot = bowlManager.sauceSlots[bowlManager.currentSauceSlot];
+                Vector3 targetWorldPos = bowlManager.container.TransformPoint(localSlot);
+
+                rectTransform
+                    .DOMove(targetWorldPos, moveDuration)
+                    .SetEase(Ease.OutQuad)
+                    .OnComplete(() =>
+                    {
+                        bowlManager.currentSauceSlot++;
+                        SpawnDropItemBezier(targetWorldPos, bowlManager.container.TransformPoint(localSlot));
+                        FadeAndDestroy();
+                    });
+
+                return; // 🔥 Xong sauce, không cần drop ngẫu nhiên
+            }
+        }
         Vector3 targetLeft = new Vector3(bowlPos.x - offsetX, bowlPos.y + offsetY, 0f);
         Vector3 targetRight = new Vector3(bowlPos.x + offsetX, bowlPos.y + offsetY, 0f);
         Vector3 targetPos = (Random.value < 0.5f) ? targetLeft : targetRight;
@@ -155,7 +175,7 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             .SetEase(Ease.OutQuad)
             .OnComplete(() =>
             {
-                SpawnDropItemBezier(targetPos, bowlTarget.position);
+                SpawnDropItemBezier(targetPos,bowlTarget.position);
                 FadeAndDestroy();
             });
     }

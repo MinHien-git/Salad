@@ -24,10 +24,19 @@ public class DropItem : MonoBehaviour
         itemImage.preserveAspect = true;
     }
 
-    public void SetLinkedPlate(IngredientPlate plate)
+   public void SetLinkedPlate(IngredientPlate plate)
     {
         linkedPlate = plate;
+        if (linkedPlate != null && linkedPlate.ingredient != null && linkedPlate.ingredient.isSaurce)
+        {
+            RectTransform rect = GetComponent<RectTransform>();
+            if (rect != null)
+            {
+                rect.sizeDelta *= 2f; // 🔥 Gấp đôi kích thước!
+            }
+        }
     }
+
 
     public void PlayLandingAnimation()
     {
