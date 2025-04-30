@@ -75,7 +75,7 @@ public class LeaderboardUI : MonoBehaviour
         IsOpen = false;
     }
 
-    public void Open(string closeLabel = "Close")
+    public void Open(string closeLabel = "Đóng")
     {
         if (!IsOpen)
         {

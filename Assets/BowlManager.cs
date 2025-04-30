@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BowlManager : MonoBehaviour
 {
+    public static BowlManager Instance { get; private set; }
+
     [Header("Slice Settings")]
     public int numberOfSlices = 4;
     public float bowlSize = 500f;
@@ -21,7 +24,12 @@ public class BowlManager : MonoBehaviour
     public int maxSauceSlots = 4; // Số slot cố định
     public int currentSauceSlot = 0;
 
-    private void Start()
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void Init(int numberOfSlices)
     {
         cg = GetComponent<CanvasGroup>();
         if (cg == null)
@@ -30,6 +38,8 @@ public class BowlManager : MonoBehaviour
             cg.blocksRaycasts = true; // ★ thêm dòng này
             cg.interactable = true; // ★ thêm dòng này (cho chắc)
         }
+        maxSauceSlots = numberOfSlices;
+        this.numberOfSlices = numberOfSlices;
         GenerateSlices();
         GenerateSauceSlots();
     }
@@ -130,7 +140,7 @@ public class BowlManager : MonoBehaviour
         if (bowlRect != null)
         {
             // 🔥 Dùng DOTween Sequence để vừa Scale vừa Shake Rotation cùng lúc
-            Sequence bowlShakeSeq = DOTween.Sequence();
+            DG.Tweening.Sequence bowlShakeSeq = DOTween.Sequence();
 
             bowlShakeSeq.Append(
                 bowlRect.DOScale(1.1f, 0.1f).SetEase(Ease.OutQuad) // Scale to lên

@@ -8,6 +8,6 @@ public class GuideButton : MonoBehaviour
 
     public void OnClick()
     {
-        node.Open("Close");
+        node.Open("Đóng");
     }
 }

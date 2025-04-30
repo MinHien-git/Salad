@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     public List<IngredientPlate> plates = new List<IngredientPlate>();
     public GameObject dropItemPrefab;
     public List<DropItem> dropItems = new List<DropItem>();
+    public Button completeButton;
 
     public bool CanPlaceItem()
     {
@@ -44,6 +46,14 @@ public class GameManager : MonoBehaviour
             dropItems.Add(item);
             ScoreText.Instance.AnimateScoreTextIncrease();
             currentAmountDisplayer.text = dropItems.Count + "/" + currentSalad.ingredient.Length;
+            if (CanPlaceItem())
+            {
+                completeButton.interactable = true;
+            }
+            else
+            {
+                completeButton.interactable = false;
+            }
         }
     }
 
@@ -53,6 +63,14 @@ public class GameManager : MonoBehaviour
         {
             ScoreText.Instance.AnimateScoreTextDecrease();
             currentAmountDisplayer.text = dropItems.Count + "/" + currentSalad.ingredient.Length;
+            if (CanPlaceItem())
+            {
+                completeButton.interactable = true;
+            }
+            else
+            {
+                completeButton.interactable = false;
+            }
         }
     }
 
@@ -89,6 +107,8 @@ public class GameManager : MonoBehaviour
     {
         currentSalad = GetRandomSalad();
         GuideUI.Instance.Init(currentSalad);
+        int saurceAmount = currentSalad.ingredient.Count(i => i.isSaurce);
+        BowlManager.Instance.Init(currentSalad.ingredient.Length);
         CompletePopup.Instance.Init(currentSalad);
         currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
         PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(10));

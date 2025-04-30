@@ -7,6 +7,8 @@ public class SaladScriptableObject : ScriptableObject
 {
     public Ingredient[] ingredient;
     public Sprite saladImage;
+
+    [TextAreaAttribute(10, 20)]
     public string salad_name;
 
     [TextAreaAttribute(10, 20)]
@@ -17,4 +19,7 @@ public class SaladScriptableObject : ScriptableObject
 
     [TextAreaAttribute(10, 20)]
     public string ingredient_information;
+
+    public Color backgroundColor = Color.white;
+    public Color textColor = Color.black;
 }

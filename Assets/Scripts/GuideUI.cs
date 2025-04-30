@@ -71,7 +71,7 @@ public class GuideUI : MonoBehaviour
         realButton.gameObject.SetActive(active);
     }
 
-    public void Open(string closeLabel = "Ready")
+    public void Open(string closeLabel = "Sẵn Sàng")
     {
         if (!IsOpen)
         {

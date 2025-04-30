@@ -15,12 +15,13 @@ public class ScorePane : MonoBehaviour
     private void OnEnable()
     {
         scoreText.text =
-            GameManager.Instance.CheckScore()
+            GameManager.Instance.CheckScorev2()
             + "/"
             + GameManager.Instance.currentSalad.ingredient.Length;
 
         if (
-            GameManager.Instance.currentSalad.ingredient.Length == GameManager.Instance.CheckScore()
+            GameManager.Instance.currentSalad.ingredient.Length
+            == GameManager.Instance.CheckScorev2()
         )
         {
             particle.Play();
@@ -34,7 +35,7 @@ public class ScorePane : MonoBehaviour
         }
         else if (
             (int)GameManager.Instance.currentSalad.ingredient.Length / 2f
-            < GameManager.Instance.CheckScore()
+            < GameManager.Instance.CheckScorev2()
         )
         {
             explaining.text =

@@ -125,7 +125,11 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     private void SingleTap()
     {
         Debug.Log("Single Tap Spawn!");
-
+        if (GameManager.Instance.CanPlaceItem())
+        {
+            Debug.Log("Không thể đặt nguyên liệu nữa!");
+            return;
+        }
         // if (horizontalLayoutGroupParent != null)
         // {
         //     transform.SetParent(horizontalLayoutGroupParent, true);
@@ -169,25 +173,25 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
                 return; // 🔥 Xong sauce, không cần drop ngẫu nhiên
             }
         }
-        Vector3 targetLeft = new Vector3(bowlPos.x - offsetX, bowlPos.y + offsetY, 0f);
-        Vector3 targetRight = new Vector3(bowlPos.x + offsetX, bowlPos.y + offsetY, 0f);
-        Vector3 targetPos = (Random.value < 0.5f) ? targetLeft : targetRight;
+        // Vector3 targetLeft = new Vector3(bowlPos.x - offsetX, bowlPos.y + offsetY, 0f);
+        // Vector3 targetRight = new Vector3(bowlPos.x + offsetX, bowlPos.y + offsetY, 0f);
+        // Vector3 targetPos = (Random.value < 0.5f) ? targetLeft : targetRight;
 
-        rectTransform
-            .DOMove(targetPos, moveDuration)
-            .SetEase(Ease.OutQuad)
-            .OnComplete(() =>
-            {
-                BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
-                transform.SetParent(bowlManager.transform);
-                // ★ Lấy world-pos lát tiếp theo
-                Vector3 sliceWorldPos = bowlManager.GetNextSliceWorldPos();
+        // rectTransform
+        //     .DOMove(targetPos, moveDuration)
+        //     .SetEase(Ease.OutQuad)
+        //     .OnComplete(() =>
+        //     {
+        // BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
+        transform.SetParent(bowlManager.transform);
+        // ★ Lấy world-pos lát tiếp theo
+        Vector3 sliceWorldPos = bowlManager.GetNextSliceWorldPos();
 
-                // ★ Bay thẳng đến vị trí lát (không ghé tâm)
-                SpawnDropItemBezier(targetPos, sliceWorldPos);
+        // ★ Bay thẳng đến vị trí lát (không ghé tâm)
+        SpawnDropItemBezier(transform.position, sliceWorldPos);
 
-                FadeAndDestroy();
-            });
+        FadeAndDestroy();
+        // });
     }
 
     private void FadeAndDestroy()
