@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -22,7 +23,8 @@ public class ObjectToolTip : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     public void Init(string content)
     {
-        tooltipContent = content;
+        TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+        tooltipContent = textInfo.ToTitleCase(content.ToLower());
     }
 
     public void OnPointerUp(PointerEventData eventData)

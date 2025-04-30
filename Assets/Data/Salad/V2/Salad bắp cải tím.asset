@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad b\u1EAFp c\u1EA3i t\xEDm"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 01856f395bdd66f41afa109396a21a94, type: 2}
+  - {fileID: 11400000, guid: b4ce76882fb313e4a8f342fa630532e0, type: 2}
+  - {fileID: 11400000, guid: a3de650f8c08b1b4dab4d9fcd82b9edd, type: 2}
+  - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
+  - {fileID: 11400000, guid: 0eed7a9fcd0378c4680a3a2d142b56e4, type: 2}
+  - {fileID: 11400000, guid: b136bb1f9a14193458d1a2b5add5c873, type: 2}
+  - {fileID: 11400000, guid: 570c0e390769c574c97baa2331ba4004, type: 2}
+  - {fileID: 11400000, guid: 717d8bf0f3fad6e40852c01a02dd85d1, type: 2}
+  saladImage: {fileID: 21300000, guid: 34a4c9fc76637f94caa14df1e72003b9, type: 3}
+  salad_name: "Salad b\u1EAFp c\u1EA3i t\xEDm"
+  salad_script_name: "<color=#fff>Salad b\u1EAFp c\u1EA3i t\xEDm</color>"
+  description: "H\u01B0\u01A1ng v\u1ECB thanh m\xE1t, chua ng\u1ECDt h\xE0i h\xF2a,
+    b\u1EAFt mi\u1EC7ng c\u1EE7a c\xE1c lo\u1EA1i rau c\u1EE7 t\u01B0\u01A1i ngon
+    khi \xE1o \u0111\u1EC1u x\u1ED1t mayonnaise th\u01A1m b\xE9o, chua d\u1ECBu.\n"
+  ingredient_description: "B\u1EAFp c\u1EA3i v\xE0 c\xE0 r\u1ED1t th\xE1i s\u1EE3i
+    nh\u1ECF v\u1EEBa \u0103n, ng\xE2m trong n\u01B0\u1EDBc \u0111\xE1 kho\u1EA3ng
+    10 ph\xFAt. Pha h\u1ED7n h\u1EE3p n\u01B0\u1EDBc x\u1ED1t g\u1ED3m x\u1ED1t mayonnaise,
+    d\u1EA7u \xF4 liu, m\u1EADt ong, gi\u1EA5m t\xE1o, mu\u1ED1i, ti\xEAu. T\u1EA5t
+    c\u1EA3 nguy\xEAn li\u1EC7u tr\u1ED9n \u0111\u1EC1u v\u1EDBi x\u1ED1t v\xE0 th\u01B0\u1EDFng
+    th\u1EE9c.\n"
+  ingredient_information: "B\u1EAFp c\u1EA3i t\xEDm\nB\u1EAFp\nC\xE0 r\u1ED1t\nX\u1ED1t
+    mayonnaise\nD\u1EA7u \xF4 liu, m\u1EADt ong\nMu\u1ED1i, ti\xEAu, gi\u1EA5m t\xE1o"
+  backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

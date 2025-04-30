@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad  nem cua b\u1EC3 h\u1EA3i ph\xF2ng"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 46f1df517a8fc1142baf7e7d2c614d81, type: 2}
+  - {fileID: 11400000, guid: 987fb4cc5770ac74e99ca76ce075f286, type: 2}
+  - {fileID: 11400000, guid: 5737be01efb5ee6479d0ecd865ea8648, type: 2}
+  - {fileID: 11400000, guid: 0481c090696a75644a493ee62ff91a0c, type: 2}
+  - {fileID: 11400000, guid: 699ab75f4572649478feb944947459f2, type: 2}
+  - {fileID: 11400000, guid: bdcef8845eb0c9943b4236206cf113cb, type: 2}
+  - {fileID: 11400000, guid: ab5216f827ccf5749903d259d54be472, type: 2}
+  - {fileID: 11400000, guid: e588ce8de4e080f4289f6a340dce8737, type: 2}
+  - {fileID: 11400000, guid: 77cb1aa945e9e2848b657174fbafd1f9, type: 2}
+  saladImage: {fileID: 21300000, guid: a6107fcc83e436b4198605624dbd2efd, type: 3}
+  salad_name: "salad nem cua b\u1EC3 h\u1EA3i ph\xF2ng"
+  salad_script_name: "<color=#e4002b>Salad Nem Cua B\u1EC3 <b>H\u1EA3i Ph\xF2ng</b></color>"
+  description: "M\xF3n salad mang m\u1ED9t h\u01B0\u01A1ng v\u1ECB t\u01B0\u01A1i
+    m\u1EDBi cho nem cua b\u1EC3 th\u01A1m b\xE9o, gi\xF2n tan, v\u1EEBa th\u01A1m
+    l\u1EEBng, kh\xF4ng ng\u1EA5y v\u1EEBa \u0111\u1EADm \u0111\xE0 v\xE0 tr\u1ECDn
+    v\u1ECB.\n"
+  ingredient_description: "Nem cua b\u1EC3 chi\xEAn \u0111\u1EC3 r\xE1o d\u1EA7u.
+    Rong s\u1EE5n gai ng\xE2m n\u01B0\u1EDBc 30p \u0111\u1EC3 n\u1EDF, c\u1EAFt nh\u1ECF
+    c\xF9ng rau x\xE0 l\xE1ch.\n\nSu h\xE0o, c\xE0 r\u1ED1t, c\u1EE7 c\u1EA3i \u0111\u01B0\u1EDDng
+    \u0111em mu\u1ED1i chua. Sau \u0111\xF3 b\xE0y tr\xED c\xE1c m\xF3n \u0103n v\xE0
+    d\xF9ng v\u1EDBi x\u1ED1t M\xE8 Rang KEWPIE."
+  ingredient_information: "Nem cua b\u1EC3\nRau m\u1EA7m\nRong s\u1EE5n gai\nC\xE0
+    r\u1ED1t, c\u1EE7 c\u1EA3i, su h\xE0o mu\u1ED1i chua\nN\u01B0\u1EDBc x\u1ED1t
+    gia v\u1ECB cho sushi\nX\xE0 l\xE1ch lolo xanh\nRau m\xF9i\nV\u1EEBng tr\u1EAFng\nX\u1ED1t
+    M\xE8 Rang KEWPIE"
+  backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}

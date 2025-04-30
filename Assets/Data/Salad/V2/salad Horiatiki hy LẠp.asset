@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad Horiatiki hy L\u1EA0p"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: a257322f8017edc48b4096db6320f702, type: 2}
+  - {fileID: 11400000, guid: 58392118aa4f03d4a88b54ad7d77d55d, type: 2}
+  - {fileID: 11400000, guid: 8b198f462ea644b48acc16cc5f0b1ca7, type: 2}
+  - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
+  - {fileID: 11400000, guid: 12084c3927403794db81b51a82627536, type: 2}
+  - {fileID: 11400000, guid: 3ce16c7053c63b2479cf3de195beeabe, type: 2}
+  - {fileID: 11400000, guid: cbab5143e380df44d927a5060383a33d, type: 2}
+  - {fileID: 11400000, guid: 5f9fc419b21c60c4fa46130190246822, type: 2}
+  - {fileID: 11400000, guid: 0eed7a9fcd0378c4680a3a2d142b56e4, type: 2}
+  - {fileID: 11400000, guid: 6f3ec6f1437bf6e499ec949e70783709, type: 2}
+  - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
+  - {fileID: 11400000, guid: 70594be4df5d96a45834157ad2e5bb15, type: 2}
+  saladImage: {fileID: 21300000, guid: 23958afecb720874d98f194364a49f0d, type: 3}
+  salad_name: "Salad Horiatiki Hy L\u1EA1p"
+  salad_script_name: "<color=#fff>Salad Horiatiki <color=#ffde59>Hy L\u1EA1p</color></color>"
+  description: "\u0110\u1EADm \u0111\xE0 h\u01B0\u01A1ng v\u1ECB \u0110\u1ECBa Trung
+    H\u1EA3i v\u1EDBi c\xE0 chua t\u01B0\u01A1i m\xE1t, d\u01B0a chu\u1ED9t gi\xF2n
+    t\u01B0\u01A1i, h\xE0nh t\xEDm cay nh\u1EB9, \xF4 liu \u0111\u1EADm v\u1ECB,
+    ph\xF4 mai feta b\xE9o m\u1EB7n v\xE0 d\u1EA7u \xF4 liu th\u01A1m l\u1EEBng,
+    t\u1EA1o n\xEAn s\u1EF1 h\xF2a quy\u1EC7n tinh t\u1EBF gi\u1EEFa v\u1ECB t\u01B0\u01A1i
+    m\xE1t v\xE0 \u0111\u1EADm \u0111\xE0 cho qu\u1ED1c th\u1EF1c c\u1EE7a Hy L\u1EA1p.\n"
+  ingredient_description: "C\xE1c nguy\xEAn li\u1EC7u X\xE0 l\xE1ch, c\xE0 chua,
+    d\u01B0a chu\u1ED9t, h\xE0nh t\xEDm c\xF9ng \xF4 liu c\u1EAFt nh\u1ECF v\u1EEBa
+    \u0103n. K\u1EBFt h\u1EE3p c\xF9ng v\u1EDBi h\u1ED7n h\u1EE3p n\u01B0\u1EDBc
+    x\u1ED1t d\u1EA7u \xF4 liu, gi\u1EA5m, n\u01B0\u1EDBc c\u1ED1t chanh v\xE0 gia
+    v\u1ECB. \nSau c\xF9ng tr\u1ED9n \u0111\u1EC1u c\xE1c nguy\xEAn li\u1EC7u v\u1EDBi
+    nhau v\xE0 th\u01B0\u1EDFng th\u1EE9c."
+  ingredient_information: "X\xE0 l\xE1ch\nC\xE0 chua\nD\u01B0a chu\u1ED9t\nH\xE0nh
+    t\xE2y t\xEDm\n\xD4 liu, ph\xF4 mai Feta\n\u1EDAt chu\xF4ng\nD\u1EA7u \xF4 liu\nGi\u1EA5m\nN\u01B0\u1EDBc
+    c\u1ED1t chanh\nT\u1ECFi, gia v\u1ECB kinh gi\u1EDBi, mu\u1ED1i, ti\xEAu"
+  backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad Pipirrana T\xE2y ban nha"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 0cd7cd93e50ac9e41850c76e058fac4c, type: 2}
+  - {fileID: 11400000, guid: 58392118aa4f03d4a88b54ad7d77d55d, type: 2}
+  - {fileID: 11400000, guid: 3a2758a17f1866b44af5c1a096203c49, type: 2}
+  - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
+  - {fileID: 11400000, guid: 8b198f462ea644b48acc16cc5f0b1ca7, type: 2}
+  - {fileID: 11400000, guid: a8adcec939b314e458e30acdaa8a9a86, type: 2}
+  - {fileID: 11400000, guid: 219ad7c848c3d0044ab00d6b77186119, type: 2}
+  - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
+  - {fileID: 11400000, guid: d31f7d2caa0c9f947a4604f9c682d9a3, type: 2}
+  - {fileID: 11400000, guid: 6f3ec6f1437bf6e499ec949e70783709, type: 2}
+  - {fileID: 11400000, guid: 0eed7a9fcd0378c4680a3a2d142b56e4, type: 2}
+  saladImage: {fileID: 21300000, guid: 52394b490c2a2de4f8bddb4c7a739c84, type: 3}
+  salad_name: "salad Pipirrana T\xE2y ban nha"
+  salad_script_name: "<color=#fff>salad Pipirrana <color=#ffde59>T\xE2y ban nha</color></color>"
+  description: "\u0110\u01A1n gi\u1EA3n m\xE0 tinh t\u1EBF v\u1EDBi c\xE0 chua ch\xEDn
+    m\u1ECDng, \u1EDBt chu\xF4ng, h\xE0nh t\xE2y v\xE0 d\u01B0a chu\u1ED9t gi\xF2n
+    t\u01B0\u01A1i, tr\u1ED9n c\xF9ng d\u1EA7u \xF4 liu nguy\xEAn ch\u1EA5t, gi\u1EA5m
+    v\xE0 c\xE1 ng\u1EEB, t\u1EA1o n\xEAn v\u1ECB thanh m\xE1t nh\u01B0ng v\u1EABn
+    \u0111\u1EADm \u0111\xE0 \u0111\u1EB7c tr\u01B0ng c\u1EE7a T\xE2y Ban Nha.\n"
+  ingredient_description: "Tr\u1ED9n \u0111\u1EC1u c\xE0 chua, d\u01B0a chu\u1ED9t,
+    \u1EDBt chu\xF4ng v\xE0 h\xE0nh t\xE2y \u0111\u01B0\u1EE3c c\u1EAFt v\u1EEBa
+    \u0103n v\u1EDBi gi\u1EA5m, d\u1EA7u \xF4 liu, mu\u1ED1i, ti\xEAu v\xE0 t\u1ECFi.
+    \u0110\u1EADy n\u1EAFp v\xE0 \u0111\u1EC3 v\xE0o t\u1EE7 l\u1EA1nh trong 2 gi\u1EDD
+    r\u1ED3i m\u1EDBi th\u01B0\u1EDFng th\u1EE9c.\n"
+  ingredient_information: "C\xE0 chua\nD\u01B0a chu\u1ED9t\n\u1EDAt chu\xF4ng\nH\xE0nh
+    t\xE2y\nGi\u1EA5m\nTr\u1EE9ng\nT\u1ECFi, \u1EDBt poblano\nD\u1EA7u \xF4 liu,
+    ti\xEAu, mu\u1ED1i"
+  backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

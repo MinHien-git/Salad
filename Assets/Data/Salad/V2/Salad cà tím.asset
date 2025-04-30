@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad c\xE0 t\xEDm"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 6f3ec6f1437bf6e499ec949e70783709, type: 2}
+  - {fileID: 11400000, guid: cbab5143e380df44d927a5060383a33d, type: 2}
+  - {fileID: 11400000, guid: 9e3de6b5f561ca844860cf1b1b8c81c4, type: 2}
+  - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
+  - {fileID: 11400000, guid: 6708241cbc5aecb4fb301ad1bdf70bff, type: 2}
+  - {fileID: 11400000, guid: a3de650f8c08b1b4dab4d9fcd82b9edd, type: 2}
+  - {fileID: 11400000, guid: b136bb1f9a14193458d1a2b5add5c873, type: 2}
+  - {fileID: 11400000, guid: ade38025166ba76489a9166eea1f9ff4, type: 2}
+  - {fileID: 11400000, guid: 0eed7a9fcd0378c4680a3a2d142b56e4, type: 2}
+  - {fileID: 11400000, guid: 3a2758a17f1866b44af5c1a096203c49, type: 2}
+  - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
+  saladImage: {fileID: 21300000, guid: 637c996dba1e7f5439e8d6b77a7bee5a, type: 3}
+  salad_name: "Salad c\xE0 t\xEDm"
+  salad_script_name: "<color=#fff>Salad C\xE0 T\xEDm</color>"
+  description: "C\xE0 t\xEDm n\u01B0\u1EDBng v\xE0ng \u0111\u1EC1u, k\u1EBFt h\u1EE3p
+    v\u1EDBi c\xE0 chua, d\u01B0a chu\u1ED9t t\u01B0\u01A1i m\xE1t, x\u1ED1t tr\u1ED9n
+    th\u01A1m b\xE9o, chua ng\u1ECDt v\u1EEBa v\u1ECB. M\u1ED9t s\u1EF1 k\u1EBFt
+    h\u1EE3p \u0111\u1ED9c \u0111\xE1o nh\u01B0ng l\u1EA1i h\xE0i h\xF2a gi\u1EEFa
+    h\u01B0\u01A1ng v\u1ECB n\u01B0\u1EDBng v\xE0 s\u1EF1 t\u01B0\u01A1i m\xE1t c\u1EE7a
+    rau c\u1EE7.\n"
+  ingredient_description: "C\xE0 t\xEDm c\u1EAFt khoanh, \u01B0\u1EDBp d\u1EA7u \xF4
+    liu, n\u01B0\u1EDBng v\xE0ng x\xE9m c\u1EA1nh. Tr\u1ED9n c\xF9ng n\u01B0\u1EDBc
+    x\u1ED1t bao g\u1ED3m d\u1EA7u \xF4 liu, chanh, m\u1EADt ong, gi\u1EA5m, t\u1ECFi
+    b\u0103m, mu\u1ED1i, ti\xEAu. Sau c\xF9ng, b\xE0y tr\xED ra d\u0129a, r\u1EAFc
+    v\u1EEBng rang r\u1ED3i th\u01B0\u1EDFng th\u1EE9c.\n"
+  ingredient_information: "C\xE0 t\xEDm\nC\xE0 chua\nD\u01B0a chu\u1ED9t\nH\xFAng
+    qu\u1EBF\nD\u1EA7u \xF4 liu, n\u01B0\u1EDBc c\u1ED1t chanh\nM\u1EADt ong, gi\u1EA5m
+    t\xE1o, t\u1ECFi b\u0103m\nMu\u1ED1i, ti\xEAu, v\u1EEBng rang"
+  backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

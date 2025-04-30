@@ -39,7 +39,7 @@ public class BowlManager : MonoBehaviour
             cg.interactable = true; // ★ thêm dòng này (cho chắc)
         }
         maxSauceSlots = numberOfSlices;
-        this.numberOfSlices = amount;
+        this.numberOfSlices = numberOfSlices;
         GenerateSlices();
         GenerateSauceSlots();
     }

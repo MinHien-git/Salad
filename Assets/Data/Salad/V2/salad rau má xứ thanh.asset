@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad rau m\xE1 x\u1EE9 thanh"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: b34e360ae3cd88d41a220c632a933bcb, type: 2}
+  - {fileID: 11400000, guid: edfd9218696a9a54682e2a28bcf66342, type: 2}
+  - {fileID: 11400000, guid: d31f7d2caa0c9f947a4604f9c682d9a3, type: 2}
+  - {fileID: 11400000, guid: ce70e8061b977c742a996a54313ae434, type: 2}
+  - {fileID: 11400000, guid: 5737be01efb5ee6479d0ecd865ea8648, type: 2}
+  - {fileID: 11400000, guid: 570c0e390769c574c97baa2331ba4004, type: 2}
+  - {fileID: 11400000, guid: 2f7c97d06f3318c469f2ca7db30b57df, type: 2}
+  - {fileID: 11400000, guid: c062a65f1f909b543a2d9f4988e4ac43, type: 2}
+  saladImage: {fileID: 21300000, guid: 2cce8b989e9dab04395e25ff1973033d, type: 3}
+  salad_name: "salad rau m\xE1 x\u1EE9 thanh"
+  salad_script_name: "<color=#e4002b>Salad Rau M\xE1 <b>X\u1EE9 Thanh</b></color>"
+  description: "M\xF3n salad n\xE0y k\u1EBFt h\u1EE3p rau m\xE1 t\u01B0\u01A1i xanh,
+    th\u1ECBt l\u1EE3n ba ch\u1EC9 lu\u1ED9c th\u01A1m m\u1EC1m, h\xE0nh t\xE2y v\xE0
+    b\u1EAFp c\u1EA3i t\xEDm gi\xF2n ng\u1ECDt t\u1EA1o n\xEAn h\u01B0\u01A1ng v\u1ECB
+    thanh \u0111\u1EA1m v\xE0 t\u01B0\u01A1i m\xE1t\n"
+  ingredient_description: "Rau m\xE1\nTh\u1ECBt ba ch\u1EC9\nH\xE0nh t\xE2y\nB\u1EAFp
+    c\u1EA3i t\xEDm\nC\xE0 r\u1ED1t\nH\xE0nh phi\nV\u1EEBng tr\u1EAFng\nX\u1ED1t
+    m\xE8 rang KEWPIE h\u01B0\u01A1ng v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc"
+  ingredient_information: "Th\u1ECBt ba ch\u1EC9 lu\u1ED9c \u0111\u1EC3 ngu\u1ED9i,
+    c\u1EAFt nh\u1ECF v\u1EEBa \u0103n. Rau m\xE1 nh\u1EB7t s\u1EA1ch, h\xE0nh t\xE2y
+    c\u1EAFt nh\u1ECF ng\xE2m n\u01B0\u1EDBc \u0111\xE1 r\u1ED3i \u0111\u1EC3 r\xE1o
+    n\u01B0\u1EDBc. B\u1EAFp c\u1EA3i t\xEDm c\u1EAFt nh\u1ECF. \n\nB\xE0y tr\xED
+    c\xE1c nguy\xEAn li\u1EC7u ra d\u0129a v\xE0 tr\u1ED9n c\xF9ng n\u01B0\u1EDBc
+    x\u1ED1t m\xE8 rang KEWPIE h\u01B0\u01A1ng v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc\n"
+  backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}

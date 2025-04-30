@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad Khoai t\xE2y nh\u1EADt b\u1EA3n"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 9a71743e6f8e2204385b45949b77091c, type: 2}
+  - {fileID: 11400000, guid: 9e9194e885c42e44eaaa8ab7ded390d1, type: 2}
+  - {fileID: 11400000, guid: 3fb61aeab96cdcb4097dd6782a97ce0d, type: 2}
+  - {fileID: 11400000, guid: 570c0e390769c574c97baa2331ba4004, type: 2}
+  - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
+  - {fileID: 11400000, guid: d4e0ab16678818e4e9ed991381cf0141, type: 2}
+  saladImage: {fileID: 21300000, guid: 6db8ea25d02794049bd43d8c526203a8, type: 3}
+  salad_name: "salad Khoai t\xE2y Nh\u1EADt B\u1EA3n"
+  salad_script_name: "<color=#fff>Salad Khoai t\xE2y <color=#ffde59>Nh\u1EADt B\u1EA3n</color></color>"
+  description: "H\u01B0\u01A1ng v\u1ECB m\u1EC1m m\u1ECBn v\xE0 ng\u1ECDt b\xE9o
+    t\u1EEB khoai t\xE2y nghi\u1EC1n, tr\u1EE9ng v\xE0 x\u1ED1t mayonnaise, \u0111i\u1EC3m
+    ch\xFAt t\u01B0\u01A1i gi\xF2n t\u1EEB d\u01B0a chu\u1ED9t v\xE0 c\xE0 r\u1ED1t,
+    t\u1EA1o n\xEAn m\u1ED9t m\xF3n \u0103n h\xE0i h\xF2a v\xE0 th\u01A1m b\xE9o."
+  ingredient_description: "Khoai t\xE2y r\u1EEDa s\u1EA1ch, g\u1ECDt b\u1ECF m\u1EAFt.\nLu\u1ED9c
+    ch\xEDn, l\u1ED9t v\u1ECF l\xFAc khoai c\xF2n n\xF3ng, t\xE1n nhuy\u1EC5n.\nTh\u1ECBt
+    ngu\u1ED9i c\u1EAFt mi\u1EBFng v\u1EEBa.\nC\xE0 r\u1ED1t b\xE0o v\u1ECF, c\u1EAFt
+    l\xE0m 4 theo chi\u1EC1u d\u1ECDc. Lu\u1ED9c ch\xEDn.\nD\u01B0a leo b\u1ECF ru\u1ED9t,
+    c\u1EAFt l\xE1t.\nTr\u1ED9n \u0111\u1EC1u c\xE1c nguy\xEAn li\u1EC7u tr\xEAn
+    c\xF9ng v\u1EDBi x\u1ED1t Mayonnaise h\u01B0\u01A1ng v\u1ECB Nh\u1EADt Kewpie."
+  ingredient_information: "Khoai t\xE2y (\u0111\xE3 lu\u1ED9c ch\xEDn)\nTh\u1ECBt
+    ngu\u1ED9i (Jambon)\nC\xE0 r\u1ED1t\nD\u01B0a leo\nMu\u1ED1i ti\xEAu\nX\u1ED1t
+    Mayonnaise h\u01B0\u01A1ng v\u1ECB Nh\u1EADt Kewpie"
+  backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

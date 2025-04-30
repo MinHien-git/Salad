@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "salad c\xE1 n\u01B0\u1EDBng s\xF4ng \u0111\xE0"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 70902cca70486ca4f93707174b1e87f3, type: 2}
+  - {fileID: 11400000, guid: fea16b338edf5b74493a30eaf08bd4f7, type: 2}
+  - {fileID: 11400000, guid: aca71907c3f60234cb7d6c21ddf801bf, type: 2}
+  - {fileID: 11400000, guid: 570c0e390769c574c97baa2331ba4004, type: 2}
+  - {fileID: 11400000, guid: 58392118aa4f03d4a88b54ad7d77d55d, type: 2}
+  - {fileID: 11400000, guid: bcaeca9570c97b24b8081a89e76c02b9, type: 2}
+  - {fileID: 11400000, guid: 717d8bf0f3fad6e40852c01a02dd85d1, type: 2}
+  - {fileID: 11400000, guid: 9499b4cd1dfcce74f8a9601c5e495947, type: 2}
+  - {fileID: 11400000, guid: bbc87018ce60aeb49902a2d86f05094f, type: 2}
+  saladImage: {fileID: 21300000, guid: b74940be0ca125948b2aa53d85ea53fd, type: 3}
+  salad_name: "salad c\xE1 n\u01B0\u1EDBng s\xF4ng \u0111\xE0"
+  salad_script_name: "<color=#e4002b>Salad C\xE1 N\u01B0\u1EDBng <b>S\xF4ng \u0110\xE0</b></color>"
+  description: "M\xF3n salad n\xE0y l\xE0 s\u1EF1 k\u1EBFt h\u1EE3p ho\xE0n h\u1EA3o
+    gi\u1EEFa c\xE1 tr\u1EE9ng n\u01B0\u1EDBng \u0111\u1EADm \u0111\xE0, rau c\u1EA3i
+    b\u1EB9 xanh t\u01B0\u01A1i m\xE1t v\xE0 h\u01B0\u01A1ng th\u01A1m l\xE1 l\u1ED1t
+    \u0111\u1EB7c tr\u01B0ng t\u1EA1o n\xEAn h\u01B0\u01A1ng v\u1ECB \u0111\u1EADm
+    \u0111\xE0, t\u01B0\u01A1i m\u1EDBi v\xE0 h\u1EA5p d\u1EABn.\n"
+  ingredient_description: "C\xE1 tr\u1EE9ng\nRau c\u1EA3i b\u1EB9 xanh\nL\xE1 l\u1ED1t\nC\xE1c
+    lo\u1EA1i rau th\u01A1m\nC\xE0 r\u1ED1t\nB\u1EAFp c\u1EA3i t\xEDm\n\u1EDAt chu\xF4ng
+    \u0111\u1ECF\nL\xE1 l\u1ED1t chi\xEAn gi\xF2n (pha x\u1ED1t)\nX\u1ED1t M\xE8
+    Rang KEWPIE \nv\u1ECB Wasabi v\xE0 Rong Bi\u1EC3n\n"
+  ingredient_information: "C\xE1 tr\u1EE9ng \u01B0\u1EDBp n\u01B0\u1EDBc ch\u1EA5m
+    g\u1EEBng m\xE8 r\u1ED3i \u0111em n\u01B0\u1EDBng. Rau c\u1EA3i b\u1EB9 xanh,
+    l\xE1 l\u1ED1t v\xE0 c\xE1c lo\u1EA1i rau th\u01A1m l\u1EB7t, r\u1EEDa s\u1EA1ch,
+    \u0111\u1EC3 r\xE1o. C\xE0 r\u1ED1t, b\u1EAFp c\u1EA3i t\xEDm v\xE0 \u1EDBt chu\xF4ng
+    \u0111\u1ECF c\u1EAFt s\u1EE3i.\n\nN\u01B0\u1EDBc x\u1ED1t l\xE0 h\u1ED7n h\u1EE3p
+    l\xE1 l\u1ED1t chi\xEAn gi\xF2n, c\u1EAFt nh\u1ECF v\xE0 n\u01B0\u1EDBc x\u1ED1t
+    M\xE8 Rang KEWPIE v\u1ECB Wasabi v\xE0 Rong Bi\u1EC3n.\n\nSau c\xF9ng, cho t\u1EA5t
+    c\u1EA3 c\xE1c nguy\xEAn li\u1EC7u l\xEAn d\u0129a khi \u0103n ch\u1EA5m c\xF9ng
+    n\u01B0\u1EDBc x\u1ED1t \u0111\xE3 pha.\n"
+  backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}

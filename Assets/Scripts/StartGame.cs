@@ -10,6 +10,6 @@ public class StartGame : MonoBehaviour
     // Update is called once per frame
     public void OnClick()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Version2Scene");
     }
 }

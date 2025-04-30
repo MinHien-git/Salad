@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5262a99c4f6ee4c95bdaee698dd97c, type: 3}
+  m_Name: "Salad d\u01B0a chu\u1ED9t"
+  m_EditorClassIdentifier: 
+  ingredient:
+  - {fileID: 11400000, guid: 6f3ec6f1437bf6e499ec949e70783709, type: 2}
+  - {fileID: 11400000, guid: cbab5143e380df44d927a5060383a33d, type: 2}
+  - {fileID: 11400000, guid: ec26727fd331280419b367224ca3313b, type: 2}
+  - {fileID: 11400000, guid: 3a2758a17f1866b44af5c1a096203c49, type: 2}
+  - {fileID: 11400000, guid: a5a43c5f7d5f3aa44a54493059fddcce, type: 2}
+  - {fileID: 11400000, guid: cf36fdf1f225a924facb9f926f0bfb5d, type: 2}
+  - {fileID: 11400000, guid: b36c6b7d40417d843a8d098a124bd154, type: 2}
+  - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
+  - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
+  - {fileID: 11400000, guid: 25ede4ca208190a4397ef906e498a54c, type: 2}
+  - {fileID: 11400000, guid: bbc87018ce60aeb49902a2d86f05094f, type: 2}
+  saladImage: {fileID: 21300000, guid: 4b193d9b9f308d744afa6607196aafee, type: 3}
+  salad_name: "Salad d\u01B0a chu\u1ED9t"
+  salad_script_name: "<color=#fff>Salad d\u01B0a chu\u1ED9t</color>"
+  description: "M\xF3n \u0103n v\u1EDBi h\u01B0\u01A1ng v\u1ECB thanh m\xE1t, chua
+    thanh, t\u01B0\u01A1i gi\xF2n t\u1EEB d\u01B0a chu\u1ED9t th\xE1i l\xE1t m\u1ECFng
+    v\xE0 c\xE0 chua b\xE0o s\u1EE3i th\u1EA5m v\u1ECB n\u01B0\u1EDBc m\u1EAFm chay
+    chua ng\u1ECDt c\xE2n b\u1EB1ng.\n"
+  ingredient_description: "Khu\u1EA5y \u0111\u1EC1u n\u01B0\u1EDBc m\u1EAFm chay,
+    chanh, \u0111\u01B0\u1EDDng, t\u1ECFi, \u1EDBt. R\u01B0\u1EDBi \u0111\u1EC1u
+    x\u1ED1t l\xEAn d\u01B0a chu\u1ED9t, c\xE0 chua. Tr\u1ED9n nh\u1EB9 cho th\u1EA5m
+    v\u1ECB r\u1ED3i th\xEAm rau th\u01A1m, l\u1EA1c rang.\n"
+  ingredient_information: "D\u01B0a chu\u1ED9t\n(b\xE0o l\xE1t m\u1ECFng ho\u1EB7c
+    \u0111\u1EADp d\u1EADp c\u1EAFt kh\xFAc)\nC\xE0 chua\nRau th\u01A1m\nL\u1EA1c
+    rang\n\u1EDAt, t\u1ECFi b\u0103m\nN\u01B0\u1EDBc m\u1EAFm chay (ho\u1EB7c x\xEC
+    d\u1EA7u)\nN\u01B0\u1EDBc c\u1ED1t chanh\n\u0110\u01B0\u1EDDng\nMu\u1ED1i, ti\xEAu"
+  backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 1}
