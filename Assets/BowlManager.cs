@@ -29,7 +29,7 @@ public class BowlManager : MonoBehaviour
         Instance = this;
     }
 
-    public void Init(int numberOfSlices)
+    public void Init(int numberOfSlices, int amount)
     {
         cg = GetComponent<CanvasGroup>();
         if (cg == null)
@@ -39,7 +39,7 @@ public class BowlManager : MonoBehaviour
             cg.interactable = true; // ★ thêm dòng này (cho chắc)
         }
         maxSauceSlots = numberOfSlices;
-        this.numberOfSlices = numberOfSlices;
+        this.numberOfSlices = amount;
         GenerateSlices();
         GenerateSauceSlots();
     }

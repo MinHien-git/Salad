@@ -108,7 +108,10 @@ public class GameManager : MonoBehaviour
         currentSalad = GetRandomSalad();
         GuideUI.Instance.Init(currentSalad);
         int saurceAmount = currentSalad.ingredient.Count(i => i.isSaurce);
-        BowlManager.Instance.Init(currentSalad.ingredient.Length);
+        BowlManager.Instance.Init(
+            currentSalad.ingredient.Length,
+            currentSalad.ingredient.Length - saurceAmount
+        );
         CompletePopup.Instance.Init(currentSalad);
         currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
         PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(10));

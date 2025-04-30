@@ -11,6 +11,7 @@ public class GuideUI : MonoBehaviour
     public TextMeshProUGUI title;
     public TextMeshProUGUI content;
     public Image saladImage;
+    public Image container;
     public GameObject note; // The note to display
     public Image background; // The note to display
     public Vector3 initialScale = new Vector3(0.1f, 0.1f, 0.1f); // Initial scale for the animation
@@ -29,6 +30,12 @@ public class GuideUI : MonoBehaviour
     public void Init(SaladScriptableObject saladScriptable)
     {
         title.text = saladScriptable.salad_name;
+        if (saladScriptable.salad_script_name != "")
+        {
+            title.text = saladScriptable.salad_script_name;
+        }
+        container.color = saladScriptable.backgroundColor;
+        content.color = saladScriptable.textColor;
         content.text = saladScriptable.description;
         saladImage.sprite = saladScriptable.saladImage;
     }

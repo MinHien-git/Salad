@@ -12,6 +12,9 @@ public class SaladScriptableObject : ScriptableObject
     public string salad_name;
 
     [TextAreaAttribute(10, 20)]
+    public string salad_script_name;
+
+    [TextAreaAttribute(10, 20)]
     public string description;
 
     [TextAreaAttribute(10, 20)]

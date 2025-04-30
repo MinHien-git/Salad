@@ -125,8 +125,12 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     private void SingleTap()
     {
         Debug.Log("Single Tap Spawn!");
+        BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
+
         if (GameManager.Instance.CanPlaceItem())
         {
+            ShakePlate();
+            bowlManager.ShakeBowl();
             Debug.Log("Không thể đặt nguyên liệu nữa!");
             return;
         }
@@ -141,8 +145,7 @@ public class UITapHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             return;
         }
 
-        BowlManager bowlManager = bowlTarget.GetComponent<BowlManager>();
-        if (bowlManager != null && bowlManager.IsFull())
+        if (bowlManager != null && GameManager.Instance.CanPlaceItem())
         {
             ShakePlate();
             bowlManager.ShakeBowl();
