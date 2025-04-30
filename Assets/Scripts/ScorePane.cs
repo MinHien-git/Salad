@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScorePane : MonoBehaviour
 {
@@ -11,17 +12,37 @@ public class ScorePane : MonoBehaviour
     public ParticleSystem[] sadParticles;
     public ParticleSystem[] regretParticles;
     public ParticleSystem particle;
+    public Image background;
+    public TextMeshProUGUI ingredient_description;
+    public TextMeshProUGUI ingredient_information;
+    public Image[] buttonOutline;
+    public TextMeshProUGUI[] buttonText;
 
     private void OnEnable()
     {
+        if (GameManager.Instance.currentSalad == null)
+            return;
+        SaladScriptableObject salad = GameManager.Instance.currentSalad;
+        background.color = salad.backgroundColor;
+        ingredient_description.text = salad.ingredient_description;
+        ingredient_description.color = salad.textColor;
+        ingredient_information.text = salad.ingredient_information;
+        ingredient_information.color = salad.textColor;
+        scoreText.color = salad.textColor;
+        explaining.color = salad.textColor;
+        for (int i = 0; i < buttonOutline.Length; ++i)
+        {
+            buttonOutline[i].color = salad.textColor;
+            buttonText[i].color = salad.backgroundColor;
+        }
         scoreText.text =
             GameManager.Instance.CheckScorev2()
             + "/"
             + GameManager.Instance.currentSalad.ingredient.Length;
 
         if (
-            GameManager.Instance.currentSalad.ingredient.Length
-            == GameManager.Instance.CheckScorev2()
+            GameManager.Instance.currentSalad.ingredient.Length / 2
+            <= GameManager.Instance.CheckScorev2()
         )
         {
             particle.Play();
@@ -30,12 +51,11 @@ public class ScorePane : MonoBehaviour
                 randomParticles[i].transform.position = GetRandomPositionInsideScreen();
                 randomParticles[i].Play();
             }
-            explaining.text =
-                "Chúc mừng, bạn đã hoàn thành phần chơi của mình với số điểm tuyệt đối";
+            explaining.text = "Chúc mừng, bạn đã hoàn thành phần chơi của mình ";
         }
         else if (
             (int)GameManager.Instance.currentSalad.ingredient.Length / 2f
-            < GameManager.Instance.CheckScorev2()
+            > GameManager.Instance.CheckScorev2()
         )
         {
             explaining.text =
