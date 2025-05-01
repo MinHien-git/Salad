@@ -17,6 +17,7 @@ public class ScorePane : MonoBehaviour
     public TextMeshProUGUI ingredient_information;
     public Image[] buttonOutline;
     public TextMeshProUGUI[] buttonText;
+    public VerticalLayoutGroup layoutGroup;
 
     private void OnEnable()
     {
@@ -76,6 +77,14 @@ public class ScorePane : MonoBehaviour
                 sadParticles[i].Play();
             }
         }
+        StartCoroutine(RefreshLayoutNextFrame());
+    }
+
+    IEnumerator RefreshLayoutNextFrame()
+    {
+        yield return null; // wait 1 frame
+        layoutGroup.gameObject.SetActive(false);
+        layoutGroup.gameObject.SetActive(true);
     }
 
     public Vector3 GetRandomPositionInsideScreen()

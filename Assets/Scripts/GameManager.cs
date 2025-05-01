@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        currentSalad = GetRandomSalad();
+        currentSalad = PersistentData.Instance.selectedSalad ?? GetRandomSalad();
         GuideUI.Instance.Init(currentSalad);
         int saurceAmount = currentSalad.ingredient.Count(i => i.isSaurce);
         BowlManager.Instance.Init(

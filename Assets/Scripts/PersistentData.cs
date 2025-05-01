@@ -5,6 +5,7 @@ using UnityEngine;
 public class PersistentData : MonoBehaviour
 {
     public static PersistentData Instance { get; private set; }
+    public SaladScriptableObject selectedSalad;
     public SaladScriptableObject previousSalad;
 
     void Awake()
