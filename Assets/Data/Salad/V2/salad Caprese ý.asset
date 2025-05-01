@@ -33,7 +33,8 @@ MonoBehaviour:
     l\xEAn nhau. R\u01B0\u1EDBi th\xEAm gi\u1EA5m balsamic ho\u1EB7c m\u1EADt ong,
     d\u1EA7u \xF4 liu v\xE0 ti\xEAu. Cu\u1ED1i c\xF9ng trang tr\xED b\u1EB1ng l\xE1
     h\xFAng qu\u1EBF.\n"
-  ingredient_information: "Gi\u1EA5m Balsamic\nC\xE0 chua\nPh\xF4 mai mozzarella\nD\u1EA7u
-    \xF4 liu\nH\xFAng qu\u1EBF\nTi\xEAu, m\u1EADt ong"
+  ingredient_information: "Gi\u1EA5m Balsamic: 1g\nC\xE0 chua: 3 tr\xE1i\nPh\xF4
+    mai mozzarella: 500g\nD\u1EA7u \xF4 liu: 2 mu\u1ED7ng canh\nH\xFAng qu\u1EBF:
+    50g\nTi\xEAu, m\u1EADt ong"
   backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

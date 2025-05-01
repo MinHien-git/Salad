@@ -38,8 +38,9 @@ MonoBehaviour:
     x\u1ED1t bao g\u1ED3m d\u1EA7u \xF4 liu, chanh, m\u1EADt ong, gi\u1EA5m, t\u1ECFi
     b\u0103m, mu\u1ED1i, ti\xEAu. Sau c\xF9ng, b\xE0y tr\xED ra d\u0129a, r\u1EAFc
     v\u1EEBng rang r\u1ED3i th\u01B0\u1EDFng th\u1EE9c.\n"
-  ingredient_information: "C\xE0 t\xEDm\nC\xE0 chua\nD\u01B0a chu\u1ED9t\nH\xFAng
-    qu\u1EBF\nD\u1EA7u \xF4 liu, n\u01B0\u1EDBc c\u1ED1t chanh\nM\u1EADt ong, gi\u1EA5m
-    t\xE1o, t\u1ECFi b\u0103m\nMu\u1ED1i, ti\xEAu, v\u1EEBng rang"
+  ingredient_information: "C\xE0 t\xEDm: 2 qu\u1EA3\nC\xE0 chua: 2 qu\u1EA3\nD\u01B0a
+    chu\u1ED9t: 1 qu\u1EA3\nH\xFAng qu\u1EBF: 1 n\u1EAFm nh\u1ECF\nD\u1EA7u \xF4
+    liu, n\u01B0\u1EDBc c\u1ED1t chanh\nM\u1EADt ong, gi\u1EA5m t\xE1o, t\u1ECFi
+    b\u0103m\nMu\u1ED1i, ti\xEAu, v\u1EEBng rang"
   backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

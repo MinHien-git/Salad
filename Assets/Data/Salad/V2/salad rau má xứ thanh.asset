@@ -28,14 +28,15 @@ MonoBehaviour:
     th\u1ECBt l\u1EE3n ba ch\u1EC9 lu\u1ED9c th\u01A1m m\u1EC1m, h\xE0nh t\xE2y v\xE0
     b\u1EAFp c\u1EA3i t\xEDm gi\xF2n ng\u1ECDt t\u1EA1o n\xEAn h\u01B0\u01A1ng v\u1ECB
     thanh \u0111\u1EA1m v\xE0 t\u01B0\u01A1i m\xE1t\n"
-  ingredient_description: "Rau m\xE1\nTh\u1ECBt ba ch\u1EC9\nH\xE0nh t\xE2y\nB\u1EAFp
-    c\u1EA3i t\xEDm\nC\xE0 r\u1ED1t\nH\xE0nh phi\nV\u1EEBng tr\u1EAFng\nX\u1ED1t
-    m\xE8 rang KEWPIE h\u01B0\u01A1ng v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc"
-  ingredient_information: "Th\u1ECBt ba ch\u1EC9 lu\u1ED9c \u0111\u1EC3 ngu\u1ED9i,
+  ingredient_description: "Th\u1ECBt ba ch\u1EC9 lu\u1ED9c \u0111\u1EC3 ngu\u1ED9i,
     c\u1EAFt nh\u1ECF v\u1EEBa \u0103n. Rau m\xE1 nh\u1EB7t s\u1EA1ch, h\xE0nh t\xE2y
     c\u1EAFt nh\u1ECF ng\xE2m n\u01B0\u1EDBc \u0111\xE1 r\u1ED3i \u0111\u1EC3 r\xE1o
     n\u01B0\u1EDBc. B\u1EAFp c\u1EA3i t\xEDm c\u1EAFt nh\u1ECF. \n\nB\xE0y tr\xED
     c\xE1c nguy\xEAn li\u1EC7u ra d\u0129a v\xE0 tr\u1ED9n c\xF9ng n\u01B0\u1EDBc
-    x\u1ED1t m\xE8 rang KEWPIE h\u01B0\u01A1ng v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc\n"
+    x\u1ED1t m\xE8 rang KEWPIE h\u01B0\u01A1ng v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc"
+  ingredient_information: "Rau m\xE1: 300g\nTh\u1ECBt ba ch\u1EC9: 100g\nH\xE0nh
+    t\xE2y: 30g\nB\u1EAFp c\u1EA3i t\xEDm: 30g\nC\xE0 r\u1ED1t: 20g\nH\xE0nh phi:
+    15g\nV\u1EEBng tr\u1EAFng: m\u1ED9t \xEDt\nX\u1ED1t m\xE8 rang KEWPIE h\u01B0\u01A1ng
+    v\u1ECB qu\u1EA3 Yuzu v\xE0 T\u1EAFc:  70g\n"
   backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}

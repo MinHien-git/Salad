@@ -35,9 +35,12 @@ MonoBehaviour:
     chanh, \u0111\u01B0\u1EDDng, t\u1ECFi, \u1EDBt. R\u01B0\u1EDBi \u0111\u1EC1u
     x\u1ED1t l\xEAn d\u01B0a chu\u1ED9t, c\xE0 chua. Tr\u1ED9n nh\u1EB9 cho th\u1EA5m
     v\u1ECB r\u1ED3i th\xEAm rau th\u01A1m, l\u1EA1c rang.\n"
-  ingredient_information: "D\u01B0a chu\u1ED9t\n(b\xE0o l\xE1t m\u1ECFng ho\u1EB7c
-    \u0111\u1EADp d\u1EADp c\u1EAFt kh\xFAc)\nC\xE0 chua\nRau th\u01A1m\nL\u1EA1c
-    rang\n\u1EDAt, t\u1ECFi b\u0103m\nN\u01B0\u1EDBc m\u1EAFm chay (ho\u1EB7c x\xEC
-    d\u1EA7u)\nN\u01B0\u1EDBc c\u1ED1t chanh\n\u0110\u01B0\u1EDDng\nMu\u1ED1i, ti\xEAu"
+  ingredient_information: "D\u01B0a chu\u1ED9t (b\xE0o l\xE1t m\u1ECFng ho\u1EB7c
+    \u0111\u1EADp d\u1EADp c\u1EAFt kh\xFAc): 2 qu\u1EA3\nC\xE0 chua: 1 qu\u1EA3\nRau
+    th\u01A1m: 1 n\u1EAFm nh\u1ECF\nL\u1EA1c rang: 1 \xEDt (gi\xE3 d\u1EADp)\n\u1EDAt,
+    t\u1ECFi b\u0103m: V\u1EEBa \u0111\u1EE7 (t\xF9y kh\u1EA9u v\u1ECB)\nN\u01B0\u1EDBc
+    m\u1EAFm chay (ho\u1EB7c x\xEC d\u1EA7u): 2 th\xECa canh\nN\u01B0\u1EDBc c\u1ED1t
+    chanh: 1 th\xECa canh\n\u0110\u01B0\u1EDDng: 1 th\xECa c\xE0 ph\xEA\nMu\u1ED1i,
+    ti\xEAu: V\u1EEBa \u0111\u1EE7"
   backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

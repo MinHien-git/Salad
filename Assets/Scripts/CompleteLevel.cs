@@ -6,6 +6,6 @@ public class CompleteLevel : MonoBehaviour
 {
     public void OnClick()
     {
-        CompletePopup.Instance.Open();
+        BowlManager.Instance.StartMixingSequence();
     }
 }

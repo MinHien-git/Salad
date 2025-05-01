@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 0d127740b26161d4eb9bb7eca7fb8526, type: 3}
   ingredient_name: "d\u1EA7u \u0103n"
-  isSaurce: 1
+  isSaurce: 0

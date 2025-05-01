@@ -30,11 +30,7 @@ MonoBehaviour:
     gi\u1EEFa \u0111\u1ED9 gi\xF2n v\xE0 m\u1EC1m. Nguy\xEAn li\u1EC7u \u0111\u01B0\u1EE3c
     tr\u1ED9n v\u1EDBi n\u01B0\u1EDBc x\u1ED1t M\xE8 Rang KEWPIE, mang l\u1EA1i c\u1EA3m
     gi\xE1c thanh m\xE1t, \u0111\u1EADm \u0111\xE0 v\xE0 v\xF4 c\xF9ng th\xFA v\u1ECB.\n"
-  ingredient_description: "X\xE0 l\xE1ch b\xFAp m\u1EE1\nC\u1EA7n t\xE0u\nTr\xE1i
-    v\u1EA3 t\u01B0\u01A1i\nTh\u1ECBt h\u1EBFn\nS\u1EA3 b\u0103m\n\u1EDAt hi\u1EC3m
-    c\u1EAFt l\xE1t (Topping)\nB\xE1nh \u0111a m\xE8 (\u0103n k\xE8m)\nT\u01B0\u01A1ng
-    \u1EDBt\nX\u1ED1t M\xE8 Rang KEWPIE"
-  ingredient_information: "Tr\xE1i v\u1EA3 lu\u1ED9c trong n\u01B0\u1EDBc s\xF4i
+  ingredient_description: "Tr\xE1i v\u1EA3 lu\u1ED9c trong n\u01B0\u1EDBc s\xF4i
     c\xF3 v\u1EAFt chanh, sau 5 ph\xFAt v\u1EDBt ra ng\xE2m n\u01B0\u1EDBc \u0111\xE1.
     Ti\u1EBFp \u0111\u1EBFn d\xF9ng dao g\u1ECDt v\u1ECF xanh, c\u1EAFt l\xE1t r\u1ED3i
     ng\xE2m l\u1EA1i v\xE0o n\u01B0\u1EDBc c\xF3 chanh. X\xE0 l\xE1ch, c\u1EA7n t\xE0u
@@ -42,6 +38,11 @@ MonoBehaviour:
     \u0111\u1EC3 r\xE1o n\u01B0\u1EDBc, x\xE0o th\u01A1m v\u1EDBi s\u1EA3, x\u1ED1t
     M\xE8 Rang KEWPIE v\xE0 t\u01B0\u01A1ng \u1EDBt.\n\nSau c\xF9ng, tr\u1ED9n \u0111\u1EC1u
     t\u1EA5t c\u1EA3 nguy\xEAn li\u1EC7u v\xE0 th\u01B0\u1EDFng th\u1EE9c c\xF9ng
-    b\xE1nh \u0111a th\u01A1m gi\xF2n.\n"
+    b\xE1nh \u0111a th\u01A1m gi\xF2n."
+  ingredient_information: "X\xE0 l\xE1ch b\xFAp m\u1EE1: 80g\nC\u1EA7n t\xE0u: 20g\nTr\xE1i
+    v\u1EA3 t\u01B0\u01A1i: 70g (2 tr\xE1i to)\nTh\u1ECBt h\u1EBFn:  40g\nS\u1EA3
+    b\u0103m: 5g\n\u1EDAt hi\u1EC3m c\u1EAFt l\xE1t (Topping):  v\u1EEBa \u0111\u1EE7\nB\xE1nh
+    \u0111a m\xE8 (\u0103n k\xE8m): v\u1EEBa \u0111\u1EE7\nT\u01B0\u01A1ng \u1EDBt:
+    10g\nX\u1ED1t M\xE8 Rang KEWPIE: 35g\n"
   backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}

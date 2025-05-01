@@ -43,9 +43,10 @@ MonoBehaviour:
     \u0111\u01B0\u1EDDng. \n\nB\xE0y tr\xED t\u1EA5t c\u1EA3 c\xE1c nguy\xEAn li\u1EC7u
     l\xEAn d\u0129a, khi \u0103n tr\u1ED9n c\xE1c nguy\xEAn li\u1EC7u c\xF9ng x\u1ED1t
     M\xE8 Rang KEWPIE.\n"
-  ingredient_information: "Th\u1ECBt \u0111\xF9i g\xE0 lu\u1ED9c\nL\xE1 \xE9 tr\u1EAFng\nB\u1EAFp
-    c\u1EA3i tr\u1EAFng + t\xEDm\nH\xE0nh t\xEDm ng\xE2m chua\nC\xE0 r\u1ED1t\nH\xE0nh
-    t\xE2y l\xE1t m\u1ECFng\nH\xE0nh phi + V\u1EEBng rang\nB\xE1nh \u0111a (\u0103n
-    k\xE8m)\nX\u1ED1t M\xE8 Rang KEWPIE"
+  ingredient_information: "Th\u1ECBt \u0111\xF9i g\xE0 lu\u1ED9c: 200g\nL\xE1 \xE9
+    tr\u1EAFng: 30g\nB\u1EAFp c\u1EA3i tr\u1EAFng + t\xEDm: 40g\nH\xE0nh t\xEDm ng\xE2m
+    chua: 30g\nC\xE0 r\u1ED1t: 15g\nH\xE0nh t\xE2y l\xE1t m\u1ECFng: 40g\nH\xE0nh
+    phi + V\u1EEBng rang: v\u1EEBa \u0111\u1EE7\nB\xE1nh \u0111a (\u0103n k\xE8m):
+    v\u1EEBa \u0111\u1EE7\nX\u1ED1t M\xE8 Rang KEWPIE: 50ml"
   backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}

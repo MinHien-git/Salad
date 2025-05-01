@@ -38,9 +38,10 @@ MonoBehaviour:
     cho v\u1EEBa \u0103n.\n\nSau \u0111\xF3 \u0111em t\u1EA5t c\u1EA3 c\xE1c nguy\xEAn
     li\u1EC7u tr\u1ED9n \u0111\u1EC1u l\u1EA1i v\u1EDBi nhau r\u1ED3i b\xE0y tr\xED
     l\xEAn d\u0129a."
-  ingredient_information: "Rau m\u1EA7m\nC\xE0 chua bi\nH\xE0nh t\xE2y nh\u1ECF\nC\xE0
-    r\u1ED1t\nD\u1EA7u \u0103n\nChanh\n\u0110\u01B0\u1EDDng tr\u1EAFng\nH\xE0nh t\xEDm\nB\xF4ng
-    c\u1EA3i xanh ho\u1EB7c tr\u1EAFng\nN\u01B0\u1EDBc t\u01B0\u01A1ng\nN\u01B0\u1EDBc
-    x\u1ED1t tu\u1EF3 th\xEDch\n"
+  ingredient_information: "Rau m\u1EA7m: 100g\nC\xE0 chua bi: 100g\nH\xE0nh t\xE2y
+    nh\u1ECF: 1 c\u1EE7\nC\xE0 r\u1ED1t: 1 c\u1EE7\nD\u1EA7u \u0103n: 2 mu\u1ED7ng\nChanh:
+    1 tr\xE1i\n\u0110\u01B0\u1EDDng tr\u1EAFng: 2 mu\u1ED7ng\nH\xE0nh t\xEDm: 3 c\u1EE7\nB\xF4ng
+    c\u1EA3i xanh ho\u1EB7c tr\u1EAFng: 150g\nN\u01B0\u1EDBc t\u01B0\u01A1ng: 2 mu\u1ED7ng\nN\u01B0\u1EDBc
+    x\u1ED1t tu\u1EF3 th\xEDch: 2 mu\u1ED7ng\n"
   backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

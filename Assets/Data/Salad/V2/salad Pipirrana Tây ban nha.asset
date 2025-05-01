@@ -37,8 +37,8 @@ MonoBehaviour:
     \u0103n v\u1EDBi gi\u1EA5m, d\u1EA7u \xF4 liu, mu\u1ED1i, ti\xEAu v\xE0 t\u1ECFi.
     \u0110\u1EADy n\u1EAFp v\xE0 \u0111\u1EC3 v\xE0o t\u1EE7 l\u1EA1nh trong 2 gi\u1EDD
     r\u1ED3i m\u1EDBi th\u01B0\u1EDFng th\u1EE9c.\n"
-  ingredient_information: "C\xE0 chua\nD\u01B0a chu\u1ED9t\n\u1EDAt chu\xF4ng\nH\xE0nh
-    t\xE2y\nGi\u1EA5m\nTr\u1EE9ng\nT\u1ECFi, \u1EDBt poblano\nD\u1EA7u \xF4 liu,
-    ti\xEAu, mu\u1ED1i"
+  ingredient_information: "C\xE0 chua: 3 c\u1EE7\nD\u01B0a chu\u1ED9t: 1 qu\u1EA3\n\u1EDAt
+    chu\xF4ng: 1 tr\xE1i\nH\xE0nh t\xE2y: 1 c\u1EE7\nGi\u1EA5m: 15ml\nTr\u1EE9ng:
+    3 qu\u1EA3\nT\u1ECFi, \u1EDBt poblano\nD\u1EA7u \xF4 liu, ti\xEAu, mu\u1ED1i"
   backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

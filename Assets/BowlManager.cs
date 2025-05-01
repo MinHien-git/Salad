@@ -14,6 +14,7 @@ public class BowlManager : MonoBehaviour
     public float itemDistanceRatio = 0.5f; // item cách tâm bằng 50% bán kính
     private RectTransform[] slices;
     private int currentSlice = 0;
+    public SpoonAnimator[] spoons;
 
     [Header("Drop Item Settings")]
     public Vector2 itemSize = new Vector2(100f, 100f);
@@ -23,10 +24,84 @@ public class BowlManager : MonoBehaviour
     public List<Vector2> sauceSlots = new List<Vector2>();
     public int maxSauceSlots = 4; // Số slot cố định
     public int currentSauceSlot = 0;
+    private Tween bowlStirTween; // Để quản lý tween loop này
+
+    public void ShakeBowlStir()
+    {
+        RectTransform bowlRect = GetComponent<RectTransform>();
+
+        if (bowlRect != null)
+        {
+            if (bowlStirTween != null && bowlStirTween.IsActive())
+                return;
+
+            DG.Tweening.Sequence stirSeq = DOTween.Sequence();
+
+            Vector2 originalPos = bowlRect.anchoredPosition;
+            Vector3 originalScale = bowlRect.localScale;
+
+            // Lặp vị trí lên xuống
+            stirSeq.Append(
+                bowlRect.DOAnchorPosY(originalPos.y + 10f, 0.1f).SetEase(Ease.InOutSine)
+            );
+            stirSeq.Append(
+                bowlRect.DOAnchorPosY(originalPos.y - 10f, 0.1f).SetEase(Ease.InOutSine)
+            );
+            stirSeq.Append(bowlRect.DOAnchorPosY(originalPos.y, 0.1f).SetEase(Ease.InOutSine));
+
+            // Lặp nhẹ xoay trái phải
+            stirSeq.Join(bowlRect.DORotate(new Vector3(0, 0, 10f), 0.1f).SetEase(Ease.InOutSine));
+            stirSeq.Append(
+                bowlRect.DORotate(new Vector3(0, 0, -10f), 0.2f).SetEase(Ease.InOutSine)
+            );
+            stirSeq.Append(bowlRect.DORotate(Vector3.zero, 0.1f).SetEase(Ease.InOutSine));
+
+            // Lặp scale (rung to nhỏ mạnh hơn bình thường)
+            stirSeq.Join(bowlRect.DOScale(originalScale * 1.1f, 0.1f).SetEase(Ease.OutQuad));
+            stirSeq.Append(bowlRect.DOScale(originalScale * 0.95f, 0.1f).SetEase(Ease.InQuad));
+            stirSeq.Append(bowlRect.DOScale(originalScale, 0.1f).SetEase(Ease.OutQuad));
+
+            // Lặp mãi khi đang trộn
+            stirSeq.SetLoops(-1, LoopType.Restart);
+
+            bowlStirTween = stirSeq;
+        }
+    }
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void StartMixingSequence()
+    {
+        // 1. Bắt đầu animation cho tất cả các muỗng
+        foreach (var spoon in spoons)
+        {
+            spoon.gameObject.SetActive(true); // Giả sử SpoonAnimator có hàm này
+            spoon.StartStirring(); // Giả sử SpoonAnimator có hàm này
+        }
+
+        ShakeBowlStir();
+
+        // Sau 3.5s thì dừng và mở popup
+        DOVirtual.DelayedCall(
+            2f,
+            () =>
+            {
+                StopShakeBowlStir();
+                CompletePopup.Instance.Open();
+            }
+        );
+    }
+
+    public void StopShakeBowlStir()
+    {
+        if (bowlStirTween != null)
+        {
+            bowlStirTween.Kill();
+            bowlStirTween = null;
+        }
     }
 
     public void Init(int numberOfSlices, int amount)

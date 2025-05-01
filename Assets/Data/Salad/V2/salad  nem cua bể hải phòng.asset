@@ -34,9 +34,9 @@ MonoBehaviour:
     c\xF9ng rau x\xE0 l\xE1ch.\n\nSu h\xE0o, c\xE0 r\u1ED1t, c\u1EE7 c\u1EA3i \u0111\u01B0\u1EDDng
     \u0111em mu\u1ED1i chua. Sau \u0111\xF3 b\xE0y tr\xED c\xE1c m\xF3n \u0103n v\xE0
     d\xF9ng v\u1EDBi x\u1ED1t M\xE8 Rang KEWPIE."
-  ingredient_information: "Nem cua b\u1EC3\nRau m\u1EA7m\nRong s\u1EE5n gai\nC\xE0
-    r\u1ED1t, c\u1EE7 c\u1EA3i, su h\xE0o mu\u1ED1i chua\nN\u01B0\u1EDBc x\u1ED1t
-    gia v\u1ECB cho sushi\nX\xE0 l\xE1ch lolo xanh\nRau m\xF9i\nV\u1EEBng tr\u1EAFng\nX\u1ED1t
-    M\xE8 Rang KEWPIE"
+  ingredient_information: "Nem cua b\u1EC3: 300g\nRau m\u1EA7m: 15g\nRong s\u1EE5n
+    gai: 100g\nC\xE0 r\u1ED1t, c\u1EE7 c\u1EA3i, su h\xE0o mu\u1ED1i chua: 60g\nN\u01B0\u1EDBc
+    x\u1ED1t gia v\u1ECB cho sushi:  20ml\nX\xE0 l\xE1ch lolo xanh:  100g\nRau m\xF9i:
+    20g\nV\u1EEBng tr\u1EAFng:  m\u1ED9t \xEDt\nX\u1ED1t M\xE8 Rang KEWPIE:  70ml"
   backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}

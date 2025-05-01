@@ -32,8 +32,9 @@ MonoBehaviour:
     l\xE0m 4 theo chi\u1EC1u d\u1ECDc. Lu\u1ED9c ch\xEDn.\nD\u01B0a leo b\u1ECF ru\u1ED9t,
     c\u1EAFt l\xE1t.\nTr\u1ED9n \u0111\u1EC1u c\xE1c nguy\xEAn li\u1EC7u tr\xEAn
     c\xF9ng v\u1EDBi x\u1ED1t Mayonnaise h\u01B0\u01A1ng v\u1ECB Nh\u1EADt Kewpie."
-  ingredient_information: "Khoai t\xE2y (\u0111\xE3 lu\u1ED9c ch\xEDn)\nTh\u1ECBt
-    ngu\u1ED9i (Jambon)\nC\xE0 r\u1ED1t\nD\u01B0a leo\nMu\u1ED1i ti\xEAu\nX\u1ED1t
-    Mayonnaise h\u01B0\u01A1ng v\u1ECB Nh\u1EADt Kewpie"
+  ingredient_information: "Khoai t\xE2y (\u0111\xE3 lu\u1ED9c ch\xEDn): 400g\nTh\u1ECBt
+    ngu\u1ED9i (Jambon): 65g\nC\xE0 r\u1ED1t: 25g\nD\u01B0a leo: 50g\nMu\u1ED1i ti\xEAu:
+    v\u1EEBa \u0111\u1EE7\nX\u1ED1t Mayonnaise h\u01B0\u01A1ng v\u1ECB Nh\u1EADt
+    Kewpie: 100g"
   backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

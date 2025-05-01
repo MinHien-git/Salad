@@ -40,8 +40,10 @@ MonoBehaviour:
     x\u1ED1t d\u1EA7u \xF4 liu, gi\u1EA5m, n\u01B0\u1EDBc c\u1ED1t chanh v\xE0 gia
     v\u1ECB. \nSau c\xF9ng tr\u1ED9n \u0111\u1EC1u c\xE1c nguy\xEAn li\u1EC7u v\u1EDBi
     nhau v\xE0 th\u01B0\u1EDFng th\u1EE9c."
-  ingredient_information: "X\xE0 l\xE1ch\nC\xE0 chua\nD\u01B0a chu\u1ED9t\nH\xE0nh
-    t\xE2y t\xEDm\n\xD4 liu, ph\xF4 mai Feta\n\u1EDAt chu\xF4ng\nD\u1EA7u \xF4 liu\nGi\u1EA5m\nN\u01B0\u1EDBc
-    c\u1ED1t chanh\nT\u1ECFi, gia v\u1ECB kinh gi\u1EDBi, mu\u1ED1i, ti\xEAu"
+  ingredient_information: "X\xE0 l\xE1ch: 1 c\xE2y to v\u1EEBa\nC\xE0 chua: 113g\nD\u01B0a
+    chu\u1ED9t: 1 tr\xE1i l\u1EDBn\nH\xE0nh t\xE2y t\xEDm: \xBD c\u1EE7 v\u1EEBa\n\xD4
+    liu, ph\xF4 mai Feta: 90g\n\u1EDAt chu\xF4ng: 30g\nD\u1EA7u \xF4 liu: 125ml\nGi\u1EA5m:
+    95ml\nN\u01B0\u1EDBc c\u1ED1t chanh: 1 tr\xE1i\nT\u1ECFi, gia v\u1ECB kinh gi\u1EDBi,
+    mu\u1ED1i, ti\xEAu"
   backgroundColor: {r: 0.89411765, g: 0, b: 0.16862746, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

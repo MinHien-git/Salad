@@ -33,7 +33,8 @@ MonoBehaviour:
     d\u1EA7u \xF4 liu, m\u1EADt ong, gi\u1EA5m t\xE1o, mu\u1ED1i, ti\xEAu. T\u1EA5t
     c\u1EA3 nguy\xEAn li\u1EC7u tr\u1ED9n \u0111\u1EC1u v\u1EDBi x\u1ED1t v\xE0 th\u01B0\u1EDFng
     th\u1EE9c.\n"
-  ingredient_information: "B\u1EAFp c\u1EA3i t\xEDm\nB\u1EAFp\nC\xE0 r\u1ED1t\nX\u1ED1t
-    mayonnaise\nD\u1EA7u \xF4 liu, m\u1EADt ong\nMu\u1ED1i, ti\xEAu, gi\u1EA5m t\xE1o"
+  ingredient_information: "B\u1EAFp c\u1EA3i t\xEDm: 150g\nB\u1EAFp: 1 tr\xE1i\nC\xE0
+    r\u1ED1t: 1 c\u1EE7\nX\u1ED1t mayonnaise: 3 mu\u1ED7ng\nD\u1EA7u \xF4 liu, m\u1EADt
+    ong\nMu\u1ED1i, ti\xEAu, gi\u1EA5m t\xE1o"
   backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

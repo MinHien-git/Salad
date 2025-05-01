@@ -33,7 +33,9 @@ MonoBehaviour:
     t\u1ECFi \u1EDBt. Sau \u0111\xF3, n\u01B0\u1EDBc x\u1ED1t tr\u1ED9n c\xF9ng rong
     bi\u1EC3n.\n"
   ingredient_information: "Rong bi\u1EC3n t\u01B0\u01A1i (ho\u1EB7c rong kh\xF4 ng\xE2m
-    n\u1EDF)\nM\xE8 rang\nD\u1EA7u m\xE8\nGi\u1EA5m t\xE1o\nN\u01B0\u1EDBc t\u01B0\u01A1ng\n\u0110\u01B0\u1EDDng\nT\u1ECFi
-    \u1EDBt b\u0103m"
+    n\u1EDF): 100g\nM\xE8 rang: 1 th\xECa canh\nD\u1EA7u m\xE8: 1 th\xECa canh\nGi\u1EA5m
+    t\xE1o: 1 th\xECa c\xE0 ph\xEA\nN\u01B0\u1EDBc t\u01B0\u01A1ng: 1 th\xECa canh\n\u0110\u01B0\u1EDDng:
+    1 th\xECa c\xE0 ph\xEA\nT\u1ECFi \u1EDBt b\u0103m:  V\u1EEBa \u0111\u1EE7 (tu\u1EF3
+    th\xEDch)"
   backgroundColor: {r: 0.24705882, g: 0.60784316, b: 0, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}

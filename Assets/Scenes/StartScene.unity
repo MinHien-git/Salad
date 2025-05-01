@@ -2817,22 +2817,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n<size=18>B\u01B0\u1EDBc 1</size>: Khi b\u1EAFt \u0111\u1EA7u tr\xF2
+  m_text: "\n<size=24>B\u01B0\u1EDBc 1</size>: Khi b\u1EAFt \u0111\u1EA7u tr\xF2
     ch\u01A1i, m\xE0n h\xECnh s\u1EBD hi\u1EC3n th\u1ECB th\xF4ng tin v\u1EC1 m\xF3n
     salad. H\xE3y \u0111\u1ECDc k\u1EF9 ph\u1EA7n n\xE0y \u0111\u1EC3 hi\u1EC3u c\xE1c
-    b\u01B0\u1EDBc l\xE0m m\xF3n salad.\n\n<size=18>B\u01B0\u1EDBc 2</size>: Ng\u01B0\u1EDDi
+    b\u01B0\u1EDBc l\xE0m m\xF3n salad.\n\n<size=24>B\u01B0\u1EDBc 2</size>: Ng\u01B0\u1EDDi
     ch\u01A1i s\u1EBD nh\xECn th\u1EA5y c\xE1c d\u0129a nguy\xEAn li\u1EC7u n\u1EB1m
-    \u1EDF g\xF3c ph\u1EA3i m\xE0n h\xECnh. H\xE3y ch\u1ECDn d\u0129a nguy\xEAn li\u1EC7u
-    c\u1EA7n thi\u1EBFt v\xE0 k\xE9o v\xE0o b\xE0n \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u
-    ch\u1EBF bi\u1EBFn m\xF3n \u0103n.\n\n<size=18>B\u01B0\u1EDBc 3</size>: Trong
-    qu\xE1 tr\xECnh ch\u01A1i, n\u1EBFu b\u1EA1n mu\u1ED1n xem l\u1EA1i h\u01B0\u1EDBng
+    \u1EDF g\xF3c d\u01B0\u1EDBi m\xE0n h\xECnh. H\xE3y ch\u1ECDn d\u0129a nguy\xEAn
+    li\u1EC7u c\u1EA7n thi\u1EBFt v\xE0 \u1EA5n v\xE0o b\xE0n \u0111\u1EC3 b\u1EAFt
+    \u0111\u1EA7u ch\u1EBF bi\u1EBFn m\xF3n \u0103n.\n\n<size=24>B\u01B0\u1EDBc 3</size>:
+    Trong qu\xE1 tr\xECnh ch\u01A1i, n\u1EBFu b\u1EA1n mu\u1ED1n xem l\u1EA1i h\u01B0\u1EDBng
     d\u1EABn, c\xF3 hai c\xE1ch \u0111\u1EC3 th\u1EF1c hi\u1EC7n: b\u1EA1n c\xF3
     th\u1EC3 \u1EA5n gi\u1EEF v\xE0o d\u0129a n\u1EB1m ch\xEDnh gi\u1EEFa m\xE0n
     h\xECnh ho\u1EB7c nh\u1EA5n v\xE0o n\xFAt \"?\" n\u1EB1m \u1EDF g\xF3c tr\xE1i
-    d\u01B0\u1EDBi m\xE0n h\xECnh.\n\n<size=18>B\u01B0\u1EDBc 4</size>: Khi \u0111\xE3
-    ho\xE0n t\u1EA5t vi\u1EC7c ch\u1EBF bi\u1EBFn, h\xE3y nh\u1EA5n n\xFAt \"Complete\"
-    \u0111\u1EC3 xem k\u1EBFt qu\u1EA3 c\u1EE7a m\xF3n salad v\xE0 ki\u1EC3m tra
-    xem b\u1EA1n \u0111\xE3 s\u1EED d\u1EE5ng \u0111\xFAng c\xE1c nguy\xEAn li\u1EC7u
+    d\u01B0\u1EDBi m\xE0n h\xECnh.\n\n<size=24>B\u01B0\u1EDBc 4</size>: Khi \u0111\xE3
+    ho\xE0n t\u1EA5t vi\u1EC7c ch\u1EBF bi\u1EBFn, h\xE3y nh\u1EA5n n\xFAt \"Ho\xE0n
+    th\xE0nh\" \u0111\u1EC3 xem k\u1EBFt qu\u1EA3 c\u1EE7a m\xF3n salad v\xE0 ki\u1EC3m
+    tra xem b\u1EA1n \u0111\xE3 s\u1EED d\u1EE5ng \u0111\xFAng c\xE1c nguy\xEAn li\u1EC7u
     hay ch\u01B0a.\n\nL\u1EF1a ch\u1ECDn ch\xEDnh x\xE1c c\xE1c lo\u1EA1i nguy\xEAn
     li\u1EC7u ph\xF9 h\u1EE3p \u0111\u1EC3 ho\xE0n th\xE0nh m\xF3n salad \u0111\u1EB7c
     bi\u1EC7t c\u1EE7a b\u1EA1n m\u1ED9t c\xE1ch ho\xE0n h\u1EA3o nh\u1EA5t.  \r\nM\u1ED9t
@@ -2865,13 +2865,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 2048
   m_textAlignment: 65535
