@@ -30,12 +30,7 @@ MonoBehaviour:
     b\u1EB9 xanh t\u01B0\u01A1i m\xE1t v\xE0 h\u01B0\u01A1ng th\u01A1m l\xE1 l\u1ED1t
     \u0111\u1EB7c tr\u01B0ng t\u1EA1o n\xEAn h\u01B0\u01A1ng v\u1ECB \u0111\u1EADm
     \u0111\xE0, t\u01B0\u01A1i m\u1EDBi v\xE0 h\u1EA5p d\u1EABn.\n"
-  ingredient_description: "C\xE1 tr\u1EE9ng: 180g\nRau c\u1EA3i b\u1EB9 xanh: 60g\nL\xE1
-    l\u1ED1t:  20g\nC\xE1c lo\u1EA1i rau th\u01A1m: v\u1EEBa \u0111\u1EE7\nC\xE0
-    r\u1ED1t: 50g\nB\u1EAFp c\u1EA3i t\xEDm: 50g\n\u1EDAt chu\xF4ng \u0111\u1ECF:
-    10g\nL\xE1 l\u1ED1t chi\xEAn gi\xF2n (pha x\u1ED1t): 15g\nX\u1ED1t M\xE8 Rang
-    KEWPIE v\u1ECB Wasabi v\xE0 Rong Bi\u1EC3n: 60ml\n"
-  ingredient_information: "C\xE1 tr\u1EE9ng \u01B0\u1EDBp n\u01B0\u1EDBc ch\u1EA5m
+  ingredient_description: "C\xE1 tr\u1EE9ng \u01B0\u1EDBp n\u01B0\u1EDBc ch\u1EA5m
     g\u1EEBng m\xE8 r\u1ED3i \u0111em n\u01B0\u1EDBng. Rau c\u1EA3i b\u1EB9 xanh,
     l\xE1 l\u1ED1t v\xE0 c\xE1c lo\u1EA1i rau th\u01A1m l\u1EB7t, r\u1EEDa s\u1EA1ch,
     \u0111\u1EC3 r\xE1o. C\xE0 r\u1ED1t, b\u1EAFp c\u1EA3i t\xEDm v\xE0 \u1EDBt chu\xF4ng
@@ -43,6 +38,11 @@ MonoBehaviour:
     l\xE1 l\u1ED1t chi\xEAn gi\xF2n, c\u1EAFt nh\u1ECF v\xE0 n\u01B0\u1EDBc x\u1ED1t
     M\xE8 Rang KEWPIE v\u1ECB Wasabi v\xE0 Rong Bi\u1EC3n.\n\nSau c\xF9ng, cho t\u1EA5t
     c\u1EA3 c\xE1c nguy\xEAn li\u1EC7u l\xEAn d\u0129a khi \u0103n ch\u1EA5m c\xF9ng
-    n\u01B0\u1EDBc x\u1ED1t \u0111\xE3 pha.\n"
+    n\u01B0\u1EDBc x\u1ED1t \u0111\xE3 pha."
+  ingredient_information: "C\xE1 tr\u1EE9ng: 180g\nRau c\u1EA3i b\u1EB9 xanh: 60g\nL\xE1
+    l\u1ED1t:  20g\nC\xE1c lo\u1EA1i rau th\u01A1m: v\u1EEBa \u0111\u1EE7\nC\xE0
+    r\u1ED1t: 50g\nB\u1EAFp c\u1EA3i t\xEDm: 50g\n\u1EDAt chu\xF4ng \u0111\u1ECF:
+    10g\nL\xE1 l\u1ED1t chi\xEAn gi\xF2n (pha x\u1ED1t): 15g\nX\u1ED1t M\xE8 Rang
+    KEWPIE v\u1ECB Wasabi v\xE0 Rong Bi\u1EC3n: 60ml\n"
   backgroundColor: {r: 0.9843137, g: 0.9607843, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}

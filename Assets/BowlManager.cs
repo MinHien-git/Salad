@@ -86,7 +86,7 @@ public class BowlManager : MonoBehaviour
 
         // Sau 3.5s thì dừng và mở popup
         DOVirtual.DelayedCall(
-            2f,
+            1f,
             () =>
             {
                 StopShakeBowlStir();
