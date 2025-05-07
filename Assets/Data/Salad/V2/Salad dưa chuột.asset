@@ -13,13 +13,10 @@ MonoBehaviour:
   m_Name: "Salad d\u01B0a chu\u1ED9t"
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: 6f3ec6f1437bf6e499ec949e70783709, type: 2}
   - {fileID: 11400000, guid: cbab5143e380df44d927a5060383a33d, type: 2}
   - {fileID: 11400000, guid: ec26727fd331280419b367224ca3313b, type: 2}
   - {fileID: 11400000, guid: 3a2758a17f1866b44af5c1a096203c49, type: 2}
-  - {fileID: 11400000, guid: a5a43c5f7d5f3aa44a54493059fddcce, type: 2}
   - {fileID: 11400000, guid: cf36fdf1f225a924facb9f926f0bfb5d, type: 2}
-  - {fileID: 11400000, guid: b36c6b7d40417d843a8d098a124bd154, type: 2}
   - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
   - {fileID: 11400000, guid: a0cd5eb4219c6cf4a90c2119fdec179c, type: 2}
   - {fileID: 11400000, guid: 25ede4ca208190a4397ef906e498a54c, type: 2}

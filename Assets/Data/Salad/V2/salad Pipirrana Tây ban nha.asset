@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: "salad Pipirrana T\xE2y ban nha"
   m_EditorClassIdentifier: 
   ingredient:
-  - {fileID: 11400000, guid: 0cd7cd93e50ac9e41850c76e058fac4c, type: 2}
   - {fileID: 11400000, guid: 58392118aa4f03d4a88b54ad7d77d55d, type: 2}
-  - {fileID: 11400000, guid: 3a2758a17f1866b44af5c1a096203c49, type: 2}
   - {fileID: 11400000, guid: 0c5b08695c352424496006232c8c103f, type: 2}
   - {fileID: 11400000, guid: 8b198f462ea644b48acc16cc5f0b1ca7, type: 2}
   - {fileID: 11400000, guid: a8adcec939b314e458e30acdaa8a9a86, type: 2}
