@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84861260542827745a936bf72c50bd31, type: 3}
   m_Name: "x\xE0 l\xE1ch lolo"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: d697dda71c14a9e4cb65515385921eec, type: 3}
+  sprite: {fileID: 21300000, guid: 513079b4bedc6ae42acd2c8a5fa33935, type: 3}
   ingredient_name: "x\xE0 l\xE1ch lolo"
   isSaurce: 0
