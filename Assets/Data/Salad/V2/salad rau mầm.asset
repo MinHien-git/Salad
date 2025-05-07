@@ -18,10 +18,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fb2d4c39f732d0b4fafe2fc15baaccb5, type: 2}
   - {fileID: 11400000, guid: 6049704b18ff3d34baebcb6da32b7de7, type: 2}
   - {fileID: 11400000, guid: eea1600012a25934e9d574b7c6b8eccb, type: 2}
-  - {fileID: 11400000, guid: ec26727fd331280419b367224ca3313b, type: 2}
   - {fileID: 11400000, guid: d31f7d2caa0c9f947a4604f9c682d9a3, type: 2}
   - {fileID: 11400000, guid: 570c0e390769c574c97baa2331ba4004, type: 2}
   - {fileID: 11400000, guid: 42858879a2390a34fa3b1f8aeda01613, type: 2}
+  - {fileID: 11400000, guid: e588ce8de4e080f4289f6a340dce8737, type: 2}
   saladImage: {fileID: 21300000, guid: 1b8d8cb6beecb1947a73ef05ebd7745a, type: 3}
   salad_name: "salad rau m\u1EA7m"
   salad_script_name: "<color=#fff>salad rau m\u1EA7m</color>"

@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bcaeca9570c97b24b8081a89e76c02b9, type: 2}
   - {fileID: 11400000, guid: 717d8bf0f3fad6e40852c01a02dd85d1, type: 2}
   - {fileID: 11400000, guid: bbc87018ce60aeb49902a2d86f05094f, type: 2}
+  - {fileID: 11400000, guid: 9499b4cd1dfcce74f8a9601c5e495947, type: 2}
   saladImage: {fileID: 21300000, guid: b74940be0ca125948b2aa53d85ea53fd, type: 3}
   salad_name: "salad c\xE1 n\u01B0\u1EDBng s\xF4ng \u0111\xE0"
   salad_script_name: "<color=#e4002b>Salad C\xE1 N\u01B0\u1EDBng <b>S\xF4ng \u0110\xE0</b></color>"

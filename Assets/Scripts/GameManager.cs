@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
             dropItems.Add(item);
             ScoreText.Instance.AnimateScoreTextIncrease();
             currentAmountDisplayer.text = dropItems.Count + "/" + currentSalad.ingredient.Length;
-            if (CanPlaceItem())
+            if (dropItems.Count >= currentSalad.ingredient.Length / 2)
             {
                 completeButton.interactable = true;
             }
@@ -102,11 +102,46 @@ public class GameManager : MonoBehaviour
 
         return result;
     }
+    public List<Ingredient> GetGameIngredientList(int totalCount)
+    {
+        // 1. Bắt đầu với toàn bộ nguyên liệu từ currentSalad
+        List<Ingredient> result = new(currentSalad.ingredient);
+
+        // 2. Lấy các nguyên liệu còn lại chưa nằm trong salad
+        List<Ingredient> remaining = ingredients
+            .Where(i => !result.Contains(i))
+            .ToList();
+
+        ShuffleList(remaining);
+
+        // 3. Thêm các nguyên liệu còn thiếu để đủ số lượng totalCount
+        int needToAdd = totalCount - result.Count;
+        if (needToAdd > remaining.Count)
+        {
+            Debug.LogWarning("Không đủ nguyên liệu để tạo danh sách 30 nguyên liệu unique.");
+            needToAdd = remaining.Count;
+        }
+
+        result.AddRange(remaining.Take(needToAdd));
+        return result;
+    }
+
+    private void ShuffleList<T>(List<T> list)
+    {
+        for (int i = 0; i < list.Count; i++)
+        {
+            int rand = Random.Range(i, list.Count);
+            T temp = list[i];
+            list[i] = list[rand];
+            list[rand] = temp;
+        }
+    }
 
     public void Start()
     {
         currentSalad = PersistentData.Instance.selectedSalad ?? GetRandomSalad();
         GuideUI.Instance.Init(currentSalad);
+
         int saurceAmount = currentSalad.ingredient.Count(i => i.isSaurce);
         BowlManager.Instance.Init(
             currentSalad.ingredient.Length,
@@ -114,10 +149,13 @@ public class GameManager : MonoBehaviour
         );
         CompletePopup.Instance.Init(currentSalad);
         currentAmountDisplayer.text = 0 + "/" + currentSalad.ingredient.Length;
-        PrepareIngredientTable.Instance.InitPlate(GetRandomUniqueItems(10));
-        PrepareIngredientTable.Instance.InitPlate(currentSalad);
+
+        // ✅ Tạo danh sách nguyên liệu 30 item: unique, có đủ nguyên liệu salad
+        List<Ingredient> gameIngredients = GetGameIngredientList(30);
+        PrepareIngredientTable.Instance.InitPlate(gameIngredients);
         PrepareIngredientTable.Instance.ShuffleChildObjects();
     }
+
 
     SaladScriptableObject GetRandomSalad()
     {
